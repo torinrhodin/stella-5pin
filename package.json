@@ -1,5 +1,5 @@
 {
-  "name": "eylea",
+  "name": "stellant",
   "version": "1.0.0",
   "description": "Agnitio iPlanner App",
   "main": "Gruntfile.js",
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/5pin-design/eylea"
+    "url": "git+https://github.com/torinrhodin/stella-5pin"
   },
   "author": "5pin Design",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/5pin-design/eylea/issues"
+    "url": "https://github.com/torinrhodin/stella-5pin/issues"
   },
-  "homepage": "https://github.com/5pin-design/eylea#readme"
+  "homepage": "https://github.com/torinrhodin/stella-5pin#readme"
 }

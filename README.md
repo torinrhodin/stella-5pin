@@ -1,2 +1,2 @@
-# eylea
-eylea app dev
+# stellant
+stellant app dev
