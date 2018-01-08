@@ -22,19 +22,13 @@ $teal: #00a79d;
 --------------------------------------------------------------*/
 @font-face {
     font-family: 'BayerSansCond Regular';
-    src: url('../../content/fonts/BayerSansCond-Regular.otf') format('truetype');
+    src: url('../../content/fonts/BayerSans-Regular.otf') format('opentype');
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BayerSans Bold';
-    src: url('../../content/fonts/BayerSansCond-Bold.otf');
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TradeGothicLTStd-Bold';
-    src: url('../../content/fonts/TradeGothicLTStd-Bold.otf') format('opentype');
+    src: url('../../content/fonts/BayerSans-Bold.otf') format('opentype');
     font-style: normal;
 }
 
