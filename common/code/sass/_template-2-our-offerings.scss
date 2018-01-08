@@ -127,18 +127,18 @@
 #smartpack_pillars {
 
   .slide-title {
-    font-size: 47.5px;
+    font-size: 46.5px;
   }
   
   .slide-subtitle {
-    font-size: 24px;   
-    margin-top: 20px; 
+    font-size: 24px;
+    margin-top: 20px;
   }
   
   #pillars {
     display: flex;
     justify-content: space-between;
-    margin: 48px 70px 0;
+    margin: 48px 63px 0;
     font-family: $font__main;
 
     .pillar {
@@ -301,7 +301,7 @@
   #reliability-shield-large {
     width: 127px;
     height: 170px;
-    margin-left: 70px;
+    margin-left: 63px;
     margin-top: 50px;
     margin-right: 50px;
     background-image: url('../../content/img/reliability-shield-large.png');
@@ -317,7 +317,7 @@
 #technological_deployments {
 	background-image: url('../../content/img/computer-background.png');
   background-size: 884.5px 406.5px;
-  background-position-x: 70px;
+  background-position-x: 63px;
   background-position-y: 322px;
   
   .slide-title {
@@ -393,7 +393,8 @@
   background-size: 387px 347.5px;
   
   .slide-title {
-
+    margin-left: 45px;
+    
     .title-icon {
       width: 82px;
       height: 63px;
@@ -440,6 +441,20 @@
           }
         }
       }
+    }
+  }
+}
+
+#scanner_connectivity_detail {
+  
+  .slide-title {
+    margin-left: 45px;
+    
+    .title-icon {
+      width: 82px;
+      height: 63px;
+      background-image: url('../../content/img/scanner-title-icon.png');
+      margin-right: 0px;
     }
   }
 }
