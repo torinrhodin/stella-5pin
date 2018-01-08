@@ -9,6 +9,9 @@ document.addEventListener('presentationInit', function() {
 			app.elements.medradLogo.className = "hide";
 			app.elements.smartpackLogo.className = "hide";
 
+			// Disable color Bayer Logo
+			app.elements.menu.classList.remove('color-logo');
+			
 			// Attach Swipe Event
 			document.addEventListener('swipeleft', this._swipeNext);
 			app.elements.menu.classList.remove('color-logo');
@@ -20,6 +23,10 @@ document.addEventListener('presentationInit', function() {
 			// Show footer logo
 			app.elements.medradLogo.className = "show";
 			app.elements.smartpackLogo.className = "show";
+
+			// Enable color Bayer Logo
+			app.elements.menu.classList.add('color-logo');
+
 			// Remove Swipe Event
 			document.removeEventListener('swipeleft', this._swipeNext);
 		},
@@ -27,4 +34,4 @@ document.addEventListener('presentationInit', function() {
 			app.collection.next();
 		},
 	};  
-}); 
+});
