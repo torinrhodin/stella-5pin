@@ -1,0 +1,44 @@
+document.addEventListener('presentationInit', function() {
+	var slide = app.slide.navigation_real_world = {
+		elements: {
+			slideLinks: ["ul .link-slide", "all"],
+		},
+		onEnter: function(ele) {
+			console.log('enter');
+
+			// Attach Swipe Events
+			document.addEventListener('swiperight', this._swipePrev);
+			document.addEventListener('swipeleft', this._swipeNext);
+
+			// Define array of Slide Links
+			var slideLinks = slide.element.slideLinks;
+			
+			// Bulk add events for Slide Links
+			for (i = 0; i < slideLinks.length; i++) {
+				app.addEvent('click', slide.slideClick, slideLinks[i]);
+			}
+		},
+		onExit: function(ele) {
+			console.log('exit');
+			
+			// Remove Swipe Event
+			document.removeEventListener('swiperight', this._swipePrev);
+			document.removeEventListener('swipeleft', this._swipeNext);
+		},
+		_swipePrev: function() {
+			app.collection.previous()
+		},
+		_swipeNext: function() {
+			app.collection.next();
+		},
+		slideClick: function(event) {
+			console.log('clicked');
+			var appID = app.loaded.id;
+			var slideshow = this.getAttribute('data-slideshow');
+			var slide = this.getAttribute('data-slide');
+	  	console.log("slide: " + slide + " slideshow: " + slideshow);
+
+			app.goTo(appID, slideshow, slide);
+		},
+	};  
+}); 

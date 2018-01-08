@@ -1,0 +1,66 @@
+/*--------------------------------------------------------------
+# Secondary Navigation
+--------------------------------------------------------------*/
+#navigation_dosing,
+#navigation_efficacy,
+#navigation_tolerability {
+	background-image: url('../../content/img/EYLEA_E-Detailer_page3.jpg');
+
+	h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: 160px 0 0 40px;
+    font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: -1px;
+    position: absolute;
+	}
+}
+
+#navigation_dosing {
+	.badge {
+		position: absolute;
+		top: 40px;
+		right: 80px;
+    max-width: 150px!important;
+    height: auto!important;
+	}
+}
+
+#secondary-nav {
+	width: 775px;
+  margin: 300px 80px 0 105px;
+  overflow: hidden;
+
+	li {
+		width: 321px;
+		margin: 0 20px 35px 20px;
+		text-align: center;
+		float: left;
+
+		&:first-child,
+		&:nth-child(2) {
+			position: relative;
+			left: 40px;
+		}
+	}
+
+	h2 {
+    font-size: 60px;
+    padding: 18px 30px;
+		color: $blue;
+		position: relative;
+
+		.link-text {
+			
+		}
+
+		.parallelogram {
+			@include parallelogram;
+	    -webkit-transform: skew(-18deg);
+			height: 92px;
+			background: $yellow;
+			left: 0;
+		}
+	}
+}

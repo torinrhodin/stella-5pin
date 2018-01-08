@@ -1,0 +1,76 @@
+/*--------------------------------------------------------------
+# Intro
+--------------------------------------------------------------*/
+#introduction {
+	background-image: url('../../content/img/170220_01_S6_7_technician.jpg');
+
+	#eylea-logo-top {
+		position: absolute;
+		padding: 20px 40px;
+	}
+
+	h1 {
+		font-size: 70px;
+		margin: 40px 0px 0 68px;
+    
+    #product-name {
+      margin-bottom: 20px;
+    }
+    
+    span {
+      font-size: 36px;
+      color: $white;
+    }
+    
+		sup.reg,
+		.title-start,
+		.title-today {
+			-webkit-text-stroke-width: 0;
+		}
+
+		sup.reg {
+			font-size: 20px;
+			position: relative;
+			top: -12px;
+		}
+
+		.title-start,
+		.title-today {
+			font-size: 40px;
+			line-height: 40px;
+		}
+
+		.title-today {
+			margin-right: 30px;
+			text-align: right;
+			display: block;
+		}
+		
+    .headline {
+      font-size: 69px;
+      
+      &.first {
+        color: $white;
+      }
+      
+      &.second {
+        color: $orange;
+        display: block;
+        margin-top: -10px;
+      }
+    }
+	}
+
+	.info {
+		font-size: 11px;
+		line-height: 1.2;
+		color: $white;
+		position: absolute;
+		bottom: 0;
+		padding: 20px 40px;
+
+		ul {
+			margin-left: 15px;
+		}
+	}
+}

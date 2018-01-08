@@ -1,0 +1,1455 @@
+/*--------------------------------------------------------------
+# Eylea Styles
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'HelveticaNeueLTPro-Cn';
+  src: url("../../content/fonts/HelveticaNeueLTPro-Cn.otf") format("opentype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'HelveticaNeueLTPro-ThCn';
+  src: url("../../content/fonts/HelveticaNeueLTPro-ThCn.otf") format("opentype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TradeGothicLTStd-Bold';
+  src: url("../../content/fonts/TradeGothicLTStd-Bold.otf") format("opentype");
+  font-style: normal; }
+
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#presentation {
+  width: 1024px;
+  height: 768px;
+  position: relative;
+  margin: 0 auto; }
+
+/*--------------------------------------------------------------
+# Gray Border
+--------------------------------------------------------------*/
+.grey-top {
+  width: 1024px;
+  height: 20px;
+  position: absolute;
+  background: url("../../content/img/EYLEA_E-Detailer_NAV.png") no-repeat 0 0;
+  background-size: 100% auto; }
+
+.grey-bottom {
+  width: 1024px;
+  height: 20px;
+  position: absolute;
+  background: url("../../content/img/EYLEA_E-Detailer_NAV_bottom.png") no-repeat 0 0;
+  background-size: 100% auto;
+  background-position: 0 bottom;
+  bottom: 0;
+  z-index: 1; }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  width: 100%;
+  position: relative;
+  z-index: 999;
+  height: 75px; }
+
+#mainmenu {
+  width: 70px;
+  height: 80px;
+  left: auto;
+  right: 0;
+  overflow: hidden; }
+  #mainmenu ul {
+    float: right; }
+    #mainmenu ul li {
+      width: 46px;
+      height: 46px;
+      background: url("../../content/img/graphics_bayer-logo.png") no-repeat 0 0;
+      background-size: 100% 100%;
+      margin: 23px 15px; }
+  #mainmenu.hide {
+    display: none; }
+  #mainmenu.color-logo li {
+    background-image: url("../../content/img/graphics_bayer-logo-rgb.png"); }
+
+#slidenav {
+  position: absolute;
+  margin-top: 23px;
+  height: 50px;
+  right: 80px;
+  overflow: hidden; }
+  #slidenav ul {
+    float: right; }
+    #slidenav ul li {
+      color: #FECE00;
+      border: solid 2px #FFFFFF;
+      border-radius: 40px;
+      margin-left: 15px;
+      float: left; }
+      #slidenav ul li.prevSlide, #slidenav ul li.nextSlide {
+        font-family: "HelveticaNeueLTPro-ThCn", sans-serif;
+        font-size: 65px;
+        padding: 9px 15px 0px 12px;
+        line-height: 0.5; }
+      #slidenav ul li.nextSlide {
+        -webkit-transform: rotate(-180deg); }
+      #slidenav ul li.secondaryNav {
+        font-family: "HelveticaNeueLTPro-Cn", sans-serif;
+        font-size: 40px;
+        line-height: 0.5;
+        padding: 12px 9px 10px 9px;
+        -webkit-transform: rotate(-45deg); }
+
+/*--------------------------------------------------------------
+# Nav
+--------------------------------------------------------------*/
+.navigation-menu,
+.navigation-menu li.parent-menu ul {
+  list-style: none; }
+
+/*--------------------------------------------------------------
+# Slide
+--------------------------------------------------------------*/
+#presentation section > .slide,
+#presentation section > .slide > .slide {
+  padding: 0; }
+
+.slide {
+  text-align: left;
+  background: url("../../content/img/EYLEA_E-Detailer_BlueBackground.jpg") no-repeat 0 0;
+  background-size: 100% 100%;
+  overflow: hidden; }
+  .slide h1 {
+    font-family: "Arial", sans-serif;
+    color: #143B5E;
+    -webkit-text-fill-color: #FECE00;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #143B5E; }
+  .slide #main_navigationContainer h2 {
+    margin-top: 0px; }
+  .slide img {
+    height: auto; }
+  .slide .tab-title {
+    background: url("../../content/img/tab-bg.png") no-repeat;
+    margin-top: 50px;
+    width: 139px;
+    height: 32px;
+    padding-left: 35px;
+    font-family: "Arial", sans-serif;
+    font-size: 25px;
+    padding-top: 4px;
+    font-weight: bold;
+    color: #143B5E; }
+  .slide .slide-title {
+    width: 950px;
+    font-size: 40px;
+    line-height: 1.1;
+    color: #FECE00;
+    font-family: "Arial", sans-serif;
+    margin: 15px 0 0 35px; }
+  .slide .slide-subtitle {
+    font-size: 18px;
+    font-weight: normal;
+    color: #FFFFFF;
+    margin: 10px 35px; }
+
+/*--------------------------------------------------------------
+# Study Design
+--------------------------------------------------------------*/
+#popup-text {
+  display: none; }
+
+/*--------------------------------------------------------------
+# Footnote Links
+--------------------------------------------------------------*/
+sup {
+  vertical-align: super;
+  font-size: 0.4em;
+  font-weight: normal;
+  position: relative;
+  top: -0.2em; }
+
+sup.reg,
+sup.ordinal,
+sup.cross {
+  font-size: 0.7em;
+  top: 0.1em;
+  left: 1px; }
+
+span.asterisk {
+  font-size: 1.4em;
+  position: relative;
+  top: 0.2em;
+  left: 1px; }
+
+h1 sup, h2 sup {
+  font-weight: bold; }
+
+h1 sup.reg, h2 sup.reg {
+  font-size: 0.4em;
+  top: -0.2em;
+  left: 2px; }
+
+h1 span.asterisk, h2 span.asterisk {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.2em;
+  left: 2px; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#mainfooter {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  z-index: 1;
+  right: 0;
+  left: 50%; }
+
+#eyleaLogo {
+  width: 158px;
+  height: 40px;
+  background: url("../../content_EN/img/Eylea_Pr_Tag_En_4C.png") no-repeat 0 0;
+  background-size: 100% auto;
+  margin: 22px 10px;
+  float: right; }
+  #eyleaLogo.show {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+    -webkit-transition: opacity 0.4s ease-out;
+    transition-delay: 0.4s;
+    -webkit-transition-delay: 0.4s; }
+  #eyleaLogo.hide {
+    opacity: 0;
+    transition: opacity 0s ease-in;
+    -webkit-transition: opacity 0s ease-in; }
+
+/*--------------------------------------------------------------
+# Intro
+--------------------------------------------------------------*/
+#introduction {
+  background-image: url("../../content/img/EYLEA_E-Detailer_page1.jpg"); }
+  #introduction #eylea-logo-top {
+    position: absolute;
+    padding: 20px 40px; }
+  #introduction h1 {
+    font-size: 70px;
+    margin: 180px 425px 0 100px;
+    -webkit-text-stroke-width: 1px; }
+    #introduction h1 sup.reg,
+    #introduction h1 .title-start,
+    #introduction h1 .title-today {
+      -webkit-text-fill-color: #143B5E;
+      -webkit-text-stroke-width: 0; }
+    #introduction h1 sup.reg {
+      font-size: 20px;
+      position: relative;
+      top: -12px; }
+    #introduction h1 .title-start,
+    #introduction h1 .title-today {
+      font-size: 40px;
+      line-height: 40px; }
+    #introduction h1 .title-today {
+      margin-right: 30px;
+      text-align: right;
+      display: block; }
+  #introduction .info {
+    font-size: 11px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 40px; }
+    #introduction .info ul {
+      margin-left: 15px; }
+
+/*--------------------------------------------------------------
+# Main Navigation
+--------------------------------------------------------------*/
+#navigation {
+  background-image: url("../../content/img/EYLEA_E-Detailer_Contents.jpg"); }
+  #navigation h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 50px 0 0 30px;
+    position: absolute; }
+    #navigation h1 span {
+      display: block; }
+    #navigation h1 sup.reg {
+      -webkit-text-fill-color: #143B5E;
+      -webkit-text-stroke-width: 0; }
+  #navigation #primary-nav {
+    margin-top: 50px;
+    position: relative;
+    left: 80px; }
+    #navigation #primary-nav li.parent-menu {
+      margin-bottom: 11px; }
+      #navigation #primary-nav li.parent-menu:after {
+        content: "";
+        display: block;
+        clear: both; }
+    #navigation #primary-nav li.parent-menu:first-child {
+      margin-left: 500px; }
+    #navigation #primary-nav li.parent-menu:nth-child(2) {
+      margin-left: 475px; }
+    #navigation #primary-nav li.parent-menu:nth-child(3) {
+      margin-left: 450px; }
+    #navigation #primary-nav li.parent-menu:nth-child(4) {
+      margin-left: 425px; }
+    #navigation #primary-nav li.parent-menu:nth-child(5) {
+      margin-left: 400px; }
+    #navigation #primary-nav li.parent-menu:nth-child(6) {
+      margin-left: 375px; }
+    #navigation #primary-nav li.parent-menu:nth-child(7) {
+      margin-left: 350px; }
+    #navigation #primary-nav li.parent-menu:nth-child(8) {
+      margin-left: 325px; }
+    #navigation #primary-nav .child-menu,
+    #navigation #primary-nav .child-sub-menu {
+      display: none; }
+    #navigation #primary-nav .child-menu {
+      overflow: hidden;
+      position: relative;
+      left: -110px; }
+      #navigation #primary-nav .child-menu:after {
+        content: " ";
+        width: 45px;
+        height: 1px;
+        border-top: solid 1px #FFFFFF;
+        position: absolute;
+        top: 22px;
+        left: 100px;
+        z-index: -2; }
+      #navigation #primary-nav .child-menu.active {
+        display: block; }
+      #navigation #primary-nav .child-menu li {
+        width: 550px;
+        position: relative;
+        float: left; }
+    #navigation #primary-nav .child-sub-menu {
+      width: 275px;
+      overflow: hidden;
+      position: relative;
+      left: -83px; }
+      #navigation #primary-nav .child-sub-menu:after {
+        content: " ";
+        width: 35px;
+        height: 1px;
+        border-top: solid 1px #FFFFFF;
+        position: absolute;
+        top: 22px;
+        left: 75px;
+        z-index: -2; }
+      #navigation #primary-nav .child-sub-menu.active-child {
+        display: block; }
+  #navigation .parallelogram {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skew(-25deg);
+    z-index: -1; }
+  #navigation h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    padding: 8px 0 8px 10px;
+    color: #143B5E;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    float: left; }
+    #navigation h2 .link-text {
+      padding: 0 20px 0 10px; }
+    #navigation h2 .parallelogram {
+      height: 36px;
+      left: 0;
+      background: #FECE00; }
+    #navigation h2#home-link {
+      color: #FFFFFF; }
+      #navigation h2#home-link .parallelogram {
+        background: transparent;
+        border: solid 1px #FECE00; }
+  #navigation h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 3px 0 8px 12px;
+    padding: 8px 8px 8px 0px;
+    color: #FFFFFF;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    float: left; }
+    #navigation h3 .link-text {
+      padding: 0 10px 0 15px; }
+    #navigation h3 .parallelogram {
+      height: 32px;
+      background: #143B5E;
+      border: solid 1px #FECE00;
+      right: 0; }
+  #navigation #efficacy-menu h3 .link-text,
+  #navigation #dosing-menu h3 .link-text,
+  #navigation #tolerability-menu h3 .link-text {
+    min-width: 58px;
+    text-align: center;
+    display: block; }
+  #navigation .child-menu li:first-child {
+    margin-left: 125px; }
+  #navigation .child-menu li:nth-child(2) {
+    margin-left: 100px; }
+  #navigation .child-menu li:nth-child(3) {
+    margin-left: 75px; }
+  #navigation .child-menu li:nth-child(4) {
+    margin-left: 50px; }
+  #navigation h4 {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 7px 0 4px 12px;
+    padding: 8px 10px 8px 0;
+    color: #FFFFFF;
+    clear: both;
+    position: relative;
+    float: left; }
+    #navigation h4#link-efficacy-wAMD .link-text, #navigation h4#link-efficacy-DME .link-text, #navigation h4#link-efficacy-CRVO .link-text, #navigation h4#link-efficacy-BRVO .link-text {
+      width: 52px;
+      display: block; }
+    #navigation h4 .link-text {
+      padding: 0 0 0 10px; }
+    #navigation h4 .parallelogram {
+      height: 29px;
+      background: #143B5E;
+      border: solid 1px #FFFFFF;
+      right: 0; }
+  #navigation .child-sub-menu li:first-child {
+    margin-left: 92px; }
+  #navigation .child-sub-menu li:nth-child(2) {
+    margin-left: 73px; }
+  #navigation .child-sub-menu li:nth-child(3) {
+    margin-left: 55px; }
+  #navigation .child-sub-menu li:nth-child(4) {
+    margin-left: 36px; }
+  #navigation .footnote {
+    font-size: 11.5px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    position: absolute;
+    left: 25px;
+    bottom: 20px; }
+
+#navigation.efficacy-menu #primary-nav li.parent-menu:nth-child(3) {
+  margin-left: 390px; }
+
+#navigation.efficacy-menu #primary-nav li.parent-menu:nth-child(4) {
+  margin-left: 365px; }
+
+#navigation.efficacy-menu #primary-nav li.parent-menu:nth-child(5) {
+  margin-left: 340px; }
+
+#navigation.efficacy-menu #primary-nav li.parent-menu:nth-child(6) {
+  margin-left: 315px; }
+
+#navigation.efficacy-menu #primary-nav li.parent-menu:nth-child(7) {
+  margin-left: 290px; }
+
+#navigation.efficacy-menu #primary-nav li.parent-menu:nth-child(8) {
+  margin-left: 265px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav li.parent-menu:nth-child(3), #navigation.efficacy-menu.collection-efficacy_DME #primary-nav li.parent-menu:nth-child(3) {
+  margin-left: 350px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav li.parent-menu:nth-child(4), #navigation.efficacy-menu.collection-efficacy_DME #primary-nav li.parent-menu:nth-child(4) {
+  margin-left: 325px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav li.parent-menu:nth-child(5), #navigation.efficacy-menu.collection-efficacy_DME #primary-nav li.parent-menu:nth-child(5) {
+  margin-left: 300px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav li.parent-menu:nth-child(6), #navigation.efficacy-menu.collection-efficacy_DME #primary-nav li.parent-menu:nth-child(6) {
+  margin-left: 275px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav li.parent-menu:nth-child(7), #navigation.efficacy-menu.collection-efficacy_DME #primary-nav li.parent-menu:nth-child(7) {
+  margin-left: 250px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav li.parent-menu:nth-child(8), #navigation.efficacy-menu.collection-efficacy_DME #primary-nav li.parent-menu:nth-child(8) {
+  margin-left: 225px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav .child-menu li:nth-child(2) {
+  margin-left: 75px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav .child-menu li:nth-child(3) {
+  margin-left: 50px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav .child-menu li:nth-child(4) {
+  margin-left: 25px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav .child-sub-menu li:nth-child(2) {
+  margin-left: 73px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav .child-sub-menu li:nth-child(3) {
+  margin-left: 55px; }
+
+#navigation.efficacy-menu.collection-efficacy_wAMD #primary-nav .child-sub-menu li:nth-child(4) {
+  margin-left: 36px; }
+
+#navigation.efficacy-menu.collection-efficacy_DME #primary-nav .child-menu li:nth-child(3) {
+  margin-left: 50px; }
+
+#navigation.efficacy-menu.collection-efficacy_DME #primary-nav .child-menu li:nth-child(4) {
+  margin-left: 25px; }
+
+#navigation.efficacy-menu.collection-efficacy_DME #primary-nav .child-sub-menu li:nth-child(3) {
+  margin-left: 55px; }
+
+#navigation.efficacy-menu.collection-efficacy_DME #primary-nav .child-sub-menu li:nth-child(4) {
+  margin-left: 36px; }
+
+#navigation.efficacy-menu.collection-efficacy_CRVO #primary-nav li.parent-menu:nth-child(3), #navigation.efficacy-menu.collection-efficacy_BRVO #primary-nav li.parent-menu:nth-child(3) {
+  margin-left: 335px; }
+
+#navigation.efficacy-menu.collection-efficacy_CRVO #primary-nav li.parent-menu:nth-child(4), #navigation.efficacy-menu.collection-efficacy_BRVO #primary-nav li.parent-menu:nth-child(4) {
+  margin-left: 310px; }
+
+#navigation.efficacy-menu.collection-efficacy_CRVO #primary-nav li.parent-menu:nth-child(5), #navigation.efficacy-menu.collection-efficacy_BRVO #primary-nav li.parent-menu:nth-child(5) {
+  margin-left: 285px; }
+
+#navigation.efficacy-menu.collection-efficacy_CRVO #primary-nav li.parent-menu:nth-child(6), #navigation.efficacy-menu.collection-efficacy_BRVO #primary-nav li.parent-menu:nth-child(6) {
+  margin-left: 260px; }
+
+#navigation.efficacy-menu.collection-efficacy_CRVO #primary-nav li.parent-menu:nth-child(7), #navigation.efficacy-menu.collection-efficacy_BRVO #primary-nav li.parent-menu:nth-child(7) {
+  margin-left: 235px; }
+
+#navigation.efficacy-menu.collection-efficacy_CRVO #primary-nav li.parent-menu:nth-child(8), #navigation.efficacy-menu.collection-efficacy_BRVO #primary-nav li.parent-menu:nth-child(8) {
+  margin-left: 210px; }
+
+#navigation.efficacy-menu.collection-efficacy_CRVO #primary-nav .child-menu li:nth-child(4) {
+  margin-left: 0px; }
+
+#navigation.efficacy-menu.collection-efficacy_CRVO #primary-nav .child-sub-menu li:nth-child(4) {
+  margin-left: 36px; }
+
+#navigation.dosing-menu #primary-nav li.parent-menu:nth-child(4) {
+  margin-left: 365px; }
+
+#navigation.dosing-menu #primary-nav li.parent-menu:nth-child(5) {
+  margin-left: 340px; }
+
+#navigation.dosing-menu #primary-nav li.parent-menu:nth-child(6) {
+  margin-left: 315px; }
+
+#navigation.dosing-menu #primary-nav li.parent-menu:nth-child(7) {
+  margin-left: 290px; }
+
+#navigation.dosing-menu #primary-nav li.parent-menu:nth-child(8) {
+  margin-left: 265px; }
+
+#navigation.real-world-menu #primary-nav li.parent-menu:nth-child(5) {
+  margin-left: 380px; }
+
+#navigation.real-world-menu #primary-nav li.parent-menu:nth-child(6) {
+  margin-left: 355px; }
+
+#navigation.real-world-menu #primary-nav li.parent-menu:nth-child(7) {
+  margin-left: 330px; }
+
+#navigation.real-world-menu #primary-nav li.parent-menu:nth-child(8) {
+  margin-left: 305px; }
+
+#navigation.real-world-menu #primary-nav .child-menu li:nth-child(2) {
+  margin-left: 105px; }
+
+#navigation.tolerability-menu #primary-nav li.parent-menu:nth-child(6) {
+  margin-left: 315px; }
+
+#navigation.tolerability-menu #primary-nav li.parent-menu:nth-child(7) {
+  margin-left: 290px; }
+
+#navigation.tolerability-menu #primary-nav li.parent-menu:nth-child(8) {
+  margin-left: 265px; }
+
+.footnote .bullet {
+  display: block;
+  float: left;
+  margin-left: -7px; }
+
+#navigation h1 span.asterisk {
+  display: inline;
+  font-size: 33px;
+  top: -0.15em;
+  left: 2px; }
+
+/*--------------------------------------------------------------
+# Secondary Navigation
+--------------------------------------------------------------*/
+#navigation_dosing,
+#navigation_efficacy,
+#navigation_tolerability {
+  background-image: url("../../content/img/EYLEA_E-Detailer_page3.jpg"); }
+  #navigation_dosing h1,
+  #navigation_efficacy h1,
+  #navigation_tolerability h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    margin: 160px 0 0 40px;
+    font-weight: 800;
+    -webkit-text-stroke-width: 1px;
+    letter-spacing: -1px;
+    position: absolute; }
+
+#navigation_dosing .badge {
+  position: absolute;
+  top: 40px;
+  right: 80px;
+  max-width: 150px !important;
+  height: auto !important; }
+
+#secondary-nav {
+  width: 775px;
+  margin: 300px 80px 0 105px;
+  overflow: hidden; }
+  #secondary-nav li {
+    width: 321px;
+    margin: 0 20px 35px 20px;
+    text-align: center;
+    float: left; }
+    #secondary-nav li:first-child, #secondary-nav li:nth-child(2) {
+      position: relative;
+      left: 40px; }
+  #secondary-nav h2 {
+    font-size: 60px;
+    padding: 18px 30px;
+    color: #143B5E;
+    position: relative; }
+    #secondary-nav h2 .parallelogram {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      -webkit-transform: skew(-25deg);
+      z-index: -1;
+      -webkit-transform: skew(-18deg);
+      height: 92px;
+      background: #FECE00;
+      left: 0; }
+
+/*--------------------------------------------------------------
+# Efficacy Chart Detail
+--------------------------------------------------------------*/
+.chart {
+  margin: 40px 0 0 35px; }
+  .chart .chart-desc {
+    display: none; }
+  .chart .chart-details {
+    font-size: 11px;
+    margin-bottom: 30px;
+    margin-top: 4px;
+    margin-left: 2px; }
+    .chart .chart-details span {
+      float: right;
+      margin-right: 315px;
+      color: #FFFFFF;
+      margin-top: 1px; }
+    .chart .chart-details span:first-child {
+      float: left;
+      margin-right: 0px;
+      margin-top: 0px; }
+  .chart .further-details {
+    clear: both;
+    margin-left: -70px;
+    padding-left: 70px;
+    padding-right: 35px;
+    margin-bottom: 20px;
+    float: left;
+    padding-bottom: 4px; }
+    .chart .further-details p {
+      font-size: 16px;
+      line-height: 1.3;
+      color: #FECE00; }
+    .chart .further-details.one-line {
+      background-size: 692px auto;
+      position: relative;
+      padding-right: 15px; }
+      .chart .further-details.one-line p {
+        font-size: 16px;
+        color: #FECE00;
+        padding-top: 6px; }
+      .chart .further-details.one-line .parallelogram {
+        border: solid 2px #F8CE4B;
+        right: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        -webkit-transform: skew(-25deg);
+        z-index: -1;
+        height: 100%;
+        left: 0px; }
+    .chart .further-details.two-lines {
+      width: 660px;
+      background-size: 660px auto;
+      position: relative; }
+      .chart .further-details.two-lines p {
+        width: 535px;
+        padding-top: 8px; }
+      .chart .further-details.two-lines .parallelogram {
+        height: 100%;
+        border: solid 2px #F8CE4B;
+        right: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        -webkit-transform: skew(-25deg);
+        z-index: -1;
+        left: 0px; }
+    .chart .further-details.three-lines {
+      font-size: 14px;
+      padding-top: 3px;
+      color: #FECE00;
+      line-height: 17px;
+      max-width: 631px;
+      background-size: 631px auto;
+      position: relative; }
+      .chart .further-details.three-lines li {
+        margin-left: 16px; }
+        .chart .further-details.three-lines li:before {
+          content: "";
+          display: inline-block;
+          height: 1rem;
+          margin-left: -5px; }
+      .chart .further-details.three-lines .parallelogram {
+        height: 100%;
+        border: solid 2px #F8CE4B;
+        right: 0;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        -webkit-transform: skew(-25deg);
+        z-index: -1;
+        left: 0px; }
+
+.reveal-study-design {
+  width: 150px;
+  margin: 10px 0 0 35px; }
+  .reveal-study-design span {
+    clear: both;
+    text-transform: uppercase;
+    margin-top: 8px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 13.56234375px; }
+  .reveal-study-design span:first-child {
+    font-family: "HelveticaNeueLTPro-Cn", sans-serif;
+    font-size: 36px;
+    line-height: 1;
+    width: 20px;
+    margin-left: 29px;
+    padding: 2px 10px 0px 9px;
+    color: #FECE00;
+    background: #143B5E;
+    border: solid 2px #FFFFFF;
+    border-radius: 40px;
+    display: block; }
+
+#efficacy_wAMD_gains .chart-details span:last-child {
+  margin-right: 183px; }
+
+#efficacy_wAMD_gains .chart-img img {
+  height: 327px; }
+
+#efficacy_DME_acuity .chart-details span:last-child {
+  margin-right: 130px; }
+
+#efficacy_DME_gains .chart-details span:last-child {
+  margin-right: 115px; }
+
+#efficacy_DME_gains .reveal-study-design {
+  margin: -10px 0 0 35px;
+  float: left;
+  clear: left; }
+
+#efficacy_CRVO_acuity .chart-details span:last-child {
+  margin-right: 437px; }
+
+#efficacy_CRVO_gains .chart-details span:last-child {
+  margin-right: 167px; }
+
+#efficacy_BRVO_acuity .chart-details span:last-child {
+  margin-right: 465px; }
+
+#efficacy_BRVO_gains .chart-details span:last-child {
+  margin-right: 224px; }
+
+#efficacy_DME_acuity .chart-desc {
+  margin-top: 8px; }
+
+.chart .further-details.one-line {
+  background-position-x: -65.59375px;
+  max-width: 692px; }
+
+#efficacy_CRVO_acuity .chart .further-details.one-line {
+  background-position-x: -95.59375px; }
+
+#efficacy_CRVO_gains .further-details.one-line {
+  background-position-x: -482.59375px;
+  padding-top: 4px; }
+  #efficacy_CRVO_gains .further-details.one-line p {
+    padding-top: 4px; }
+
+#efficacy_BRVO_acuity .further-details.one-line {
+  background-position-x: -100.59375px;
+  margin-top: 1px;
+  padding-top: 4px; }
+  #efficacy_BRVO_acuity .further-details.one-line p {
+    padding-top: 4px; }
+
+#efficacy_BRVO_gains .further-details.one-line {
+  background-position-x: -482.59375px;
+  margin-top: 9px;
+  padding-top: 4px; }
+  #efficacy_BRVO_gains .further-details.one-line p {
+    padding-top: 4px; }
+
+#efficacy_BRVO_gains .reveal-study-design {
+  margin-top: 110px; }
+
+#efficacy_DME_gains .further-details.one-line {
+  background-position-x: -39px; }
+  #efficacy_DME_gains .further-details.one-line sup {
+    font-size: .5em; }
+
+.keys {
+  position: absolute;
+  bottom: 20px;
+  left: 35px; }
+  .keys .chart-key {
+    font-size: 9px !important;
+    color: #FFFFFF; }
+
+#efficacy_BRVO_acuity .keys,
+#efficacy_BRVO_gains .keys,
+#efficacy_BRVO_maintenance .keys {
+  bottom: 32px; }
+
+#efficacy_CRVO_maintenance .reveal-study-design span:first-child,
+#efficacy_CRVO_response .reveal-study-design span:first-child,
+#efficacy_BRVO_maintenance .reveal-study-design span:first-child,
+#efficacy_BRVO_response .reveal-study-design span:first-child {
+  margin-top: 80px; }
+
+/* tabbed charts */
+.tabs {
+  margin-top: 16px;
+  margin-left: 35px;
+  height: 36px; }
+  .tabs li {
+    list-style: none;
+    float: left;
+    opacity: .4; }
+    .tabs li.first {
+      padding-top: .5px; }
+    .tabs li img {
+      max-width: 157px !important;
+      height: auto; }
+  .tabs li:last-child img {
+    margin-left: -34px;
+    max-width: 179px !important;
+    height: auto; }
+  .tabs #dme-gains-active,
+  .tabs #wamd-gains-active,
+  .tabs #dme-response-active {
+    opacity: 1; }
+
+.tabbed .chart-desc {
+  margin-top: 12px; }
+
+.tabbed .chart {
+  margin-top: 0px; }
+
+/* study design popup */
+#study-design {
+  width: 588px;
+  position: absolute;
+  background-color: #FFFFFF;
+  padding: 20px 30px 40px;
+  left: 184px;
+  z-index: 99999;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
+  #study-design .bullet {
+    display: block;
+    float: left;
+    margin-left: -12px; }
+  #study-design h3 {
+    color: #143B5E;
+    margin-left: -12px; }
+  #study-design p {
+    color: #143B5E;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.3; }
+
+#study-design-background {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  top: 0;
+  z-index: 9999; }
+
+#close-study {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 30px;
+  line-height: 1;
+  padding: 10px 18px 12px;
+  color: #143B5E;
+  background: #FFFFFF;
+  border: solid 3px #143B5E;
+  border-radius: 40px;
+  margin-left: 20px; }
+
+#efficacy_wAMD_maintenance .further-details {
+  width: 500px; }
+
+#efficacy_wAMD_maintenance img {
+  max-width: 750px;
+  height: auto; }
+
+#efficacy_wAMD_gains img {
+  max-width: 880px;
+  height: auto; }
+
+#efficacy_wAMD_acuity .further-details p {
+  width: 505px; }
+
+#efficacy_wAMD_acuity .further-details {
+  width: 505px; }
+
+#efficacy_wAMD_acuity img {
+  max-width: 750px;
+  height: auto; }
+
+#efficacy_DME_gains .chart-img img {
+  max-width: 950px;
+  height: auto; }
+
+#efficacy_DME_acuity img {
+  max-width: 934px;
+  height: auto; }
+
+#efficacy_DME_response .chart-img img {
+  max-width: 940px;
+  height: auto; }
+
+#efficacy_CRVO_acuity img {
+  max-width: 630px;
+  height: auto; }
+
+#efficacy_CRVO_gains img {
+  max-width: 900px;
+  height: auto; }
+
+#efficacy_CRVO_maintenance img {
+  max-width: 915px;
+  height: auto; }
+
+#efficacy_CRVO_response img {
+  max-width: 900px;
+  height: auto; }
+
+#efficacy_BRVO_acuity img {
+  max-width: 613px;
+  height: auto; }
+
+#efficacy_BRVO_gains img {
+  max-width: 834px;
+  height: auto; }
+
+#efficacy_BRVO_maintenance img {
+  max-width: 930px;
+  height: auto; }
+
+#efficacy_BRVO_response img {
+  max-width: 920px;
+  height: auto; }
+
+#efficacy_BRVO_acuity .slide-title {
+  width: 965px;
+  line-height: 35px; }
+
+#jump-to-rw {
+  bottom: 12px;
+  left: 200px;
+  margin-top: -10px;
+  float: left; }
+  #jump-to-rw span.link {
+    -webkit-transform: rotate(-180deg);
+    font-family: "HelveticaNeueLTPro-ThCn", sans-serif !important;
+    font-size: 65px;
+    padding: 9px 18px 0px 8px;
+    line-height: 0.5;
+    color: #FECE00;
+    border: solid 2px #FFFFFF;
+    border-radius: 40px;
+    margin-left: 62px;
+    float: left;
+    letter-spacing: -7px;
+    margin-bottom: 8px; }
+  #jump-to-rw span {
+    clear: both;
+    margin-top: 8px;
+    display: block;
+    color: #FFFFFF;
+    font-size: 13.56234375px;
+    text-align: center; }
+
+#efficacy_DME_acuity .reveal-study-design {
+  margin-top: 75px; }
+
+#efficacy_BRVO_acuity .reveal-study-design {
+  margin-top: 100px; }
+
+#efficacy_CRVO_gains .reveal-study-design,
+#efficacy_CRVO_acuity .reveal-study-design {
+  margin-top: 98px; }
+
+/*--------------------------------------------------------------
+# Dosing Chart Detail
+--------------------------------------------------------------*/
+.dosing .body-content {
+  position: relative;
+  margin-bottom: 0px;
+  margin-top: 27px;
+  height: 165px; }
+  .dosing .body-content .text {
+    width: 640px;
+    position: absolute;
+    bottom: 0px; }
+    .dosing .body-content .text ul,
+    .dosing .body-content .text p {
+      margin-left: 35px;
+      color: #FFFFFF;
+      font-size: 15px;
+      margin-bottom: 10px; }
+    .dosing .body-content .text li {
+      margin-bottom: 10px;
+      margin-left: 20px;
+      line-height: 15px; }
+  .dosing .body-content .badge {
+    float: right;
+    position: absolute;
+    right: 100px;
+    bottom: 8px;
+    max-width: 170px !important;
+    height: auto !important; }
+
+.dosing .chart-img {
+  background: #FFFFFF; }
+
+.dosing p {
+  font-size: 15px;
+  color: #FFFFFF;
+  line-height: 20px; }
+
+.dosing .keys {
+  position: absolute;
+  bottom: 20px;
+  left: 35px; }
+  .dosing .keys .chart-key {
+    font-weight: 300; }
+
+#dosing_wAMD img,
+#dosing_DME img,
+#dosing_CRVO img,
+#dosing_BRVO img {
+  max-width: 1024px;
+  height: auto; }
+
+/*--------------------------------------------------------------
+# Real World Detail
+--------------------------------------------------------------*/
+#navigation_real_world {
+  background-image: url("../../content/img/EYLEA_E-Detailer_page42.jpg"); }
+  #navigation_real_world .slide-title {
+    font-size: 35px;
+    margin: 35px; }
+  #navigation_real_world .text {
+    font-size: 20px;
+    margin: 35px 35px 80px 35px; }
+    #navigation_real_world .text p {
+      color: #FFFFFF;
+      font-size: 18px;
+      line-height: 1.2; }
+  #navigation_real_world .further-details {
+    width: auto !important;
+    position: relative;
+    margin: 0 0 100px -70px;
+    padding: 15px 0 4px 105px;
+    clear: both;
+    float: left; }
+    #navigation_real_world .further-details p {
+      font-size: 18px;
+      color: #FECE00;
+      line-height: 1.2;
+      width: 540px; }
+    #navigation_real_world .further-details .parallelogram {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      -webkit-transform: skew(-25deg);
+      z-index: -1;
+      -webkit-transform: skew(-18deg);
+      border: solid 2px #FECE00;
+      height: 70px;
+      top: 0;
+      left: 0; }
+  #navigation_real_world h4 {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    color: #82CDDE;
+    padding: 20px 0; }
+    #navigation_real_world h4 .link-text {
+      text-align: center; }
+    #navigation_real_world h4 .parallelogram {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      -webkit-transform: skew(-25deg);
+      z-index: -1;
+      -webkit-transform: skew(-18deg);
+      right: 0;
+      border: solid 2px #82CDDE;
+      height: 55px; }
+  #navigation_real_world #secondary-nav {
+    width: 624px;
+    margin: 70px auto; }
+    #navigation_real_world #secondary-nav li {
+      width: 225px; }
+
+#real_world_acuity .chart,
+#real_world_injections .chart {
+  margin-top: 95px; }
+
+#real_world_acuity .chart img {
+  max-width: 920px; }
+
+#real_world_acuity .chart-desc {
+  margin-top: 8px; }
+
+#real_world_acuity .further-details.plain {
+  margin-left: 0px;
+  padding-left: 20px;
+  padding-top: 15px; }
+  #real_world_acuity .further-details.plain li {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #FFFFFF; }
+
+#real_world_injections .chart img {
+  max-width: 830px; }
+
+#real_world_injections .chart-desc {
+  font-size: 11px; }
+
+#real_world_acuity img {
+  max-width: 886px;
+  height: auto; }
+
+#real_world_injections img {
+  max-width: 780px;
+  height: auto; }
+
+/*--------------------------------------------------------------
+# Tolerability Table
+--------------------------------------------------------------*/
+#tolerabilityContainer p {
+  font-size: 18px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin: 80px 36px 80px 35px; }
+
+#tolerabilityContainer .chart-header {
+  margin: 0 0 4px 261px;
+  color: #FFFFFF;
+  font-size: 15px; }
+
+#tolerabilityContainer .chart-img {
+  text-align: center; }
+
+#tolerabilityContainer .keys {
+  bottom: 40px; }
+
+#tolerability_DME .chart-header {
+  margin-left: 308px; }
+
+#tolerability_CRVO .chart-header {
+  margin: 0 0 4px 220px;
+  width: 664px; }
+
+#tolerability_BRVO .chart-header {
+  margin: 0 0 4px 243px; }
+
+#tolerability_wAMD img {
+  max-width: 693px;
+  height: auto;
+  padding-left: 13px; }
+
+#tolerability_DME img {
+  max-width: 534px;
+  height: auto; }
+
+#tolerability_CRVO img {
+  max-width: 754px;
+  height: auto; }
+
+#tolerability_BRVO img {
+  max-width: 635px;
+  height: auto;
+  margin-left: -4px; }
+
+/*--------------------------------------------------------------
+# MOA
+--------------------------------------------------------------*/
+#mainmenu.MOA {
+  right: 300px; }
+
+#MOA_affinity {
+  background-image: url("../../content/img/EYLEA_E-Detailer_page51_52.jpg");
+  overflow: hidden; }
+  #MOA_affinity .MOA_affinity,
+  #MOA_affinity .MOA_VEGF {
+    display: none; }
+  #MOA_affinity.affinity .MOA_affinity {
+    display: block; }
+  #MOA_affinity.affinity .affinity-link span:first-child {
+    background: #83a8d6; }
+  #MOA_affinity.affinity .vegf-a-link span:first-child {
+    background: #58595b; }
+  #MOA_affinity.VEGF .MOA_VEGF {
+    display: block; }
+  #MOA_affinity.VEGF .affinity-link span:first-child {
+    background: #58595b; }
+  #MOA_affinity.VEGF .blue-banner {
+    top: 305px; }
+  #MOA_affinity.VEGF .vegf-a-link span:first-child {
+    background: #83a8d6; }
+  #MOA_affinity .keys .chart-key {
+    color: #222222; }
+  #MOA_affinity h1 {
+    font-size: 33px;
+    line-height: 1.1;
+    margin: 65px 0 0 35px;
+    position: absolute;
+    -webkit-text-stroke-width: 0.75px; }
+    #MOA_affinity h1 sup.reg {
+      -webkit-text-fill-color: #143B5E;
+      -webkit-text-stroke-width: 0; }
+  #MOA_affinity h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    margin-top: 217px;
+    margin-left: -45px;
+    padding: 5px 0 5px 10px;
+    color: #143B5E;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    float: left; }
+    #MOA_affinity h2 span:first-child {
+      padding: 0 35px 0 70px; }
+    #MOA_affinity h2 .parallelogram {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      -webkit-transform: skew(-25deg);
+      z-index: -1;
+      height: 40px;
+      background: #F8CE4B;
+      left: 0px; }
+  #MOA_affinity h3 {
+    font-family: "Arial", sans-serif;
+    color: #143B5E;
+    -webkit-text-fill-color: #FECE00;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #143B5E;
+    font-size: 25px;
+    -webkit-text-stroke-width: 0.5px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-transform: uppercase; }
+  #MOA_affinity .affinity-link,
+  #MOA_affinity .vegf-a-link {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #58595b;
+    position: absolute;
+    z-index: 999;
+    overflow: hidden; }
+    #MOA_affinity .affinity-link span:first-child,
+    #MOA_affinity .vegf-a-link span:first-child {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 24px;
+      padding: 6px 16px 11px 8px;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 40px;
+      display: block;
+      width: 16px;
+      margin-right: 12px; }
+    #MOA_affinity .affinity-link span,
+    #MOA_affinity .vegf-a-link span {
+      display: block; }
+  #MOA_affinity .affinity-link {
+    width: 260px;
+    top: 50px;
+    right: 30px; }
+    #MOA_affinity .affinity-link span:first-child {
+      margin-top: 15px;
+      float: left; }
+    #MOA_affinity .affinity-link span {
+      margin-top: 10px;
+      margin-left: 5px;
+      padding-top: 15px; }
+  #MOA_affinity .vegf-a-link {
+    right: 335px;
+    position: absolute;
+    bottom: 88px;
+    text-align: right; }
+    #MOA_affinity .vegf-a-link span:first-child {
+      margin-top: 12px;
+      float: right; }
+    #MOA_affinity .vegf-a-link span {
+      margin-right: 72px;
+      padding-top: 10px; }
+  #MOA_affinity .blue-banner {
+    top: 303px;
+    position: absolute;
+    margin-left: 35px;
+    color: #FFFFFF;
+    font-size: 14.5px;
+    line-height: 1.1; }
+    #MOA_affinity .blue-banner .heading {
+      font-size: 38px;
+      line-height: 1.2;
+      font-weight: bold;
+      color: #FECE00;
+      width: 100%;
+      margin-top: 5px; }
+    #MOA_affinity .blue-banner p {
+      margin: 7px 0;
+      line-height: 22px; }
+      #MOA_affinity .blue-banner p .asterisk {
+        vertical-align: super;
+        font-size: 1em;
+        font-weight: normal;
+        position: relative;
+        top: 0.3em; }
+    #MOA_affinity .blue-banner ul {
+      list-style-type: none;
+      text-indent: -10px;
+      margin-left: 10px; }
+    #MOA_affinity .blue-banner li {
+      margin: 10px 0;
+      line-height: 17px; }
+    #MOA_affinity .blue-banner li:before {
+      content: "- ";
+      text-indent: -10px; }
+  #MOA_affinity .keys .chart-key {
+    font-size: 11px !important;
+    line-height: 1.1; }
+
+/*--------------------------------------------------------------
+# Information / References
+--------------------------------------------------------------*/
+#info h1,
+#references h1 {
+  font-size: 44px;
+  text-transform: uppercase;
+  margin: 40px 55px 5px 55px;
+  -webkit-text-stroke-width: 0; }
+
+#info .text,
+#info .footer,
+#references .text,
+#references .footer {
+  font-size: 12.25px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  margin: 0 55px; }
+
+#info .footer,
+#references .footer {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px; }
+
+#info .section,
+#references .section {
+  margin-bottom: 30px; }
+
+#info .info-heading,
+#references .info-heading {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 8px; }
+
+#info ul,
+#info ol,
+#references ul,
+#references ol {
+  margin-left: 15px; }
+  #info ul li,
+  #info ol li,
+  #references ul li,
+  #references ol li {
+    margin-bottom: 8px; }
+
+#info p,
+#references p {
+  margin-bottom: 8px; }
+
+#info #reference-group1,
+#references #reference-group1 {
+  margin-left: 19px; }
+
+#info .reference-logos,
+#references .reference-logos {
+  position: absolute;
+  top: 15px;
+  left: 195px;
+  width: 270px;
+  height: 21px; }
+  #info .reference-logos img,
+  #references .reference-logos img {
+    margin-right: 20px; }
+
+#info .version,
+#references .version {
+  margin-top: 10px; }
+
+#references .text {
+  font-size: 15px;
+  margin-right: 30px; }
+
+#references ol li {
+  margin-bottom: 16px; }
+
+/*# sourceMappingURL=style copy.css.map */

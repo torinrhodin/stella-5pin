@@ -1,0 +1,445 @@
+/*--------------------------------------------------------------
+# Our Offerings
+--------------------------------------------------------------*/
+
+#our_offerings {
+	background-image: url('../../content/img/SubLanding_r2.png');
+
+  .offering-images,
+  .offering-text {
+    display: flex;
+    justify-content: space-between;
+    .image {
+      width: 50%;
+      height: 360px;
+      
+      #labels {
+        width: 340px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 150px;
+        margin-left: 91px;
+        list-style-type: none;
+        
+        .label {
+          color: $orange;
+          font-size: 18px;
+          font-family: $font__main-bold;
+
+          &:last-of-type {
+
+          }
+        }
+      }
+    }
+    
+    .text {
+      width: 295px;
+      text-align: center;
+      color: $gray;
+      font-family: $font__main-regular;
+      font-size: 22px;
+      margin: 25px 85px;
+    }
+  }
+  
+}
+
+#medrad {
+	background-image: url('../../content/img/System_with_workstation_r1.png');  
+	background-position-y: 200px;
+	background-size: 82.1296296296296%;
+
+  .features-list {
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 35px;
+  }
+  
+  .arrow-bubble {
+    margin-right: 312px;
+    margin-top: 3px;    
+    
+    div {
+      width: 98px;
+      height: 63px;
+
+      &#injections {
+        background-image: url('../../content/img/injections.png');  
+      }
+
+      &#consumables {
+        background-image: url('../../content/img/consumables.png');  
+      }
+
+    }
+    
+    
+  }
+
+}
+
+#smartpack {
+	background-image: url('../../content/img/System_with_workstation_r1.png');  
+	background-size: 82.1296296296296%;
+	background-position-y: 118px;
+
+  .slide-subtitle {
+    margin-bottom: 50px;    
+  }
+
+  .features-list {
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 35px;
+
+    .list-title {
+      margin-bottom: 60px;
+    }
+    
+  }
+
+  .arrow-bubble {
+
+    margin-right: 150px;
+    margin-top: 52px;    
+    
+    #free-trial {
+      width: 300.5px;
+      height: 63px;
+      background-image: url('../../content/img/arrow-bubble-long.png');  
+      
+      .trial-text {
+        color: $orange;
+        font-family: $font__main;
+        font-size: 17px;
+        margin: 20px 0 0 65px;
+        
+        span {
+          font-family: $font__main-bold;
+        }
+      }
+      
+    }
+  }  
+}
+
+#smartpack_pillars {
+
+  .slide-title {
+    font-size: 47.5px;
+  }
+  
+  .slide-subtitle {
+    font-size: 24px;   
+    margin-top: 20px; 
+  }
+  
+  #pillars {
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 70px 0;
+    font-family: $font__main;
+
+    .pillar {
+      width: 275px;
+      height: 325px;
+      background-size: 100%;
+
+      .pillar-title {
+        color: $white;
+        font-size: 25px;
+        line-height: 29.5px;
+        margin-left: 17px;
+        margin-top: 14px;
+        
+        span {
+          font-size: 25px;
+          font-family: $font__main-bold;
+        }
+      }
+      
+      .pillar-detail {
+        color: $gray;
+        font-size: 24px;
+        line-height: 29px;
+        margin-left: 17px;
+      }
+
+      &#reliability-pillar {
+        background-image: url('../../content/img/reliability-pillar.png');
+
+        .pillar-detail {
+          margin-top: 125px;
+        }
+      }
+
+      &#technology-pillar {
+        background-image: url('../../content/img/technology-pillar.png');  
+        .pillar-detail {
+          margin-top: 100px;
+        }
+      }
+
+      &#capital-pillar {
+        background-image: url('../../content/img/capital-pillar.png');  
+        .pillar-detail {
+          margin-top: 100px;
+        }
+      }
+
+    }
+  }
+
+  .arrow-bubble {
+    justify-content: center;
+
+    div {
+      background-size: 100%;
+      background-image: url('../../content/img/info-link.png');
+      height: 63px;
+      width: 100px;
+      margin-left: -20px;
+      margin-top: 72.5px;
+    }
+  }
+  
+}
+
+
+#reliability {
+  
+  #VirtualCare-logo {
+    width: 200px;
+    height: 62.5px;
+    background-image: url('../../content/img/VirtualCare-logo.png');
+    background-size: 100%;
+    position: absolute;
+    top: 30px;
+    right: 150px;
+  }
+  
+  .slide-title {
+
+    .title-icon {
+      width: 50px;
+      height: 63.5px;
+      background-image: url('../../content/img/reliability-shield.png');
+    }
+  }
+  
+  .slide-intro {
+    color: $orange;
+  }
+  
+  .features-list {
+    margin-left: 70px;
+    margin-top: 42.5px;
+    
+    li {
+    
+      &.list-title {
+        margin-bottom: 25px;
+      }
+    
+      span {
+        padding-top: 1px;
+        font-size: 24px;
+        font-family: $font__main-regular;
+
+        b {
+          font-family: $font__main-bold;
+        }
+      }
+    
+      .list-icon {
+        height: 31px;
+        width: 31px;
+        padding: 0;
+  
+        &.clock-icon {
+          background-size: 100%;
+          background-image: url('../../content/img/clock-icon.png');
+          background-repeat: no-repeat;
+        }
+  
+        &.computer-icon {
+          background-size: 100%;
+          background-image: url('../../content/img/computer-icon.png');
+          background-repeat: no-repeat;
+        }
+  
+        &.phone-icon {
+          background-size: 100%;
+          background-image: url('../../content/img/phone-icon.png');
+          background-repeat: no-repeat;
+        }
+  
+      }
+    }
+  }
+  
+  .pre-footer {
+    height: 126px;
+    width: 100%;
+    background-image: url('../../content/img/pre-footer-full-width.png');
+    
+    div {
+      font-size: 21px;
+      font-family: $font__main-bold;
+      color: $white;
+      margin-left: 46px;
+      margin-top: 42px;
+      line-height: 29.5px;
+    }
+
+  }
+}
+
+#reliability_virtualcare {
+  
+  #reliability-shield-large {
+    width: 127px;
+    height: 170px;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: 50px;
+    background-image: url('../../content/img/reliability-shield-large.png');
+    background-size: 100%;
+  }
+  
+  ul {
+    margin-top: 31px;
+  }
+}
+
+
+#technological_deployments {
+	background-image: url('../../content/img/computer-background.png');
+  background-size: 884.5px 406.5px;
+  background-position-x: 70px;
+  background-position-y: 322px;
+  
+  .slide-title {
+
+    .title-icon {
+      width: 62px;
+      height: 65.5px;
+      background-image: url('../../content/img/techno-box.png');
+    }
+  }
+  
+  .slide-intro {
+    color: $orange;
+  }
+
+  #deployments-nav {
+    position: relative;
+    
+    .deployment-link {
+      position: absolute;
+      
+      span {
+        font-family: $font__main-bold;
+        font-size: 17px;
+        line-height: 18px;
+      }
+          
+      &.first {
+        top: 130px;
+        left: 290px;        
+
+        span {
+          color: $purple;
+        }
+      }
+
+      &.second {
+        top: 136px;
+        right: 192px;        
+
+        span {
+          color: $darkGreen;
+        }
+      }
+
+      &.third {
+        top: 232px;
+        left: 287px;
+
+        span {
+          color: $teal;
+        }
+      }
+
+      &.fourth {
+        top: 250px;
+        right: 237px;
+
+        span {
+          color: $lemonlime;
+        }
+      }
+
+    }
+  }
+
+}
+
+#scanner_connectivity_intro {
+  background-image: url('../../content/img/medrad-with-doctor.png');
+  background-position-x: 27.5px;
+  background-position-y: 256.5px;
+  background-size: 387px 347.5px;
+  
+  .slide-title {
+
+    .title-icon {
+      width: 82px;
+      height: 63px;
+      background-image: url('../../content/img/scanner-title-icon.png');
+      margin-right: 0px;
+    }
+  }
+  
+  
+  .features-list {
+    margin-left: 443px;
+    margin-top: 51px;
+
+    ul {
+    
+      li {
+        margin-bottom: 15px;
+        
+        &.list-title {
+          font-family: $font__main;
+          margin-bottom: 20px;
+        }
+        
+        .list-icon {
+          height: 35px;
+          width: 40px;
+          padding: 0;
+          background-size: 100%;
+        
+          &.bullseye-icon {
+            background-image: url('../../content/img/bullseye-icon.png');
+          }
+        
+          &.timer-icon {
+            background-image: url('../../content/img/timer-icon.png');
+          }
+        
+          &.width-arrow-icon {
+            background-image: url('../../content/img/width-arrow-icon.png');
+          }
+        
+          &.crossover-icon {
+            background-image: url('../../content/img/crossover-icon.png');
+          }
+        }
+      }
+    }
+  }
+}

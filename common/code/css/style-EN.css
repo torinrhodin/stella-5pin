@@ -1,0 +1,34 @@
+/*--------------------------------------------------------------
+# EN - Eylea Styles
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Structure
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Fonts
+--------------------------------------------------------------*/
+@font-face {
+  font-family: 'BayerSansCond Regular';
+  src: url("../../content/fonts/BayerSansCond-Regular.otf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'BayerSans Bold';
+  src: url("../../content/fonts/BayerSansCond-Bold.otf");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'TradeGothicLTStd-Bold';
+  src: url("../../content/fonts/TradeGothicLTStd-Bold.otf") format("opentype");
+  font-style: normal; }
+
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+#dosing_CRVO .body-content .text, #dosing_BRVO .body-content .text {
+  bottom: 2px; }
+
+/*# sourceMappingURL=style-EN.css.map */

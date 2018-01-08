@@ -1,0 +1,473 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0">  
+  	<title>Agnitio Modular Platform</title>
+    <link rel="stylesheet" href="all.css" type="text/css" media="screen" charset="utf-8">
+    <!--[if IE]>
+      <style>
+        .collection, .slideshow, .slide {float:left;}
+      </style>
+    <![endif]-->
+  </head>
+  <body id="">
+
+
+    <div id="presentation" device="">
+      <div id="study-design-background" style="display: none;"></div>
+      <div id="study-design"  style="display: none;">
+        <div id="close-study">x</div>
+        <div id="study-design-text"></div>
+      </div>
+
+      <div id="header">
+<style>
+
+input {
+  position: fixed;
+  opacity: 0;
+}
+
+label {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+label::before {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  content: '';
+  opacity: 0;
+  pointer-events: none;
+}
+label .burger {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 3;
+  width: 45px;
+  height: 2em;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger::before,
+label .burger .bar, label .burger::after {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 12%;
+  background: #fff;
+  border-radius: 10px;
+  content: '';
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+label .burger .bar {
+  top: 44%;
+}
+label .burger::before {
+  top: 0;
+  transform-origin: top left;
+}
+label .burger::after {
+  bottom: 0;
+  transform-origin: bottom left;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  transform: translate3d(0, 0, 0);
+  width: 220px;
+  /* material acceleration */
+  transform: translateX(-100%);
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+nav::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 25em;
+  content: '';
+  transform: skewX(15deg) translateX(-100%);
+  transform-origin: bottom left;
+  will-change: transform;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.spacer {
+    width: 100%;
+    height: 61px;
+    background: #d96633;
+    position: absolute;
+    top: 0;
+    border-bottom: 2px solid #4d4d4c;
+    -webkit-box-sizing: border-box;
+}
+
+@media (min-width: 40em) {
+  nav::before {
+    width: 220px;
+  }
+}
+
+nav label {
+  font-size: 1.5em;
+  color: #636463;
+  text-decoration: none;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  font-size: 1.0em;
+  line-height: 1.1em;
+  border-bottom: 2px solid #8c8c8b;
+  border-top: 2px solid #f3f4f4;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%,rgba(255,255,255,0.95) 36%,rgba(224,224,224,0.95) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  transform: translateX(-100%);
+  transition: color .15s, transform .5s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+nav label::after {
+  position: absolute;
+  width: 15px;
+  right: 0;
+  top: 0;
+  height: 100%;
+  content: '';
+  background: linear-gradient(to bottom, rgba(227,141,94,1) 36%,rgba(200,124,83,1) 100%);
+}
+
+nav label span {
+  padding: 20px 50px 20px 20px;
+  text-align: left;
+}
+
+nav label:hover,
+nav label:focus,
+[class="flyout"]:checked + label {
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(227,141,94,1) 36%,rgba(200,124,83,1) 100%);
+  border-top: 2px solid rgba(255,255,255,0.95);
+}
+
+.alt-link {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+[class="flyout"]:checked + label .alt-link {
+  display: block;
+}
+
+.sub,
+.sub2 {
+	position: absolute;
+  width: 1000px;
+  top: 5px;
+  left: 250px;
+  display: none;
+}
+
+.sub2 {
+  width: 1000px;
+  top: 180px;
+}
+
+.chevron {
+  fill: #fff;
+  position: absolute;
+}
+
+.sub > .chevron {
+  left: -22px;
+  top: 28px;
+}
+
+.sub2 > .chevron {
+  left: 56px;
+  top: -50px;
+  transform: rotate(90deg);
+}
+
+#lab4 .sub2 {
+  left: 402px;
+}
+
+.sub-slide-wrap {
+	width: 137px;
+	margin-right: 15px;
+	float: left;
+}
+
+.sub-slide-thumb {
+	width: 100%;
+	background: #fff;
+	height: 100px;
+}
+
+.sub-slide-cap {
+	color: #fff;
+  padding-top: 10px;
+}
+
+[class="flyout"]:checked + label .sub,
+[class="flyout"]:checked + label .sub2 {
+	display: block;
+}
+
+main {
+  overflow: hidden;
+}
+
+.first-link {
+  margin-top: 61px;
+}
+
+[id="navcheck"]:checked + label::before {
+  opacity: 1;
+  pointer-events: auto;
+}
+[id="navcheck"]:checked + label .burger::before, [id="navcheck"]:checked + label .burger::after {
+  width: 141.42%;
+}
+[id="navcheck"]:checked + label .burger::before {
+  transform: rotate(45deg) translateY(-50%);
+}
+[id="navcheck"]:checked + label .burger::after {
+  transform: rotate(-45deg) translateY(50%);
+}
+[id="navcheck"]:checked + label .burger .bar {
+  transform: scale(0.1);
+}
+[id="navcheck"]:checked ~ nav,
+[id="navcheck"]:checked .spacer {
+  transform: translateX(0);
+}
+[id="navcheck"]:checked ~ nav::before {
+  transform: translateX(0);
+}
+[id="navcheck"]:checked ~ nav label {
+  transform: translateX(0);
+}
+
+[id="navcheck"]:checked + label .burger {
+  width: 32px;
+  transform: translateX(160px);
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+/* misc */
+body {
+  overflow-x: hidden;
+  background: #444;
+  color: white;
+  font: 1em/1.4 "lato";
+  margin: 0;
+}
+
+main {
+  background: #3498db;
+  padding: 5% 0;
+}
+
+article {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.3em;
+}
+@media (min-width: 60em) {
+  article {
+    width: 50%;
+  }
+}
+
+h1 {
+  font: 2.5em/1.4 "roboto condensed";
+  font-weight: 700;
+}
+
+</style>
+
+	<input type="checkbox" id="navcheck" role="button" title="menu" onclick="Clear();">
+	<label for="navcheck" aria-hidden="true" title="menu">
+		<span class="burger">
+			<span class="bar">
+			</span>
+		</span>
+	</label>
+        <nav id="slidenav"></nav>
+	<nav id="menu">
+		<div class="spacer"></div>
+    <input type="radio" id="link1" class="flyout" name="flyoutmain">
+    <label id="lab1" class="first-link" for="link1">
+      <span>Home</span>
+    </label>
+		<input type="radio" id="link2" class="flyout" name="flyoutmain">
+    <label id="lab2" for="link2">
+      <span>Our offering</span>
+    </label>
+    <input type="radio" id="link3" class="flyout" name="flyoutmain">
+    <label id="lab3" for="link3">
+      <span>MEDRAD<br>Stellant CT<br>Injection<br>System</span>
+    </label>
+		<input type="radio" id="link4" class="flyout" name="flyoutmain">
+    <label id="lab4" for="link4">
+      <a class="alt-link" target="_blank" href="http://www.havaslife.com/"></a>
+      <span>SmartPACK+</span>
+      <div class="sub">
+        <svg class="chevron" version="1.1" viewBox="0 0 446.87219 1046.8749125" width="15" height="55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(1566 -1708.6)">
+        <path d="m-1553.8 2533.9c-6.6902-6.7154-12.164-12.763-12.164-13.439s87.75-88.978 195-196.23c107.25-107.25 195-195.56 195-196.25 0-0.6892-87.75-89.002-195-196.25-107.25-107.25-195-195.85-195-196.9 0-2.4459 23.824-26.228 26.274-26.228 1.0198 0 96.072 94.219 211.23 209.38l209.37 209.38-209.37 209.38c-115.15 115.16-210.23 209.38-211.27 209.38s-7.3736-5.4945-14.064-12.21z" style=""/>
+        </g>
+        </svg>
+        <div class="sub-slide-wrap">
+          <div class="sub-slide-thumb"></div>
+          <div class="sub-slide-cap">Reliability</div>
+        </div>
+        <div class="sub-slide-wrap">
+          <div class="sub-slide-thumb"></div>
+          <div class="sub-slide-cap">Technology</div>
+        </div>
+        <div class="sub-slide-wrap">
+          <div class="sub-slide-thumb"></div>
+          <div class="sub-slide-cap">Access</div>
+        </div>
+      </div>
+      <div class="sub2">
+        <svg class="chevron" version="1.1" viewBox="0 0 446.87219 1046.8749125" width="15" height="55" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(1566 -1708.6)">
+        <path d="m-1553.8 2533.9c-6.6902-6.7154-12.164-12.763-12.164-13.439s87.75-88.978 195-196.23c107.25-107.25 195-195.56 195-196.25 0-0.6892-87.75-89.002-195-196.25-107.25-107.25-195-195.85-195-196.9 0-2.4459 23.824-26.228 26.274-26.228 1.0198 0 96.072 94.219 211.23 209.38l209.37 209.38-209.37 209.38c-115.15 115.16-210.23 209.38-211.27 209.38s-7.3736-5.4945-14.064-12.21z" style=""/>
+        </g>
+        </svg>
+        <div class="sub-slide-wrap">
+          <div class="sub-slide-thumb"></div>
+          <div class="sub-slide-cap">Scanner connectivity</div>
+        </div>
+        <div class="sub-slide-wrap">
+          <div class="sub-slide-thumb"></div>
+          <div class="sub-slide-cap">Automated<br>Documentation</div>
+        </div>
+        <div class="sub-slide-wrap">
+          <div class="sub-slide-thumb"></div>
+          <div class="sub-slide-cap">Personalized<br>Protocols</div>
+        </div>
+        <div class="sub-slide-wrap">
+          <div class="sub-slide-thumb"></div>
+          <div class="sub-slide-cap">Data-driven insights</div>
+        </div>
+      </div>
+    </label>
+		<input type="radio" id="link5" class="flyout" name="flyoutmain">
+    <label id="lab5" for="link5">
+      <span>Summary</span>
+    </label>
+    <input type="radio" id="link6" class="flyout" name="flyoutmain">
+    <label id="lab6" for="link6">
+      <span>Resources</span>
+    </label>
+	</nav>
+
+
+        <div id="mainmenu"></div>
+      </div>
+      <section id="slideshows" class="slideshows"></section>
+      <footer id="mainfooter">
+        <div id="medradLogo" class='left-logo' ></div>
+        <div id="smartpackLogo" class='right-logo'></div>
+
+      </footer>
+
+    </div>
+
+    <!-- iPLANNER BUNDLED JAVASCRIPT -->
+    <!-- <script src="../viewer/js/agnitio.js"></script>
+    <script src="../viewer/js/pdf.js"></script> -->
+    <script>!window.ag && document.write(unescape('%3Cscript src="_framework/lib/agnitio.js"%3E%3C/script%3E'))</script>
+    
+    <!-- FRAMEWORK AND LIBRARIES -->  
+    <script src="_framework/lib/touchy.js" type="text/javascript" charset="utf-8"></script>
+    <script src="_framework/lib/draggy.js" type="text/javascript" charset="utf-8"></script>
+    <script src="_framework/lib/util.js" type="text/javascript" charset="utf-8"></script>
+    <script src="_framework/core.js" type="text/javascript" charset="utf-8"></script>
+    
+    <!-- MODULES --> 
+    <script src="modules/analytics/analytics.js" type="text/javascript" charset="utf-8"></script>
+    <script src="modules/menu/menu.js" type="text/javascript" charset="utf-8"></script>
+    <script src="modules/loader/loader.js" type="text/javascript" charset="utf-8"></script>
+
+    <!-- CUSTOM APP MODULES -->  
+    <script src="modules/slide-nav/slide-nav.js" type="text/javascript" charset="utf-8"></script>
+    
+    <!-- CUSTOM APP JAVASCRIPT -->  
+    <script src="code/js/slide.introduction.js"></script>
+    <script src="code/js/slide.our_offerings.js"></script>
+    <script src="code/js/slide.medrad.js"></script>
+    <script src="code/js/slide.smartpack.js"></script>
+    <script src="code/js/slide.smartpack_pillars.js"></script>
+    <script src="code/js/slide.reliability.js"></script>
+    <script src="code/js/slide.reliability_virtualcare.js"></script> 
+    <script src="code/js/slide.technological_deployments.js"></script>
+    <script src="code/js/slide.scanner_connectivity_intro.js"></script>
+    <script src="code/js/slide.scanner_connectivity_detail.js"></script>
+    <script src="code/js/slide.automated_documentation.js"></script>
+    <script src="code/js/slide.automated_documentation_steps.js"></script>
+    <script src="code/js/slide.personalized_protocols.js"></script>
+    <script src="code/js/slide.data_driven_insights.js"></script>
+    <script src="code/js/slide.capital_access_program.js"></script>
+    <script src="code/js/slide.summary_page.js"></script>
+    <script src="code/js/slide.resources.js"></script> 
+
+    <!-- APP SETUP -->
+    <script src="setup.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+      
+      function Clear()
+      {    
+         clearRadioGroup("flyoutmain");
+      }
+      
+      function clearRadioGroup(GroupName)
+      {
+        var ele = document.getElementsByName(GroupName);
+        for(var i=0;i<ele.length;i++)
+          ele[i].checked = false;
+      }
+      
+    </script>
+  </body>
+</html>

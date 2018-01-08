@@ -1,0 +1,360 @@
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+#presentation {
+	width: $size__width;
+	height: $size__height;
+  position: relative;
+  margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+	width: 100%;
+	position: relative;
+	z-index: 999;
+	height: 75px;
+}
+
+#mainmenu {
+  width: 84px;
+  height: 100px;
+  left: auto;
+  right: 0;
+  overflow: hidden;
+  margin: 30px 30px;
+  
+	ul {
+		float: right;
+
+		li {
+			width: 75px;
+			height: 75px;
+			background: url('../../content/img/Logo_Cross_Print_Wht.svg') no-repeat 0 0;
+			background-size: 100% 100%;
+		}
+	}
+
+	&.hide {
+		display: none;
+	}
+
+	&.color-logo {
+		li {
+			background-image: url('../../content/img/graphics_bayer-logo-rgb.png');
+		}
+	}
+}
+
+
+
+/*--------------------------------------------------------------
+# Nav
+--------------------------------------------------------------*/
+.navigation-menu,
+.navigation-menu li.parent-menu ul {
+	list-style: none;
+}
+
+
+/*--------------------------------------------------------------
+# Slide
+--------------------------------------------------------------*/
+#presentation section > .slide,
+#presentation section > .slide > .slide {
+	padding: 0;
+}
+
+.slide {
+  text-align: left;
+	background: no-repeat 0 0 #fff;
+	background-size: 100% 100%;
+	overflow: hidden;
+
+  h1 {
+  	@include title;
+  }
+  
+  .footer {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+
+    div {
+      
+    }
+    
+    .left-logo {
+      background: url('../../content/img/MEDRAD_Stellant_HorizDesc_Global_WHITE.svg') no-repeat;
+      width: 230px;
+      height: 40px;
+      margin-left: 50px;
+    }
+
+    .right-logo {
+      background: url('../../content/img/16518_b_rad_smartpack_logo_bl02_WHITE.svg') no-repeat;
+      width: 175px;
+      height: 54px;
+      margin-right: 50px;
+    }
+    
+  }
+  
+  #main_navigationContainer h2 {
+    margin-top: 0px;
+  }
+  
+  img {
+    height: auto;
+  }
+  
+  .slide-title {
+    width: 950px;
+    font-size: 50px;
+    line-height: 1.1;
+    color: $orange;
+    font-family: $font__main-bold;
+    margin: 65px 70px 29px;
+  }
+  
+  &.has-title-icon {
+    .slide-title {
+      display: flex;
+      justify-content: flex-start;
+      
+      span {
+        display: block;
+      
+        &.title-icon {
+          background-size: 100%;
+          background-repeat: no-repeat;
+          margin-right: 23.5px;     
+        }
+      }
+    }
+    
+  }
+  
+  &.has-subtitle {
+
+    .slide-title {
+      margin-bottom: 0px;
+    }
+  
+    .slide-subtitle {
+      font-family: $font__main;
+      font-size: 36px;
+      font-weight: normal;
+      color: $orange;
+      margin: 0px 70px;
+    }
+  }
+  
+  .slide-intro,
+  .features-title {
+    color: $gray;
+    font-family: $font__main;
+    font-size: 24px;
+    line-height: 29.5px;
+    margin-left: 70px;
+    margin-top: 25px;
+  }
+
+// Features Lists 
+
+  .features-list {
+    display: flex;
+
+    ul {
+      li {
+        display: flex;
+        justify-content: flex-start;
+        color: $orange;
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-family: $font__main-bold;
+        line-height: 29px;
+
+        &.list-title {
+          color: $gray;
+          display: list-item;
+          list-style: none;
+        }
+
+        span {
+          padding-top: 5px;
+          padding-left: 8px;
+        }
+
+        .circle {
+          display: block;
+          -webkit-border-radius: 999px;
+          -moz-border-radius: 999px;
+          border-radius: 999px;
+          width: 30px;
+          height: 31px;
+          padding: 0 0 0 1px;
+          border: 3px solid #8cc63e;
+          color: #8cc63e;
+          text-align: center;
+          font: 25px Arial, sans-serif;
+        }
+
+        .plus-sign {
+          line-height: 31px;
+        }
+                
+      }
+    }
+  }
+  
+  .arrow-bubble {
+    display: flex;
+    justify-content: flex-end;
+    
+    div {
+      background-size: 100%;
+    }
+  }
+
+  .pre-footer {
+    position: absolute;
+    bottom: 105px;
+    background-size: 100%;    
+  }
+
+  .key {
+    position: absolute;
+    bottom: 26px;
+    text-align: center;
+    color: $gray;
+    font-family: $font__main;
+    font-size: 13px;
+    width: 100%;
+  }
+
+}
+
+/*--------------------------------------------------------------
+# Study Design
+--------------------------------------------------------------*/
+#popup-text {
+	display: none;
+}
+
+
+/*--------------------------------------------------------------
+# Footnote Links
+--------------------------------------------------------------*/
+sup {
+	vertical-align: super;
+	font-size: 0.4em;
+	font-weight: normal;
+	position: relative;
+	top: -0.2em;
+}
+
+sup.reg,
+sup.ordinal,
+sup.cross {
+	font-size: 0.7em;
+	top: 0.1em;
+	left: 1px;
+}
+
+span.asterisk {
+  font-size: 1.4em;
+  position: relative;
+  top: 0.2em;
+  left: 1px;
+}
+
+h1, h2 {
+	sup {
+		font-weight: bold;
+	}
+
+	sup.reg {
+		font-size: 0.4em;
+		top: -0.2em;
+		left: 2px;
+	}
+
+	sup.ordinal {
+		font-size: 0.5em;
+		top: -0.1em;
+		left: 2px;
+		text-transform: lowercase;
+	}
+
+	span.asterisk {
+	  font-size: 0.8em;
+	  position: relative;
+	  top: -0.2em;
+	  left: 2px;
+	}
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#mainfooter {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 26px;
+  
+  #medradLogo {
+    background: url('../../content/img/MEDRAD_Stellant_HorizDesc_Global_Orange.svg') no-repeat;
+    width: 230px;
+    height: 40px;
+    margin-left: 50px;
+  }
+
+  #smartpackLogo {
+    background: url('../../content/img/16518_b_rad_smartpack_logo_bl02_RGB.svg') no-repeat;
+    width: 175px;
+    height: 54px;
+    margin-right: 50px;
+  }
+  
+  .hide {
+    display: none;
+  }
+}
+
+#eyleaLogo {
+	width: 158px;
+	height: 40px;
+	background: url('../../content_EN/img/Eylea_Pr_Tag_En_4C.png') no-repeat 0 0;
+	background-size: 100% auto;
+	margin: 22px 10px;
+	float: right;
+
+	&.show {
+	  opacity: 1;
+	  transition: opacity 0.4s ease-out;
+	  -webkit-transition: opacity 0.4s ease-out;
+	  transition-delay: 0.4s;
+		-webkit-transition-delay: 0.4s;
+	}
+	
+	&.hide {
+	  opacity: 0;
+	  transition: opacity 0s ease-in;
+	  -webkit-transition: opacity 0s ease-in;
+	}
+}
+
+sup {
+  text-transform: lowercase;
+}

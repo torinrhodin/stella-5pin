@@ -1,0 +1,70 @@
+/*--------------------------------------------------------------
+# Tolerability Table
+--------------------------------------------------------------*/
+
+#tolerabilityContainer {
+  
+  p {
+    font-size: 18px;
+    line-height: 1.2;
+    color: #FFFFFF;
+    margin: 80px 36px 80px 35px;
+  }
+
+  .chart-header {
+    margin: 0 0 4px 261px;
+    color: #FFFFFF;
+    font-size: 15px;
+  }
+  
+  .chart-img {
+    text-align: center;    
+  }
+  
+  .keys {
+    bottom: 40px;
+  }
+}
+
+#tolerability_DME {
+
+  .chart-header {
+    margin-left: 308px;
+  }  
+}
+
+#tolerability_CRVO {
+  
+  .chart-header {
+    margin: 0 0 4px 220px;
+    width: 664px;
+  }
+}
+
+#tolerability_BRVO {
+  .chart-header {
+    margin: 0 0 4px 243px;
+  }
+}
+
+#tolerability_wAMD img {
+  max-width: 693px;
+  height: auto;
+  padding-left: 13px;
+}
+
+#tolerability_DME img {
+  max-width: 534px;
+  height: auto;
+}
+
+#tolerability_CRVO img {
+  max-width: 754px;
+  height: auto;
+}
+
+#tolerability_BRVO img {
+  max-width: 635px;
+  height: auto;
+  margin-left: -4px;
+}

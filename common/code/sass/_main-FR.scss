@@ -1,0 +1,440 @@
+
+/*--------------------------------------------------------------
+# Slide
+--------------------------------------------------------------*/
+.slide {
+	.slide-title {
+		text-transform: uppercase;
+	}
+}
+
+#efficacy_wAMD_gains,
+#efficacy_DME_gains {
+	.slide-title {
+		font-size: 34px;
+	}
+}
+
+#efficacy_BRVO_acuity {
+	.slide-title {
+		font-size: 32px;
+	}
+}
+
+
+#efficacy_wAMD_maintenance,
+#efficacy_wAMD_gains,
+#efficacy_wAMD_acuity,
+#navigation_real_world,
+#tolerability_wAMD,
+#dosing_wAMD {
+	.tab-title {
+    width: 195px;
+    background-image: url('../../content/img/tab-bg-long.png');
+    background-size: 100%;
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#eyleaLogo {
+	background-image: url('../../content_FR/img/Eylea_Pr_Tag_Fr_4C.png');
+}
+
+/*--------------------------------------------------------------
+# Intro
+--------------------------------------------------------------*/
+#introduction {
+	h1 {
+		font-size: 66px;
+		margin-right: 300px;
+		
+		.title-today {
+			vertical-align: super;
+	    margin-right: 0;
+	    text-align: left;
+	    display: inline;
+	  }
+	}
+
+	#eylea-logo-top {
+		padding-top: 30px;
+	}
+
+	.info {
+		font-size: 10.5px;
+		padding: 15px 35px 15px 10px;;
+	}
+}
+
+/*--------------------------------------------------------------
+# Main Navigation
+--------------------------------------------------------------*/
+#navigation {
+	#primary-nav {
+    margin-top: 65px;
+    left: 65px;
+  }
+
+  h2 {
+  	.link-text {
+  		padding: 0 15px 0 5px;
+  	}
+  }
+}
+
+#navigation.efficacy-menu {
+	#primary-nav {
+		li.parent-menu {
+    	width: 600px;
+    }
+
+		li.parent-menu:nth-child(2) {
+		    width: 610px;
+		}
+
+		.child-menu {
+	    left: -120px;
+	    width: 475px;
+		}
+
+		.child-sub-menu {
+	    width: 296px;
+	    left: -90px;
+		}
+	}
+}
+
+#navigation.real-world-menu {
+	#primary-nav {
+		.child-menu {
+	    overflow: visible;
+	    position: relative;
+	    left: 110px;
+			
+			// Line
+			&:after {
+				width: 1px;
+				height: 15px;
+				border-top: none;
+		    border-left: solid 1px $white;
+		    top: 35px;
+		    left: 195px;
+			}
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Secondary Navigation
+--------------------------------------------------------------*/
+#navigation_dosing,
+#navigation_efficacy,
+#navigation_tolerability {
+	#secondary-nav {
+		width: 815px;
+
+		li {
+			width: 345px;
+
+			h2 {
+				font-size: 45px;
+				padding-top: 26px;
+				padding-bottom: 20px;
+			}
+
+			&:first-child {
+				margin: 0 20px 0 20px;
+				left: 35px;
+
+				h2 {
+					padding-left: 0;
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+/*--------------------------------------------------------------
+# Efficacy Chart Detail
+--------------------------------------------------------------*/
+.reveal-study-design {
+	text-align: center;
+  width: 105px;
+  line-height: 1.2;
+
+	span:first-child {
+	  margin-left: 32px;
+	}	
+}
+
+#efficacy_wAMD_maintenance,
+#efficacy_CRVO_acuity,
+#efficacy_CRVO_maintenance {
+	.chart {
+		margin-top: 15px;
+	}
+}
+
+#efficacy_wAMD_maintenance {
+	.chart {
+		.further-details {
+		  padding-right: 13px;
+		  &.two-lines p {
+		    width: 718px;
+		    padding-top: 10px;
+      }
+		}
+	}
+}
+
+
+#efficacy_wAMD_gains {
+	.chart {
+		.further-details {
+		    max-width: 675px;
+		}
+	}
+}
+
+#efficacy_wAMD_acuity {
+
+	.chart {
+		.further-details {
+		    max-width: 710px;
+		  
+		  p {
+  		  padding-top: 6px;
+		  }
+		}
+	}
+}
+
+#efficacy_DME_gains {
+
+	.chart {
+		.further-details {
+		    max-width: 745px;
+		    
+		   sup {
+        font-size: .5em;
+        top: 0;
+      }
+		}
+	}	
+
+  #dme-gains-last {
+    margin-top: 4px;
+  }
+
+	
+}
+
+#efficacy_DME_gains {
+
+  #jump-to-rw {
+  
+    bottom: 12px;
+    left: 200px;
+    position: absolute;
+  
+    span.link {
+      -webkit-transform: rotate(-180deg);
+      font-family: "HelveticaNeueLTPro-ThCn", sans-serif !important;
+      font-size: 65px;
+      padding: 9px 18px 0px 8px;
+      line-height: 0.5;
+      color: #FECE00;
+      border: solid 2px #FFFFFF;
+      border-radius: 40px;
+      margin-left: 54px;
+      float: left;
+      letter-spacing: -7px;
+      margin-bottom: 8px;
+    }
+  
+    span {
+      clear: both;
+      text-transform: uppercase;
+      margin-top: 8px;
+      display: block;
+      color: #FFFFFF;
+      font-size: 13.56234375px;
+      text-align: center;
+    }
+  }
+  
+  .reveal-study-design {
+      position: absolute;
+      bottom: 10px;
+  }
+}
+
+#efficacy_CRVO_acuity .keys {
+  bottom: 10px;
+}
+
+#efficacy_CRVO_maintenance .slide-title {
+  width: 981px;
+}
+
+.reveal-study-design {
+  width: 111px;
+}
+
+/*--------------------------------------------------------------
+# Real World Detail
+--------------------------------------------------------------*/
+#navigation_real_world {
+	.slide-title {
+		font-size: 38px;
+	}
+
+	.text {
+		margin-bottom: 65px;
+	}
+	
+	h3 {
+		text-transform: uppercase;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+	
+	.further-details {
+    margin-bottom: 70px;
+    
+    p {
+      font-size: 17px;
+     }
+  }
+
+	#secondary-nav {
+		li:nth-child(2) {
+			h4 {
+				padding: 13px 0;
+			}
+		}
+	}
+  .further-details p {
+    width: 615px;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Tolerability Table
+--------------------------------------------------------------*/
+#tolerabilityContainer {
+	.chart-header {
+    font-size: 13px;
+	}
+
+	img {
+	    padding-left: 0;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 1.2;
+	}
+}
+
+#tolerability_CRVO p {
+  margin-right: 24px;
+}
+
+
+/*--------------------------------------------------------------
+# MOA
+--------------------------------------------------------------*/
+#MOA_affinity {
+
+	.MOA_affinity {
+		.blue-banner {
+			.heading {
+				font-size: 35px;
+				margin-bottom: 20px;
+			}
+
+		}
+	}
+
+	.MOA_VEGF {
+		.blue-banner {
+			.heading {
+				font-size: 37px;
+			}
+
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	h1 {
+		font-size: 34px;
+		text-transform: uppercase;
+    span.asterisk {
+      top: -0.15em;
+    }
+	}
+
+	h3 {
+		top: 15px;
+		text-align: right;
+	}
+
+	.vegf-a-link {
+		text-transform: none;
+    right: 325px;
+    bottom: 80px;
+
+		span {
+    	margin-right: 65px;
+    }
+	}
+}
+
+
+/* dosing */
+
+#dosing_DME .body-content .text {
+  width: 667px;
+  bottom: auto;
+}
+
+#dosing_CRVO,
+#dosing_BRVO {
+ .body-content .text {
+    width: 744px;
+    bottom: 30px;
+  }
+}
+
+#MOA_affinity .blue-banner p .asterisk {
+  vertical-align: super;
+  font-size: 1em;
+  font-weight: normal;
+  position: absolute;
+  top: 0.0em;
+}
+
+#MOA_affinity .blue-banner p span {
+  position: relative;
+}
+
+#efficacy_DME_acuity .reveal-study-design {
+  margin-top: 47px;
+}
+
+#MOA_affinity h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}

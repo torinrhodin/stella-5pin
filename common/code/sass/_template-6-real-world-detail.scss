@@ -1,0 +1,132 @@
+/*--------------------------------------------------------------
+# Real World Detail
+--------------------------------------------------------------*/
+#navigation_real_world {
+	background-image: url('../../content/img/EYLEA_E-Detailer_page42.jpg');
+
+	.slide-title {
+    font-size: 35px;
+		margin: 35px;
+	}
+
+  .text {
+    font-size: 20px;
+  	margin: 35px 35px 80px 35px;
+
+    p {
+      color: $white;
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
+
+.further-details {
+    width: auto !important;
+    position: relative;
+    margin: 0 0 100px -70px;
+    padding: 15px 0 4px 105px;
+    clear: both;
+    float: left;
+    
+    p {
+      font-size: 18px;
+      color: $yellow;
+      line-height: 1.2;
+      width: 540px;
+    }
+
+    .parallelogram {
+      @include parallelogram;
+      -webkit-transform: skew(-18deg);
+      border: solid 2px $yellow;
+      height: 70px;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  h4 {
+  	font-size: 20px;
+  	font-weight: bold;
+  	text-transform: uppercase;
+  	position: relative;
+  	color: $light-blue;
+  	padding: 20px 0;
+
+  	.link-text {
+      text-align: center;
+  	}
+
+  	.parallelogram {
+  		@include parallelogram;
+      -webkit-transform: skew(-18deg);
+  		right: 0;
+  		border: solid 2px $light-blue;
+  		height: 55px;
+  	}
+  }
+
+  #secondary-nav {
+    width: 624px;
+    margin: 70px auto;
+      
+    li {
+      width: 225px;
+    }
+  }
+}
+
+#real_world_acuity,
+#real_world_injections {
+  .chart {
+    margin-top: 95px;
+  }
+}
+
+#real_world_acuity {
+  .chart {
+    img {
+      max-width: 920px;
+    }
+  }
+
+  .chart-desc {
+    margin-top: 8px;
+  }
+   
+  .further-details.plain {
+    margin-left: 0px;
+    padding-left: 20px;
+    padding-top: 15px;
+        
+    li {
+      font-size: 18px;
+      line-height: 1.2;
+      color: $white;
+    }
+  }
+}
+
+#real_world_injections {
+  .chart {
+    img {
+      max-width: 830px;
+    }
+  }
+
+  .chart-desc {
+    font-size: 11px;
+  }
+  
+}
+
+#real_world_acuity img {
+  max-width: 886px;
+  height: auto;
+}
+
+#real_world_injections img {
+  max-width: 780px;
+  height: auto;
+}
+

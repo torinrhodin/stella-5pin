@@ -1,0 +1,181 @@
+{
+	"storyboard" : ["stellant_app"],
+	"slides" : {
+		"introduction" : { 
+			"name" : "Home Intro",
+			"valid":true,
+			"file" : "introduction.html"
+		},
+		"our_offerings" : {
+			"name" : "Our offerings",
+			"valid":true,
+			"file" : "our_offerings.html"
+		},
+		"medrad" : {
+			"name" : "MEDRAD Stellant CT Injection System page",
+			"valid":true,
+			"file" : "medrad.html"
+		},
+		"smartpack" : {
+			"name" : "SmartPACK + benefits page",
+			"valid":true,
+			"file" : "smartpack.html"
+		},
+		"smartpack_pillars" : {
+			"name" : "SmartPACK + (3 pillars) page",
+			"valid":true,
+			"file" : "smartpack_pillars.html"
+		},
+		"reliability" : {
+			"name" : "Reliability guarantee",
+			"valid":true,
+			"file" : "reliability.html"
+		},
+		"reliability_virtualcare" : {
+			"name" : "Reliability VirtualCARE",
+			"valid":true,
+			"file" : "reliability_virtualcare.html"
+		},
+		"technological_deployments" : {
+			"name" : "Technology deployments",
+			"valid":true,
+			"file" : "technological_deployments.html"
+		},
+		"scanner_connectivity_intro" : {
+			"name" : "Scanner connectivity",
+			"valid":true,
+			"file" : "scanner_connectivity_intro.html"
+		},
+		"scanner_connectivity_detail" : {
+			"name" : "Scanner connectivity",
+			"valid":true,
+			"file" : "scanner_connectivity_detail.html"
+		},
+		"automated_documentation" : {
+			"name" : "Automated documentation",
+			"valid":true,
+			"file" : "automated_documentation.html"
+		},
+		"automated_documentation_steps" : {
+			"name" : "Automated documentation steps",
+			"valid":true,
+			"file" : "automated_documentation_steps.html"
+		},
+		"personalized_protocols" : {
+			"name" : "Personalized protocols",
+			"valid":true,
+			"file" : "personalized_protocols.html"
+		},
+		"data_driven_insights" : {
+			"name" : "Data-driven insights",
+			"valid":true,
+			"file" : "data_driven_insights.html"
+		},
+		"capital_access_program" : {
+			"name" : "Capital Access Program",
+			"valid":true,
+			"file" : "capital_access_program.html"
+		},
+		"summary_page" : {
+			"name" : "Summary Page",
+			"valid":true,
+			"file" : "summary_page.html"
+		},
+		"resources" : {
+			"name" : "Resources",
+			"valid":true,
+			"file" : "resources.html"
+		}
+	},
+	"structures" : {
+		"home" : {
+			"content" : ["introduction"],
+			"name" : "Introduction",
+			"type" : "slideshow",
+			"valid":true
+		},
+		"offerings_navigation":{
+			"content":["our_offerings"],
+			"name":"Offerings Navigation",
+			"type":"slideshow",
+			"valid":true
+		},
+		"offerings":{
+			"content":["medrad","smartpack"],
+			"name":"Offerings Navigation",
+			"type":"slideshow",
+			"valid":true
+		},
+		"smartpack_navigation":{
+			"content":["smartpack_pillars"],
+			"name":"Smartpack pillars",
+			"type":"slideshow",
+			"valid":true
+		},
+		"reliability_pillar":{
+			"content":["reliability"],
+			"name":"Reliability Slide",
+			"type":"slideshow",
+			"valid":true
+		},
+		"reliability_virtualcare_slide":{
+			"content":["reliability_virtualcare"],
+			"name":"Reliability Slides",
+			"type":"slideshow",
+			"valid":true
+		},
+		"technology_pillar":{
+			"content":["technological_deployments"],
+			"name":"Technological Deployents Slide",
+			"type":"slideshow",
+			"valid":true
+		},
+		"scanner_slides":{
+			"content":["scanner_connectivity_intro", "scanner_connectivity_detail"],
+			"name":"Scanner Slides",
+			"type":"slideshow",
+			"valid":true
+		},
+		"automated_documentation_slides":{
+			"content":["automated_documentation", "automated_documentation_steps"],
+			"name":"Automated Documentation Slides",
+			"type":"slideshow",
+			"valid":true
+		},
+		"personalized_protocols_slide":{
+			"content":["personalized_protocols"],
+			"name":"Personalized Protocol Slide",
+			"type":"slideshow",
+			"valid":true
+		},
+		"data_driven_insights_slide":{
+			"content":["data_driven_insights"],
+			"name":"Data Driven Insights Slide",
+			"type":"slideshow",
+			"valid":true
+		},
+		"capital_access_program_slide":{
+			"content":["capital_access_program"],
+			"name":"Capital Access Program Slide",
+			"type":"slideshow",
+			"valid":true
+		},
+		"summary_page_slide":{
+			"content":["summary_page"],
+			"name":"Summary Page Slide",
+			"type":"slideshow",
+			"valid":true
+		},
+		"resources_slide":{
+			"content":["resources"],
+			"name":"Resources Slide",
+			"type":"slideshow",
+			"valid":true
+		},
+	  "stellant_app" : {
+			"name" : "stellant",
+			"type" : "collection",
+  		"content" : ["home","offerings_navigation","offerings","smartpack_navigation","reliability_pillar","reliability_virtualcare_slide","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"]
+		}
+	}
+}

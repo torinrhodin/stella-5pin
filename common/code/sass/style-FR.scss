@@ -1,0 +1,19 @@
+/*--------------------------------------------------------------
+# FR - Eylea Styles
+--------------------------------------------------------------*/
+
+@import "variables";
+@import "mixins";
+@import "main-FR";
+
+#efficacy_wAMD_maintenance .further-details {
+  width: auto!important;
+}
+
+#efficacy_wAMD_acuity .further-details {
+  width: auto!important;
+  
+  p {
+    width: 724px!important;    
+  }
+}

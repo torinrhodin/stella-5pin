@@ -1,0 +1,102 @@
+/*--------------------------------------------------------------
+# Mixins
+--------------------------------------------------------------*/
+@mixin title {
+	font-family: $font__main;
+	color: $orange;
+}
+ 
+@mixin parallelogram {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	-webkit-transform: skew(-25deg);
+	z-index: -1;
+}
+
+@mixin one-line {
+//   background: url(../../content/img/further-details-1-line-bg.png) no-repeat -13.59375px 0;  
+  background-size: 692px auto;  
+  position: relative;
+  padding-right: 15px;
+
+  
+  p {
+    font-size: 16px;
+    color: $yellow;
+    padding-top: 6px;
+  }  
+
+  .parallelogram {
+    border: solid 2px #F8CE4B;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skew(-25deg);
+    z-index: -1;
+    height: 100%;
+    left: 0px;
+  }
+  
+}
+    
+@mixin two-lines {
+//  background: url("../../content/img/further-details-2-lines-bg.png") no-repeat -80.0625px 0;
+  width: 660px;
+  background-size: 660px auto;
+  position: relative;
+  
+  p {
+    width: 535px;
+    padding-top: 8px;
+  }    
+  
+  .parallelogram {
+    height: 100%;
+    border: solid 2px #F8CE4B;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skew(-25deg);
+    z-index: -1;
+    left: 0px;
+  }
+}
+
+@mixin three-lines {
+//  background: url("../../content/img/further-details-3-lines-bg.png") no-repeat -66.40734375px 0;
+  font-size: 14px;
+  padding-top: 3px;
+  color: $yellow;
+  line-height: 17px;
+  max-width: 631px;
+  background-size: 631px auto;
+  position: relative;
+ 
+  
+
+  li {
+    margin-left: 16px;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1rem;
+      margin-left: -5px;
+    }
+  }
+  
+  .parallelogram {
+    height: 100%;
+    border: solid 2px #F8CE4B;
+    right: 0;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: skew(-25deg);
+    z-index: -1;
+    left: 0px;
+  }
+  
+}

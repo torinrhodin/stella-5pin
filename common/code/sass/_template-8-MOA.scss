@@ -1,0 +1,219 @@
+/*--------------------------------------------------------------
+# MOA
+--------------------------------------------------------------*/
+#mainmenu.MOA {
+  right: 300px;
+}
+
+#MOA_affinity {
+	background-image: url('../../content/img/EYLEA_E-Detailer_page51_52.jpg');
+	overflow: hidden;
+ 
+  .MOA_affinity,
+  .MOA_VEGF {
+    display: none;
+  }
+
+  &.affinity {
+    .MOA_affinity {
+      display: block;
+    }
+    
+    .affinity-link span:first-child {  
+      background: #83a8d6;
+    }
+    
+    .vegf-a-link span:first-child {  
+      background: #58595b;
+    }
+  }
+
+  &.VEGF {
+    .MOA_VEGF {
+      display: block;
+    }
+
+    .affinity-link span:first-child {  
+      background: #58595b;
+    }
+    
+    .blue-banner {
+      top: 305px;
+    }
+
+    .vegf-a-link span:first-child {  
+      background: #83a8d6;
+    }
+  }
+
+  .keys .chart-key {
+    color: $black;
+  }
+  
+  h1 {
+    font-size: 33px;
+    line-height: 1.1;
+    margin: 65px 0 0 35px;
+    position: absolute;
+    -webkit-text-stroke-width: 0.75px;
+
+    sup.reg {
+      -webkit-text-fill-color: $blue;
+      -webkit-text-stroke-width: 0;
+    }
+  }
+  
+  h2 {
+    font-size: 32px;
+    margin-bottom: 5px;
+    margin-top: 217px;
+    margin-left: -45px;
+    padding: 5px 0 5px 10px;
+    color: #143B5E;
+    clear: both;
+    position: relative;
+    z-index: 10;
+    float: left;
+
+    span:first-child {
+      padding: 0 35px 0 70px;
+    }
+    
+    .parallelogram {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      -webkit-transform: skew(-25deg);
+      z-index: -1;
+      height: 40px;
+      background: #F8CE4B;
+      left: 0px;
+    } 
+  }
+  
+  h3 {
+    @include title-outline;
+    font-size: 25px;
+    -webkit-text-stroke-width: 0.5px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    text-transform: uppercase;
+  }
+
+  .affinity-link,
+  .vegf-a-link {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #58595b;
+    position: absolute;
+    z-index: 999;
+    overflow: hidden;
+    
+    span:first-child {
+      font-size: 40px;
+      font-weight: bold;
+      line-height: 24px;
+      padding: 6px 16px 11px 8px;
+      color: $white;
+      border: none;
+      border-radius: 40px;
+      display: block;
+      width: 16px;
+      margin-right: 12px;   
+    }
+    
+    span {
+      display: block;
+    }
+  }
+
+  .affinity-link {
+    width: 260px;
+    top: 50px;
+    right: 30px;
+
+    span:first-child {
+      margin-top: 15px;
+      float: left;
+    }
+    
+    span {
+      margin-top: 10px; 
+      margin-left: 5px; 
+      padding-top: 15px;
+    }
+  }
+
+  .vegf-a-link {
+    right: 335px;
+    position: absolute;
+    bottom: 88px;
+    text-align: right;
+    
+    span:first-child {
+      margin-top: 12px;
+      float: right;
+    }
+    
+    span {
+      margin-right: 72px;      
+      padding-top: 10px;     
+    }
+  }
+  
+  .blue-banner {
+    top: 303px;
+    position: absolute;
+    margin-left: 35px;
+    color: $white;
+    font-size: 14.5px;
+    line-height: 1.1;
+
+    .heading {
+      font-size: 38px;
+      line-height: 1.2;
+      font-weight: bold;
+      color: $yellow;
+      width: 100%;
+      margin-top: 5px;
+    }
+    
+    p {
+      margin: 7px 0;
+      line-height: 22px;
+
+      .asterisk {
+        vertical-align: super;
+        font-size: 1em;
+        font-weight: normal;
+        position: relative;
+        top: 0.3em;
+      }
+
+    }
+    ul {
+      list-style-type: none;
+      text-indent: -10px; 
+      margin-left: 10px;
+    }
+    li {
+      margin: 10px 0;
+      line-height: 17px;
+    }
+    
+    li:before {
+      content: "- ";
+      text-indent: -10px;
+    }
+
+  }
+
+  .keys .chart-key {
+    font-size: 11px !important;
+    line-height: 1.1;
+  }
+}
+
