@@ -32,20 +32,22 @@
   
   // Initiate modules
   // Custom Slide Nav (arrows and X)
-	app.nav = new Nav({
+	app.nav = new FlyoutMenu({
 		attachTo: 'stellant_app',
-		activeFor: ["offerings_navigation","medrad_slideshow","smartpack_navigation","reliability_pillar","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"],
+		activeFor: ["introduction,offerings_navigation","medrad_slideshow","smartpack_navigation","reliability_pillar","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"],
 	  links: [
-			{ title:"Prev", symbol:"‹", className:"prevSlide" },
-			{ title:"Next", symbol:"‹", className:"nextSlide" },
-			{ title:"X", symbol:"+", className:"secondaryNav" }
-	  ]		
+			{ title:"Home", idName:"link1", labelName:"lab1", goTo:"stellant_app.home.introduction"},
+			{ title:"Our Offering", idName:"link2", className:"first-link", labelName:"lab2", goTo:"stellant_app.offerings_navigation.our_offerings"},
+			{ title:"Summary", idName:"link5", labelName:"lab5", goTo:"stellant_app.summary_page_slide.summary_page"},
+			{ title:"Resources", idName:"link6", labelName:"lab6", goTo:"stellant_app.resources_slide.resources"},
+	  ]
 	});
+
 	// Main Menu (Bayer Logo)
 	app.menu = new Menu({
 		attachTo: 'stellant_app',
 	  links: [
-			{ title:"", goTo:"stellant_app.home" }
+			{ title:"", goTo:"stellant_app.home.introduction" }
 	  ]
 	});
 
