@@ -847,7 +847,7 @@ sup {
   width: 750px;
   margin: 0 auto;
   display: flex;
-  justify-content: center; }
+  justify-content: space-between; }
   #resources #resources-grid .column.first, #resources #resources-grid .column.third {
     width: 281px; }
   #resources #resources-grid .column .title,
