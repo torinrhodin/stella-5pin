@@ -32,8 +32,15 @@ $teal: #00a79d;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Arial Rounded Bold';
+    src: url('../../content/fonts/Arial-Rounded-Bold.ttf') format('truetype');
+    font-style: normal;
+}
+
 $font__header: 'BayerSans Bold', sans-serif;
 $font__main: 'BayerSansCond Regular', sans-serif;
+$font__arial: 'Arial Rounded Bold', sans-serif;
 $font__main-regular: 'BayerSansCond Regular', sans-serif;
 $font__main-medium: 'Arial', sans-serif;
 $font__main-bold: 'BayerSans Bold', sans-serif;

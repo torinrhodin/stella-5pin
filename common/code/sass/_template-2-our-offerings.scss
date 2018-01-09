@@ -386,23 +386,25 @@
 
 }
 
-#scanner_connectivity_intro {
-  background-image: url('../../content/img/medrad-with-doctor.png');
-  background-position-x: 27.5px;
-  background-position-y: 256.5px;
-  background-size: 387px 347.5px;
-  
+.slide.scanner-connectivity {
   .slide-title {
     margin-left: 45px;
     
-    .title-icon {
+    span.title-icon {
       width: 82px;
       height: 63px;
       background-image: url('../../content/img/scanner-title-icon.png');
       margin-right: 0px;
+      margin-top: -10px;
     }
   }
-  
+}
+
+#scanner_connectivity_intro {
+  background-image: url('../../content/img/medrad-with-doctor.png');
+  background-position-x: 27.5px;
+  background-position-y: 256.5px;
+  background-size: 387px 347.5px;  
   
   .features-list {
     margin-left: 443px;
@@ -446,15 +448,432 @@
 }
 
 #scanner_connectivity_detail {
-  
+  background-image: url('../../content/img/scanner-connectivity-detail.png');
+  background-position-x: 77px;
+  background-position-y: 210px;
+  background-size: 888.5px 467px;
+
+  #reveal-scanner-detail {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 59px;
+    top: 211px;
+  }
+
+}
+
+.slide.automated-documentation {
   .slide-title {
     margin-left: 45px;
+    color: $teal;
     
-    .title-icon {
+    span.title-icon {
       width: 82px;
       height: 63px;
-      background-image: url('../../content/img/scanner-title-icon.png');
+      background-image: url('../../content/img/automated-doc-icon.png');
       margin-right: 0px;
+      margin-top: -10px;
     }
   }
 }
+
+#automated_documentation {
+  background-image: url('../../content/img/automated-doc-monitor.png');
+  background-position-x: 65.5px;
+  background-position-y: 290.5px;
+  background-size: 300px 285px;
+    
+  #automated-documention-pop-link {
+    background-image: url('../../content/img/automated-documentation-pop-link.png');
+    background-size: 100%;
+    width: 335px;
+    height: 63px;
+    position: absolute;
+    left: 63px;
+    bottom: 138px;
+  }
+  
+  .features-list {
+    margin-left: 443px;
+    margin-top: 51px;
+
+    ul {
+    
+      li {
+        margin-bottom: 15px;
+        
+        &.list-title {
+          font-family: $font__main;
+          margin-bottom: 20px;
+        }
+        
+        span {
+          padding-left: 12px;
+        }
+        
+        &.extra-space {
+          span {
+            padding-left: 8px;
+          }
+        }
+        
+        .list-icon {
+          height: 35px;
+          width: 35px;
+          padding: 0;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        
+          &.import-icon {
+            background-image: url('../../content/img/import-icon.png');
+          }
+        
+          &.Aa-icon {
+            background-image: url('../../content/img/Aa-icon.png');
+          }
+        
+          &.teal-bullseye-icon {
+            background-image: url('../../content/img/teal-bullseye-icon.png');
+            width: 40px;
+            padding-left: 0px;
+          }
+        
+          &.teal-timer-icon {
+            background-image: url('../../content/img/teal-timer-icon.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+#automated_documentation_steps {
+  background-image: url('../../content/img/automated-documentation-detail.png');
+  background-position-x: 77px;
+  background-position-y: 210px;
+  background-size: 888.5px 427.5px;
+
+  #reveal-steps-detail {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 59px;
+    top: 211px;
+  }
+
+}
+
+#personalized_protocols {
+  background-image: url('../../content/img/personalized-protocols.png');
+  background-position-x: 58.5px;
+  background-position-y: 305px;
+  background-size: 296.5px 284.5px;
+
+  .slide-title {
+    margin-left: 45px;
+    color: $lemonlime;
+    
+    span.title-icon {
+      width: 82px;
+      height: 63px;
+      background-image: url('../../content/img/personalized-protocols-icon.png');
+      margin-right: 0px;
+      margin-top: -10px;
+    }
+  }
+      
+  .features-list {
+    margin-left: 443px;
+    margin-top: 51px;
+
+    ul {
+    
+      li {
+        margin-bottom: 15px;
+        
+        &.list-title {
+          font-family: $font__main;
+          margin-bottom: 20px;
+        }
+                        
+        .list-icon {
+          height: 35px;
+          width: 35px;
+          padding: 0;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        
+          &.wrench-icon {
+            background-image: url('../../content/img/wrench-icon.png');
+          }
+        
+          &.patient-icon {
+            background-image: url('../../content/img/patient-icon.png');
+          }
+        
+          &.checkmark-icon {
+            background-image: url('../../content/img/checkmark.png');
+          }
+        
+          &.waves-icon {
+            background-image: url('../../content/img/waves-icon.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+
+#data_driven_insights {
+  background-image: url('../../content/img/data-driven-insights.png');
+  background-position-x: 17.5px;
+  background-position-y: 307.5px;
+  background-size: 480px 204px;
+
+  .slide-title {
+    margin-left: 45px;
+    color: $darkGreen;
+    
+    span.title-icon {
+      width: 82px;
+      height: 63px;
+      background-image: url('../../content/img/data-driven-insights-icon.png');
+      margin-right: 0px;
+      margin-top: -10px;
+    }
+  }
+
+    
+  .pre-footer {
+    height: 76px;
+    width: 545px;
+    background-image: url('../../content/img/pre-footer-half-width.png');
+    
+    div {
+      font-size: 21px;
+      font-family: $font__main-bold;
+      color: $white;
+      margin-left: 46px;
+      margin-top: 42px;
+      line-height: 29.5px;
+    }
+
+  }
+  
+  .features-list {
+    margin-left: 555px;
+    margin-top: 13px;
+
+    ul {
+    
+      li {
+        margin-bottom: 15px;
+        
+        &.list-title {
+          font-family: $font__main;
+          margin-bottom: 20px;
+          margin-left: -110px;
+          font-size: 23px;
+        }
+        
+        .list-icon {
+          height: 35px;
+          width: 35px;
+          padding: 0;
+          background-size: 100%;
+          background-repeat: no-repeat;
+        
+          &.vial-icon {
+            background-image: url('../../content/img/vial-icon.png');
+          }
+        
+          &.tracking-icon {
+            background-image: url('../../content/img/tracking-icon.png');
+          }
+        
+          &.chart-icon {
+            background-image: url('../../content/img/chart-icon.png');
+          }
+        
+          &.mag-icon {
+            background-image: url('../../content/img/mag-icon.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+#capital_access_program {
+  background-image: url('../../content/img/capital-access-program.png');
+  background-position-x: 68px;
+  background-position-y: 281px;
+  background-size: 865px 87px;
+
+  .slide-title {
+    margin-left: 45px;
+    
+    span.title-icon {
+      width: 57px;
+      height: 71.5px;
+      background-image: url('../../content/img/capital-access-program-icon.png');
+      margin-right: 14px;
+      margin-top: -29px;
+    }
+  }
+  
+  #capital-access-programs {
+    font-family: $font__main;
+    color: $gray;
+    font-size: 23.5px;
+    line-height: 24.5px;
+    position: absolute;
+    top: 405px;
+    left: 116px;
+    width: 812.5px;
+    display: flex;
+    justify-content: space-between;
+    
+    b {
+      font-family: $font__main-bold;
+    }
+  }
+}
+
+#summary_page {
+  
+  #summary-page-image {
+    width: 418px;
+    height: 280.5px;
+    margin-left: 27px;
+    margin-top: 50px;
+    margin-right: 55px;
+    background-image: url('../../content/img/summary-page.png');
+    background-size: 100%;
+  }
+  
+  ul {
+    margin-top: 94px;
+  }
+  
+  #summary-arrow-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 51px;
+    margin-top: 40px;
+    
+    #risk-free-link {
+      background-image: url('../../content/img/risk-free-link.png');
+      background-size: 100%;
+      width: 310px;
+      height: 63.5px; 
+      
+      .trial-text {
+        color: $orange;
+        font-family: $font__main;
+        font-size: 17px;
+        margin: 25px 0 0 65px;
+        
+        span {
+          font-family: $font__main-bold;
+        }
+      }
+
+    } 
+
+    #learn-more-link {
+      background-image: url('../../content/img/learn-more-link.png');
+      background-size: 100%;
+      width: 170px;
+      height: 63.5px;
+      
+      .learn-more-text {
+        color: $orange;
+        font-family: $font__main;
+        font-size: 17px;
+        margin: 25px 0 0 65px;
+      }
+    } 
+  }
+}
+
+#resources {
+  
+  #resources-grid {
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+    .column {
+      
+      &.first,
+      &.third {
+        width: 281px;
+      }
+            
+      .title,
+      .thumb {
+        margin-bottom: 10px;
+      
+      }
+      
+      .resource {
+        text-align: center;
+        color: $gray;
+        font-family: $font__main;
+        font-size: 15px;
+        min-width: 150px;
+        margin-bottom: 30px;
+
+        &.stellant {
+          
+          .title {
+            margin-top: -15px;
+          }
+        }
+
+        img {
+          width: 85px;
+          height: 64px;
+        }
+        
+        .links {
+          display: flex;
+          justify-content: center;
+          
+          div {
+            background-image: url('../../content/img/pdf-email-link.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 60px;
+            height: 44px;
+            
+            span {
+              display: block;
+              margin: 16px 0 0 20px;
+              color: $orange;
+              font-family: $font__arial;
+              font-size: 9px;
+
+            }
+            
+            &.pdf {
+              margin-right: 10px;
+            }
+            
+            &.email {
+              span {
+                margin-left: 23px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

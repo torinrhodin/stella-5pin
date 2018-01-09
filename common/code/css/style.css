@@ -12,17 +12,17 @@
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'BayerSansCond Regular';
-  src: url("../../content/fonts/BayerSansCond-Regular.otf") format("truetype");
+  src: url("../../content/fonts/BayerSans-Regular.otf") format("opentype");
   font-style: normal; }
 
 @font-face {
   font-family: 'BayerSans Bold';
-  src: url("../../content/fonts/BayerSansCond-Bold.otf");
+  src: url("../../content/fonts/BayerSans-Bold.otf") format("opentype");
   font-style: normal; }
 
 @font-face {
-  font-family: 'TradeGothicLTStd-Bold';
-  src: url("../../content/fonts/TradeGothicLTStd-Bold.otf") format("opentype");
+  font-family: 'Arial Rounded Bold';
+  src: url("../../content/fonts/Arial-Rounded-Bold.ttf") format("truetype");
   font-style: normal; }
 
 /*--------------------------------------------------------------
@@ -114,7 +114,7 @@
     line-height: 1.1;
     color: #e86c1f;
     font-family: "BayerSans Bold", sans-serif;
-    margin: 65px 70px 29px; }
+    margin: 65px 63px 29px; }
   .slide.has-title-icon .slide-title {
     display: flex;
     justify-content: flex-start; }
@@ -125,20 +125,21 @@
         background-repeat: no-repeat;
         margin-right: 23.5px; }
   .slide.has-subtitle .slide-title {
-    margin-bottom: 0px; }
+    margin-bottom: 0px;
+    font-size: 46.5px; }
   .slide.has-subtitle .slide-subtitle {
     font-family: "BayerSansCond Regular", sans-serif;
     font-size: 36px;
     font-weight: normal;
     color: #e86c1f;
-    margin: 0px 70px; }
+    margin: 0 0 0 63px; }
   .slide .slide-intro,
   .slide .features-title {
     color: #6d6e70;
     font-family: "BayerSansCond Regular", sans-serif;
     font-size: 24px;
     line-height: 29.5px;
-    margin-left: 70px;
+    margin-left: 63px;
     margin-top: 25px; }
   .slide .features-list {
     display: flex; }
@@ -156,7 +157,8 @@
         list-style: none; }
       .slide .features-list ul li span {
         padding-top: 5px;
-        padding-left: 8px; }
+        padding-left: 8px;
+        font-size: 24px; }
       .slide .features-list ul li .circle {
         display: block;
         -webkit-border-radius: 999px;
@@ -414,7 +416,7 @@ sup {
           font-family: "BayerSans Bold", sans-serif; }
 
 #smartpack_pillars .slide-title {
-  font-size: 47.5px; }
+  font-size: 46.5px; }
 
 #smartpack_pillars .slide-subtitle {
   font-size: 24px;
@@ -423,7 +425,7 @@ sup {
 #smartpack_pillars #pillars {
   display: flex;
   justify-content: space-between;
-  margin: 48px 70px 0;
+  margin: 48px 63px 0;
   font-family: "BayerSansCond Regular", sans-serif; }
   #smartpack_pillars #pillars .pillar {
     width: 275px;
@@ -526,7 +528,7 @@ sup {
 #reliability_virtualcare #reliability-shield-large {
   width: 127px;
   height: 170px;
-  margin-left: 70px;
+  margin-left: 63px;
   margin-top: 50px;
   margin-right: 50px;
   background-image: url("../../content/img/reliability-shield-large.png");
@@ -538,7 +540,7 @@ sup {
 #technological_deployments {
   background-image: url("../../content/img/computer-background.png");
   background-size: 884.5px 406.5px;
-  background-position-x: 70px;
+  background-position-x: 63px;
   background-position-y: 322px; }
   #technological_deployments .slide-title .title-icon {
     width: 62px;
@@ -575,16 +577,20 @@ sup {
         #technological_deployments #deployments-nav .deployment-link.fourth span {
           color: #d6df23; }
 
+.slide.scanner-connectivity .slide-title {
+  margin-left: 45px; }
+  .slide.scanner-connectivity .slide-title span.title-icon {
+    width: 82px;
+    height: 63px;
+    background-image: url("../../content/img/scanner-title-icon.png");
+    margin-right: 0px;
+    margin-top: -10px; }
+
 #scanner_connectivity_intro {
   background-image: url("../../content/img/medrad-with-doctor.png");
   background-position-x: 27.5px;
   background-position-y: 256.5px;
   background-size: 387px 347.5px; }
-  #scanner_connectivity_intro .slide-title .title-icon {
-    width: 82px;
-    height: 63px;
-    background-image: url("../../content/img/scanner-title-icon.png");
-    margin-right: 0px; }
   #scanner_connectivity_intro .features-list {
     margin-left: 443px;
     margin-top: 51px; }
@@ -606,6 +612,278 @@ sup {
           background-image: url("../../content/img/width-arrow-icon.png"); }
         #scanner_connectivity_intro .features-list ul li .list-icon.crossover-icon {
           background-image: url("../../content/img/crossover-icon.png"); }
+
+#scanner_connectivity_detail {
+  background-image: url("../../content/img/scanner-connectivity-detail.png");
+  background-position-x: 77px;
+  background-position-y: 210px;
+  background-size: 888.5px 467px; }
+  #scanner_connectivity_detail #reveal-scanner-detail {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 59px;
+    top: 211px; }
+
+.slide.automated-documentation .slide-title {
+  margin-left: 45px;
+  color: #00a79d; }
+  .slide.automated-documentation .slide-title span.title-icon {
+    width: 82px;
+    height: 63px;
+    background-image: url("../../content/img/automated-doc-icon.png");
+    margin-right: 0px;
+    margin-top: -10px; }
+
+#automated_documentation {
+  background-image: url("../../content/img/automated-doc-monitor.png");
+  background-position-x: 65.5px;
+  background-position-y: 290.5px;
+  background-size: 300px 285px; }
+  #automated_documentation #automated-documention-pop-link {
+    background-image: url("../../content/img/automated-documentation-pop-link.png");
+    background-size: 100%;
+    width: 335px;
+    height: 63px;
+    position: absolute;
+    left: 63px;
+    bottom: 138px; }
+  #automated_documentation .features-list {
+    margin-left: 443px;
+    margin-top: 51px; }
+    #automated_documentation .features-list ul li {
+      margin-bottom: 15px; }
+      #automated_documentation .features-list ul li.list-title {
+        font-family: "BayerSansCond Regular", sans-serif;
+        margin-bottom: 20px; }
+      #automated_documentation .features-list ul li span {
+        padding-left: 12px; }
+      #automated_documentation .features-list ul li.extra-space span {
+        padding-left: 8px; }
+      #automated_documentation .features-list ul li .list-icon {
+        height: 35px;
+        width: 35px;
+        padding: 0;
+        background-size: 100%;
+        background-repeat: no-repeat; }
+        #automated_documentation .features-list ul li .list-icon.import-icon {
+          background-image: url("../../content/img/import-icon.png"); }
+        #automated_documentation .features-list ul li .list-icon.Aa-icon {
+          background-image: url("../../content/img/Aa-icon.png"); }
+        #automated_documentation .features-list ul li .list-icon.teal-bullseye-icon {
+          background-image: url("../../content/img/teal-bullseye-icon.png");
+          width: 40px;
+          padding-left: 0px; }
+        #automated_documentation .features-list ul li .list-icon.teal-timer-icon {
+          background-image: url("../../content/img/teal-timer-icon.png"); }
+
+#automated_documentation_steps {
+  background-image: url("../../content/img/automated-documentation-detail.png");
+  background-position-x: 77px;
+  background-position-y: 210px;
+  background-size: 888.5px 427.5px; }
+  #automated_documentation_steps #reveal-steps-detail {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 59px;
+    top: 211px; }
+
+#personalized_protocols {
+  background-image: url("../../content/img/personalized-protocols.png");
+  background-position-x: 58.5px;
+  background-position-y: 305px;
+  background-size: 296.5px 284.5px; }
+  #personalized_protocols .slide-title {
+    margin-left: 45px;
+    color: #d6df23; }
+    #personalized_protocols .slide-title span.title-icon {
+      width: 82px;
+      height: 63px;
+      background-image: url("../../content/img/personalized-protocols-icon.png");
+      margin-right: 0px;
+      margin-top: -10px; }
+  #personalized_protocols .features-list {
+    margin-left: 443px;
+    margin-top: 51px; }
+    #personalized_protocols .features-list ul li {
+      margin-bottom: 15px; }
+      #personalized_protocols .features-list ul li.list-title {
+        font-family: "BayerSansCond Regular", sans-serif;
+        margin-bottom: 20px; }
+      #personalized_protocols .features-list ul li .list-icon {
+        height: 35px;
+        width: 35px;
+        padding: 0;
+        background-size: 100%;
+        background-repeat: no-repeat; }
+        #personalized_protocols .features-list ul li .list-icon.wrench-icon {
+          background-image: url("../../content/img/wrench-icon.png"); }
+        #personalized_protocols .features-list ul li .list-icon.patient-icon {
+          background-image: url("../../content/img/patient-icon.png"); }
+        #personalized_protocols .features-list ul li .list-icon.checkmark-icon {
+          background-image: url("../../content/img/checkmark.png"); }
+        #personalized_protocols .features-list ul li .list-icon.waves-icon {
+          background-image: url("../../content/img/waves-icon.png"); }
+
+#data_driven_insights {
+  background-image: url("../../content/img/data-driven-insights.png");
+  background-position-x: 17.5px;
+  background-position-y: 307.5px;
+  background-size: 480px 204px; }
+  #data_driven_insights .slide-title {
+    margin-left: 45px;
+    color: #006738; }
+    #data_driven_insights .slide-title span.title-icon {
+      width: 82px;
+      height: 63px;
+      background-image: url("../../content/img/data-driven-insights-icon.png");
+      margin-right: 0px;
+      margin-top: -10px; }
+  #data_driven_insights .pre-footer {
+    height: 76px;
+    width: 545px;
+    background-image: url("../../content/img/pre-footer-half-width.png"); }
+    #data_driven_insights .pre-footer div {
+      font-size: 21px;
+      font-family: "BayerSans Bold", sans-serif;
+      color: #FFFFFF;
+      margin-left: 46px;
+      margin-top: 42px;
+      line-height: 29.5px; }
+  #data_driven_insights .features-list {
+    margin-left: 555px;
+    margin-top: 13px; }
+    #data_driven_insights .features-list ul li {
+      margin-bottom: 15px; }
+      #data_driven_insights .features-list ul li.list-title {
+        font-family: "BayerSansCond Regular", sans-serif;
+        margin-bottom: 20px;
+        margin-left: -110px;
+        font-size: 23px; }
+      #data_driven_insights .features-list ul li .list-icon {
+        height: 35px;
+        width: 35px;
+        padding: 0;
+        background-size: 100%;
+        background-repeat: no-repeat; }
+        #data_driven_insights .features-list ul li .list-icon.vial-icon {
+          background-image: url("../../content/img/vial-icon.png"); }
+        #data_driven_insights .features-list ul li .list-icon.tracking-icon {
+          background-image: url("../../content/img/tracking-icon.png"); }
+        #data_driven_insights .features-list ul li .list-icon.chart-icon {
+          background-image: url("../../content/img/chart-icon.png"); }
+        #data_driven_insights .features-list ul li .list-icon.mag-icon {
+          background-image: url("../../content/img/mag-icon.png"); }
+
+#capital_access_program {
+  background-image: url("../../content/img/capital-access-program.png");
+  background-position-x: 68px;
+  background-position-y: 281px;
+  background-size: 865px 87px; }
+  #capital_access_program .slide-title {
+    margin-left: 45px; }
+    #capital_access_program .slide-title span.title-icon {
+      width: 57px;
+      height: 71.5px;
+      background-image: url("../../content/img/capital-access-program-icon.png");
+      margin-right: 14px;
+      margin-top: -29px; }
+  #capital_access_program #capital-access-programs {
+    font-family: "BayerSansCond Regular", sans-serif;
+    color: #6d6e70;
+    font-size: 23.5px;
+    line-height: 24.5px;
+    position: absolute;
+    top: 405px;
+    left: 116px;
+    width: 812.5px;
+    display: flex;
+    justify-content: space-between; }
+    #capital_access_program #capital-access-programs b {
+      font-family: "BayerSans Bold", sans-serif; }
+
+#summary_page #summary-page-image {
+  width: 418px;
+  height: 280.5px;
+  margin-left: 27px;
+  margin-top: 50px;
+  margin-right: 55px;
+  background-image: url("../../content/img/summary-page.png");
+  background-size: 100%; }
+
+#summary_page ul {
+  margin-top: 94px; }
+
+#summary_page #summary-arrow-links {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 51px;
+  margin-top: 40px; }
+  #summary_page #summary-arrow-links #risk-free-link {
+    background-image: url("../../content/img/risk-free-link.png");
+    background-size: 100%;
+    width: 310px;
+    height: 63.5px; }
+    #summary_page #summary-arrow-links #risk-free-link .trial-text {
+      color: #e86c1f;
+      font-family: "BayerSansCond Regular", sans-serif;
+      font-size: 17px;
+      margin: 25px 0 0 65px; }
+      #summary_page #summary-arrow-links #risk-free-link .trial-text span {
+        font-family: "BayerSans Bold", sans-serif; }
+  #summary_page #summary-arrow-links #learn-more-link {
+    background-image: url("../../content/img/learn-more-link.png");
+    background-size: 100%;
+    width: 170px;
+    height: 63.5px; }
+    #summary_page #summary-arrow-links #learn-more-link .learn-more-text {
+      color: #e86c1f;
+      font-family: "BayerSansCond Regular", sans-serif;
+      font-size: 17px;
+      margin: 25px 0 0 65px; }
+
+#resources #resources-grid {
+  width: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+  #resources #resources-grid .column.first, #resources #resources-grid .column.third {
+    width: 281px; }
+  #resources #resources-grid .column .title,
+  #resources #resources-grid .column .thumb {
+    margin-bottom: 10px; }
+  #resources #resources-grid .column .resource {
+    text-align: center;
+    color: #6d6e70;
+    font-family: "BayerSansCond Regular", sans-serif;
+    font-size: 15px;
+    min-width: 150px;
+    margin-bottom: 30px; }
+    #resources #resources-grid .column .resource.stellant .title {
+      margin-top: -15px; }
+    #resources #resources-grid .column .resource img {
+      width: 85px;
+      height: 64px; }
+    #resources #resources-grid .column .resource .links {
+      display: flex;
+      justify-content: center; }
+      #resources #resources-grid .column .resource .links div {
+        background-image: url("../../content/img/pdf-email-link.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 44px; }
+        #resources #resources-grid .column .resource .links div span {
+          display: block;
+          margin: 16px 0 0 20px;
+          color: #e86c1f;
+          font-family: "Arial Rounded Bold", sans-serif;
+          font-size: 9px; }
+        #resources #resources-grid .column .resource .links div.pdf {
+          margin-right: 10px; }
+        #resources #resources-grid .column .resource .links div.email span {
+          margin-left: 23px; }
 
 /*
 @import "template-3-secondary-nav";
