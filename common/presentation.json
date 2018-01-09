@@ -130,14 +130,26 @@
 			"type":"slideshow",
 			"valid":true
 		},
-		"scanner_slides":{
-			"content":["scanner_connectivity_intro", "scanner_connectivity_detail"],
+		"scanner_intro":{
+			"content":["scanner_connectivity_intro"],
 			"name":"Scanner Slides",
 			"type":"slideshow",
 			"valid":true
 		},
-		"automated_documentation_slides":{
-			"content":["automated_documentation", "automated_documentation_steps"],
+		"scanner_detail":{
+			"content":["scanner_connectivity_detail"],
+			"name":"Scanner Slides",
+			"type":"slideshow",
+			"valid":true
+		},
+		"automated_documentation_intro":{
+			"content":["automated_documentation"],
+			"name":"Automated Documentation Slides",
+			"type":"slideshow",
+			"valid":true
+		},
+		"automated_documentation_steps_slide":{
+			"content":["automated_documentation_steps"],
 			"name":"Automated Documentation Slides",
 			"type":"slideshow",
 			"valid":true
@@ -175,7 +187,7 @@
 	  "stellant_app" : {
 			"name" : "stellant",
 			"type" : "collection",
-  		"content" : ["home","offerings_navigation","offerings","smartpack_navigation","reliability_pillar","reliability_virtualcare_slide","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"]
+  		"content" : ["home","offerings_navigation","offerings","smartpack_navigation","reliability_pillar","reliability_virtualcare_slide","technology_pillar","scanner_intro","scanner_detail","automated_documentation_intro","automated_documentation_steps_slide","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"]
 		}
 	}
 }
