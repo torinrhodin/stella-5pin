@@ -36,10 +36,41 @@
 		attachTo: 'stellant_app',
 		activeFor: ["introduction,offerings_navigation","medrad_slideshow","smartpack_navigation","reliability_pillar","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"],
 	  links: [
-			{ title:"Home", idName:"link1", labelName:"lab1", goTo:"stellant_app.home.introduction"},
-			{ title:"Our Offering", idName:"link2", className:"first-link", labelName:"lab2", goTo:"stellant_app.offerings_navigation.our_offerings"},
-			{ title:"Summary", idName:"link5", labelName:"lab5", goTo:"stellant_app.summary_page_slide.summary_page"},
-			{ title:"Resources", idName:"link6", labelName:"lab6", goTo:"stellant_app.resources_slide.resources"},
+	  	{
+	  		title: "Home",
+	  		idName: "link1",
+	  		className: "first-link",
+				labelName: "lab1",
+				goTo: "stellant_app.home.introduction"
+			},
+			{
+				title: "Our Offering",
+				idName: "link2",
+				labelName: "lab2",
+				goTo: "stellant_app.offerings_navigation.our_offerings"
+			},
+			{
+				title: "MEDRAD<br>Stellant CT<br>Injection<br>System",
+				idName: "link3",
+				labelName: "lab3",
+			},
+			{
+				title: "SmartPACK+",
+				idName: "link4",
+				labelName: "lab4",
+			},
+			{
+				title: "Summary",
+				idName: "link5",
+				labelName: "lab5",
+				goTo: "stellant_app.summary_page_slide.summary_page"
+			},
+			{
+				title: "Resources",
+				idName: "link6",
+				labelName: "lab6",
+				goTo: "stellant_app.resources_slide.resources"
+			},
 	  ]
 	});
 

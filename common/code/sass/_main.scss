@@ -139,6 +139,10 @@ body {
     position: relative;
   }
 
+  nav#orig-menu {
+    display: none;
+  }
+
   nav {
     position: fixed;
     top: 0;
@@ -217,23 +221,87 @@ body {
       }
     }
 
-    label > svg {
-      fill: #e86d1f;
-      stroke: #e86d1f;
+    .icon {
       position: absolute;
+      width: 46px;
+      height: 44px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: right center;
+      right: 25px;
+
+      &.link1 {
+        background-image: url('../../content/img/nav-home-orange.png');
+        background-size: 40px 35px;
+      }
+
+      &.link2 {
+        background-image: url('../../content/img/nav-check-orange.png');
+        background-size: 40px 44px;
+      }
+
+      &.link3 {
+        background-image: url('../../content/img/nav-injection-orange.png');
+        background-size: 46px 44px;
+      }
+
+      &.link4 {
+        background-image: url('../../content/img/nav-smartpack-orange.png');
+        background-size: 46px 38px;
+      }
+
+      &.link5 {
+        background-image: url('../../content/img/nav-summary-orange.png');
+        background-size: 45px 32px;
+      }
+
+      &.link6 {
+        background-image: url('../../content/img/nav-resources-orange.png');
+        background-size: 35px 46px;
+      }
     }
 
-    label:hover > svg,
-    label:focus > svg,
-    [class="flyout"]:checked + label > svg {
-      fill: #fff;
-      stroke: #fff;
-    }
+    // label > svg {
+    //   fill: #e86d1f;
+    //   stroke: #e86d1f;
+    //   position: absolute;
+    // }
+
+    // label:hover > svg,
+    // label:focus > svg,
+    // [class="flyout"]:checked + label > svg {
+    //   fill: #fff;
+    //   stroke: #fff;
+    // }
 
     label:hover > .icon,
     label:focus > .icon,
     [class="flyout"]:checked + label > .icon {
       background-position: bottom;
+
+      &.link1 {
+        background-image: url('../../content/img/nav-home-white.png');
+      }
+
+      &.link2 {
+        background-image: url('../../content/img/nav-check-white.png');
+      }
+
+      &.link3 {
+        background-image: url('../../content/img/nav-injection-white.png');
+      }
+
+      &.link4 {
+        background-image: url('../../content/img/nav-smartpack-white.png');
+      }
+
+      &.link5 {
+        background-image: url('../../content/img/nav-summary-white.png');
+      }
+
+      &.link6 {
+        background-image: url('../../content/img/nav-resources-white.png');
+      }
     }
 
     label:hover .pdf3,
@@ -253,30 +321,33 @@ body {
       -webkit-box-sizing: border-box;
   }
 
-  #lab1 svg,
-  #lab4 svg,
-  #lab5 svg,
-  #lab6 svg,
-  #lab7 svg {
+  // #lab1 svg,
+  // #lab4 svg,
+  // #lab5 svg,
+  // #lab6 svg,
+  // #lab7 svg {
+  //   right: 25px;
+  // }
+
+  // #lab2 svg {
+  //   right: 28px;
+  // }
+
+  #lab1 .icon,
+  #lab4 .icon,
+  #lab5 .icon,
+  #lab6 .icon,
+  #lab7 .icon {
     right: 25px;
   }
 
-  #lab2 svg {
+  #lab2 .icon {
     right: 28px;
   }
 
   .check1{clip-path:url(#c);}
   .check2{clip-path:url(#a);fill:none;stroke-width:3.9;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
   .check3{clip-path:url(#a);}
-
-  .icon {
-    position: absolute;
-    width: 46px;
-    height: 44px;
-    background: url('content/img/inject.png');
-    background-size: 46px 88px;
-    right: 25px;
-  }
 
   .pdf0{clip-path:url(#cv);fill:none;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
   .pdf3{clip-path:url(#av);fill:#F1F2F2;}
@@ -362,7 +433,8 @@ body {
     opacity: 1;
     pointer-events: auto;
   }
-  [id="navcheck"]:checked + label .burger::before, [id="navcheck"]:checked + label .burger::after {
+  [id="navcheck"]:checked + label .burger::before,
+  [id="navcheck"]:checked + label .burger::after {
     width: 141.42%;
   }
   [id="navcheck"]:checked + label .burger::before {
