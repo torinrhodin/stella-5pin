@@ -1205,6 +1205,7 @@ sup {
       display: flex;
       justify-content: center; }
       #resources #resources-grid .column .resource .links div {
+        display: block;
         background-image: url("../../content/img/pdf-email-link.png");
         background-size: 100%;
         background-repeat: no-repeat;
