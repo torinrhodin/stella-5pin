@@ -94,7 +94,59 @@
 				var label = '<label id="' + item.labelName + '"' + '" class="' + item.className + '"' + '" for="' + item.idName + '"' + '">';
 				    label += '<span>' + item.title + '</span>';
 				    label += '<div class="icon ' + item.idName + '"></div>';
-				    label += '</label>';
+
+				if( item.idName === 'link3' ) {
+						label += '<div class="sub">';
+						label += '<div class="chevron"></div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb" data-goto="stellant_app.smartpack_navigation.smartpack_pillars"><img src="content/img/contrast.jpg"></div>';
+						label += '<div class="sub-slide-cap">Contrast media</div>';
+						label += '</div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb"><img src="content/img/consumables.jpg"></div>';
+						label += '<div class="sub-slide-cap">Consumables</div>';
+						label += '</div>';
+						label += '</div>';
+				}
+
+				if( item.idName === 'link4' ) {
+						label += '<div class="sub">';
+						label += '<div class="chevron"></div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb"><img src="content/img/reliability.jpg"></div>';
+						label += '<div class="sub-slide-cap">Reliability</div>';
+						label += '</div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb"><img src="content/img/technology.jpg"></div>';
+						label += '<div class="sub-slide-cap">Technology</div>';
+						label += '</div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb"><img src="content/img/access.jpg"></div>';
+						label += '<div class="sub-slide-cap">Access</div>';
+						label += '</div>';
+						label += '</div>';
+						label += '<div class="sub2">';
+						label += '<div class="chevron"></div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb"><img src="content/img/scanner.jpg"></div>';
+						label += '<div class="sub-slide-cap">Scanner connectivity</div>';
+						label += '</div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb"><img src="content/img/automated.jpg"></div>';
+						label += '<div class="sub-slide-cap">Automated<br>Documentation</div>';
+						label += '</div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb"><img src="content/img/personalized.jpg"></div>';
+						label += '<div class="sub-slide-cap">Personalized<br>Protocols</div>';
+						label += '</div>';
+						label += '<div class="sub-slide-wrap">';
+						label += '<div class="sub-slide-thumb"><img src="content/img/data.jpg"></div>';
+						label += '<div class="sub-slide-cap">Data-driven insights</div>';
+						label += '</div>';
+						label += '</div>';
+				}
+
+				label += '</label>';
 				markup += input+label;
 			});
 
