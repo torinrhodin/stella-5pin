@@ -16,7 +16,7 @@ document.addEventListener('presentationInit', function() {
 
 	};
 
-  app.sendMail ( ev ) {
+  app.sendMail = function( ev ) {
 		var email = ev.target.getAttribute('data-email');
 		var emailAttachment = ev.target.getAttribute('data-attachment');
 		

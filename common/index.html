@@ -85,6 +85,9 @@
       function Clear()
       {    
          clearRadioGroup("flyoutmain");
+
+         var subContainers = document.getElementsByClassName('sub-container');
+        subContainers.className = 'sub-container';
       }
       
       function clearRadioGroup(GroupName)

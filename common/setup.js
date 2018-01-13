@@ -53,11 +53,71 @@
 				title: "MEDRAD<br>Stellant CT<br>Injection<br>System",
 				idName: "link3",
 				labelName: "lab3",
+				parentGoTo: "stellant_app.medrad_navigation.medrad",
+				isParent: true,
+				subLinks: [
+					[
+						{
+							title: "Contrast media",
+							thumb: "content/img/contrast.jpg",
+							goTo: "stellant_app.medrad_navigation.medrad"
+						},
+						{
+							title: "Consumables",
+							thumb: "content/img/consumables.jpg",
+							goTo: "stellant_app.medrad_navigation.medrad"
+						}
+					],
+					[]
+				]
 			},
 			{
 				title: "SmartPACK+",
 				idName: "link4",
 				labelName: "lab4",
+				parentGoTo: "stellant_app.smartpack_navigation.smartpack",
+				isParent: true,
+				subLinks: [
+					[
+						{
+							title: "Reliability",
+							thumb: "content/img/reliability.jpg",
+							goTo: "stellant_app.reliability_pillar.reliability"
+						},
+						{
+							title: "Technology",
+							thumb: "content/img/technology.jpg",
+							goTo: "stellant_app.technology_pillar.technology"
+						},
+						{
+							title: "Access",
+							thumb: "content/img/access.jpg",
+							goTo: "stellant_app.capital_access_program_slide.capital_access_program"
+						}
+					],
+					[
+						{
+							title: "Scanner connectivity",
+							thumb: "content/img/scanner.jpg",
+							goTo: "stellant_app.scanner_intro.scanner_connectivity_intro"
+						},
+						{
+							title: "Automated<br>Documentation",
+							thumb: "content/img/automated.jpg",
+							goTo: "stellant_app.automated_documentation_intro.automated_documentation"
+						},
+						{
+							title: "Personalized Protocols",
+							thumb: "content/img/automated.jpg",
+							goTo: "stellant_app.personalized_protocols_slide.personalized_protocols"
+						},
+						{
+							title: "Data-driven insights",
+							thumb: "content/img/data.jpg",
+							goTo: "stellant_app.data_driven_insights_slide.data_driven_insights"
+						}
+					]
+				]
 			},
 			{
 				title: "Summary",
