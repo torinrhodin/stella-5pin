@@ -188,7 +188,8 @@
 			var clearSubs = function() {
 				var subContainers = document.getElementsByClassName('sub-container');
 				for( i=0; i<subContainers.length; i++ ) {
-					subContainers[i].className = 'sub-container';
+					// subContainers[i].className = 'sub-container';
+					subContainers[i].classList.remove('active');
 				}
 			}
 
@@ -218,7 +219,8 @@
 					var targetID = event.path[0]['id'];
 					var subContainerID = targetID + '-sub';
 					var subContainer = document.getElementById(subContainerID);
-					subContainer.className += ' active';
+					// subContainer.className += ' active';
+					subContainer.classList.add('active');
 				}
 			}
 
