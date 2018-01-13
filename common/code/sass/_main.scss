@@ -380,8 +380,11 @@ body {
   }
 
   .chevron {
-    fill: #fff;
+    // fill: #fff;
     position: absolute;
+    width: 15px;
+    height: 44px;
+    background-image: url('../../content/img/nav-chevron.png');
   }
 
   .sub > .chevron {
