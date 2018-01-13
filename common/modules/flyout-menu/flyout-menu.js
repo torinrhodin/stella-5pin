@@ -185,23 +185,35 @@
 			attr = ele.getAttribute('data-goto');
 
 			// Clear Subs
-			var subContainers = document.getElementsByClassName('sub-container');
-			for( i=0; i<subContainers.length; i++ ) {
-				subContainers[i].className = 'sub-container';
+			var clearSubs = function() {
+				var subContainers = document.getElementsByClassName('sub-container');
+				for( i=0; i<subContainers.length; i++ ) {
+					subContainers[i].className = 'sub-container';
+				}
 			}
+
+			// De-activate Parents
+			var deactivateParents = function() {
+				var parents = document.getElementsByClassName('flyout');
+				for( i=0; i<parents.length; i++ ) {
+					parents[i].setAttribute('data-state', '');
+				}
+			};
+
+			clearSubs();
 
 			// Parent Links
 			if ( parentGoTo ) {
 
 				if( state === 'active' ) {
-					// De-activate Parent
-					ele.setAttribute('data-state', '');
 					attr = parentGoTo;
 
 				} else {
+					deactivateParents();
+
 					// Activate Parent
 					ele.setAttribute('data-state', 'active');
-
+					console.log('active parent', ele);
 					// Activate Sub
 					var targetID = event.path[0]['id'];
 					var subContainerID = targetID + '-sub';
@@ -229,6 +241,7 @@
 					app.goTo(name, content, subcontent);
 				}
 
+				deactivateParents();
 			}
 		},
 
