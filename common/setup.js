@@ -7,9 +7,9 @@
     globalElements:[
     	'medradLogo',
     	'smartpackLogo',
-    	'study-design',
-    	'study-design-background',
-    	'close-study'
+    	'popup',
+    	'popup-background',
+    	'close-popup'
     ]
   });
  
@@ -31,8 +31,7 @@
 	}
   
   // Initiate modules
-  // Custom Slide Nav (arrows and X)
-	app.nav = new FlyoutMenu({
+	app.flyoutMenu = new FlyoutMenu({
 		attachTo: 'stellant_app',
 		activeFor: ["introduction,offerings_navigation","medrad_slideshow","smartpack_navigation","reliability_pillar","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"],
 	  links: [
@@ -75,7 +74,7 @@
 				title: "SmartPACK+",
 				idName: "link4",
 				labelName: "lab4",
-				parentGoTo: "stellant_app.smartpack_navigation.smartpack",
+				parentGoTo: "stellant_app.smartpack_intro.smartpack",
 				isParent: true,
 				subLinks: [
 					[
@@ -153,10 +152,10 @@
 
   // Popups:
   // Attach Close Study Design
-	app.elements['close-study'].addEventListener("click", function(){
-		app.elements['study-design'].style.display = "none";
-		app.elements['study-design-background'].style.display = "none";
-		app.nav.enableSwipe();
+	app.elements['close-popup'].addEventListener("click", function(){
+		console.log('close popup MAIN');
+		app.elements['popup'].style.display = "none";
+		app.elements['popup-background'].style.display = "none";
 	});
 
 })(window);

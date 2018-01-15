@@ -1,8 +1,11 @@
 document.addEventListener('presentationInit', function() {
+	var popup = app.elements['popup'];
+	var popupBG = app.elements['popup-background'];
+
 	var slide = app.slide.smartpack_pillars = {
 		elements: {
 			slideLinks: ["#pillars .pillar", "all"],
-			popupLink: ".info-link",
+			popupLink: "#info-link",
 			popupText: "#popup-text"
 		},
 		onEnter: function(ele) {
@@ -20,6 +23,7 @@ document.addEventListener('presentationInit', function() {
 				app.addEvent('click', slide._slideClick, slideLinks[i]);
 			}
 
+			// Add popup click
 			app.addEvent('click', slide._popupLinkClick, slide.element.popupLink);
 		},
 		onExit: function(ele) {
@@ -31,10 +35,16 @@ document.addEventListener('presentationInit', function() {
 		},
 
 		_swipePrev: function() {
-			app.slideshow.previous();
+			if( popup.style.display != 'block' ) {
+				app.slideshow.previous();	
+			}
+			
 		},
 		_swipeNext: function() {
-			app.slideshow.next();
+			if( popup.style.display != 'block' ) {
+				app.slideshow.next();
+			}
+			
 		},
 		_slideClick: function(event) {
 			console.log('clicked');
@@ -47,18 +57,15 @@ document.addEventListener('presentationInit', function() {
 		},
 		_popupLinkClick: function(event) {
 			console.log('a click');
+
 			var popupText = slide.element.popupText.innerHTML;
-			var studyDesign = app.elements['study-design'];
-			var studyDesignBG = app.elements['study-design-background'];
   		
-  		// Open Study Design
-		  studyDesign.children[1].innerHTML = popupText;
-		  studyDesign.style.display = "block";
-      studyDesignBG.style.display = "block";
+  		// Open Popup
+		  popup.children[1].innerHTML = popupText;
+		  popup.style.display = "block";
+      popupBG.style.display = "block";
 
-		  // app.nav.disableSwipe();
-
-		  // Close Study Design
+		  // Close Popup
 		  // Event attached in setup.js
 		}
 	};

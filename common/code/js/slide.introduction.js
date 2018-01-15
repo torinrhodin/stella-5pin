@@ -17,7 +17,6 @@ document.addEventListener('presentationInit', function() {
 			
 			// Attach Swipe Event
 			document.addEventListener('swipeleft', this._swipeNext);
-			app.elements.menu.classList.remove('color-logo');
 
 		},
 		onExit: function(ele) {
