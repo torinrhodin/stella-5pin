@@ -1,15 +1,12 @@
 document.addEventListener('presentationInit', function() {
 	var slide = app.slide.smartpack_pillars = {
 		elements: {
-			slideLinks: ["ul .link-slide", "all"],
-			studyDesignLink: ".reveal-study-design",
+			slideLinks: ["#pillars .pillar", "all"],
+			popupLink: ".info-link",
 			popupText: "#popup-text"
 		},
 		onEnter: function(ele) {
 			console.log('enter');
-
-			// Enable color Bayer Logo
-			app.elements.menu.classList.add('color-logo');
 
 			// Attach Swipe Events
 			document.addEventListener('swiperight', this._swipePrev);
@@ -20,14 +17,13 @@ document.addEventListener('presentationInit', function() {
 			
 			// Bulk add events for Slide Links
 			for (i = 0; i < slideLinks.length; i++) {
-				app.addEvent('click', slide.slideClick, slideLinks[i]);
+				app.addEvent('click', slide._slideClick, slideLinks[i]);
 			}
+
+			app.addEvent('click', slide._popupLinkClick, slide.element.popupLink);
 		},
 		onExit: function(ele) {
 			console.log('exit');
-
-			// Disable color Bayer Logo
-			app.elements.menu.classList.remove('color-logo');
 
 			// Remove Swipe Event
 			document.removeEventListener('swiperight', this._swipePrev);
@@ -40,7 +36,7 @@ document.addEventListener('presentationInit', function() {
 		_swipeNext: function() {
 			app.slideshow.next();
 		},
-		slideClick: function(event) {
+		_slideClick: function(event) {
 			console.log('clicked');
 			var appID = app.loaded.id;
 			var slideshowName = this.getAttribute('data-slideshow');
@@ -49,7 +45,8 @@ document.addEventListener('presentationInit', function() {
 
 			app.goTo(appID, slideshowName, slideName);
 		},
-		_studyDesignClick: function(event) {
+		_popupLinkClick: function(event) {
+			console.log('a click');
 			var popupText = slide.element.popupText.innerHTML;
 			var studyDesign = app.elements['study-design'];
 			var studyDesignBG = app.elements['study-design-background'];
@@ -59,7 +56,7 @@ document.addEventListener('presentationInit', function() {
 		  studyDesign.style.display = "block";
       studyDesignBG.style.display = "block";
 
-		  app.nav.disableSwipe();
+		  // app.nav.disableSwipe();
 
 		  // Close Study Design
 		  // Event attached in setup.js
