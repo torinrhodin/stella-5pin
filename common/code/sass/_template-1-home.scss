@@ -31,7 +31,13 @@
 		sup.reg {
 			font-size: 20px;
 			position: relative;
-			top: -12px;
+			top: 5px;
+		}
+
+		.amp {
+			font-family: $font__header;
+			color: $orange;
+			margin: 0 3px 0 13px;
 		}
 
 		.title-start,
