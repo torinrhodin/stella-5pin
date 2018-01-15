@@ -843,32 +843,22 @@
         .links {
           display: flex;
           justify-content: center;
+          margin: 0 auto;
           
           div {
             display: block;
-            background-image: url('../../content/img/pdf-email-link.png');
             background-size: 100%;
             background-repeat: no-repeat;
-            width: 60px;
-            height: 44px;
-            
-            span {
-              display: block;
-              margin: 16px 0 0 20px;
-              color: $orange;
-              font-family: $font__arial;
-              font-size: 9px;
-
-            }
-            
+            width: 65px;
+            height: 44.5px;
+                  
             &.pdf {
               margin-right: 10px;
+              background-image: url('../../content/img/pdf-link.png');
             }
             
             &.email {
-              span {
-                margin-left: 23px;
-              }
+              background-image: url('../../content/img/email-link.png');
             }
           }
         }
