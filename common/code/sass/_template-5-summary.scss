@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+# Summary Slide
+--------------------------------------------------------------*/
+
+#summary_page {
+  
+  #summary-page-image {
+    width: 418px;
+    height: 280.5px;
+    margin-left: 27px;
+    margin-top: 50px;
+    margin-right: 55px;
+    background-image: url('../../content/img/summary-page.png');
+    background-size: 100%;
+  }
+  
+  ul {
+    margin-top: 94px;
+  }
+  
+  #summary-arrow-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 51px;
+    margin-top: 40px;
+    
+    #risk-free-link {
+      background-image: url('../../content/img/risk-free-link.png');
+      background-size: 100%;
+      width: 310px;
+      height: 63.5px; 
+      
+      .trial-text {
+        color: $orange;
+        font-family: $font__main;
+        font-size: 17px;
+        margin: 25px 0 0 65px;
+        
+        span {
+          font-family: $font__main-bold;
+        }
+      }
+
+    } 
+
+    #learn-more-link {
+      background-image: url('../../content/img/learn-more-link.png');
+      background-size: 100%;
+      width: 170px;
+      height: 63.5px;
+      
+      .learn-more-text {
+        color: $orange;
+        font-family: $font__main;
+        font-size: 17px;
+        margin: 25px 0 0 65px;
+      }
+    } 
+  }
+}

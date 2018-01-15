@@ -57,14 +57,14 @@ document.addEventListener('presentationInit', function() {
 		},
 		_popupLinkClick: function(event) {
 			console.log('a click');
-
+      var popupClass = this.closest('article').getAttribute('id');
 			var popupText = slide.element.popupText.innerHTML;
   		
   		// Open Popup
 		  popup.children[1].innerHTML = popupText;
 		  popup.style.display = "block";
       popupBG.style.display = "block";
-
+      popup.classList.add(popupClass);
 		  // Close Popup
 		  // Event attached in setup.js
 		}

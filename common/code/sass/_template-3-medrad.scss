@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+# Medrad styling
+--------------------------------------------------------------*/
+#medrad {
+	background-image: url('../../content/img/System_with_workstation_r1.png');  
+	background-position-y: 200px;
+	background-size: 82.1296296296296%;
+
+  .features-list {
+    justify-content: flex-end;
+    margin-right: 70px;
+    margin-top: 35px;
+  }
+  
+  .arrow-bubble {
+    margin-right: 368px;
+    margin-top: 10px;    
+    
+    div {
+      width: 98px;
+      height: 63px;
+
+      &#injections {
+        margin-right: 20px;
+        background-image: url('../../content/img/injections.png');  
+      }
+
+      &#consumables {
+        background-image: url('../../content/img/consumables.png');  
+      }
+
+    }
+    
+    
+  }
+
+}
