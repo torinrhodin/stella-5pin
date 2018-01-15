@@ -42,7 +42,6 @@
 					
 					if (self.initialized) {
 						self._connect();
-						//self._insert();
 					}
 					else {
 						self.content = (app.loaded.type === 'slideshow' ? app.slideshows[app.loaded.id] : app.collections[app.loaded.id]);
@@ -60,26 +59,12 @@
 					}
 				}
 			});
-
-			// // If slideshow/collection specific menu, remove when content unloads
-			// document.addEventListener('contentUnload', function () {
-			// 	if (self.attachTo.indexOf(app.loaded.id) > -1) {
-			// 		self._remove();
-			// 		if (app.loaded.type === 'slideshow') {
-			// 			document.removeEventListener('slideEnter', self._setCurrent);
-			// 		}
-			// 		else {
-			// 			document.removeEventListener('sectionEnter', self._setCurrent);
-			// 		}
-			// 	}
-			// });
 		},
 
 		// Create the HTML of the menu
 		_build:function () {
 			var self = this,
 			markup = '<div class="spacer"></div>';
-			// markup = '<ul id="' + app.loaded.id + 'Menu" class="menu">';
 
 			this.menuItems.forEach(function (item) {
 				item.idName = item.idName || "";
@@ -170,13 +155,10 @@
 			this.ele.removeChild(this.list);
 		},
 
-		// Update menu item classes (remove and add .selected)
+		// Update menu item classes (remove and add .active)
 		// Break up data-goto attribute and use it to call app.goTo
 		_navigate:function (event) {
 			touchy.stop(event);
-
-			// console.log('EVENT');
-			// console.log(event);
 
 			var ele = event.target;
 			var state = ele.getAttribute('data-state');
@@ -188,7 +170,6 @@
 			var clearSubs = function() {
 				var subContainers = document.getElementsByClassName('sub-container');
 				for( i=0; i<subContainers.length; i++ ) {
-					// subContainers[i].className = 'sub-container';
 					subContainers[i].classList.remove('active');
 				}
 			}
@@ -214,12 +195,11 @@
 
 					// Activate Parent
 					ele.setAttribute('data-state', 'active');
-					console.log('active parent', ele);
+					
 					// Activate Sub
-					var targetID = event.path[0]['id'];
+					var targetID = event.target['id'];
 					var subContainerID = targetID + '-sub';
 					var subContainer = document.getElementById(subContainerID);
-					// subContainer.className += ' active';
 					subContainer.classList.add('active');
 				}
 			}
@@ -250,8 +230,6 @@
 		// Add internal event listeners
 		_connect:function () {
 			var self = this;
-			console.log(this.ele);
-			console.log(this.ele.children);
 			this.ele.addEventListener('click', this._navigate);
 		},
 
