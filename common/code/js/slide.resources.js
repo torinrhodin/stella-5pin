@@ -19,15 +19,7 @@ document.addEventListener('presentationInit', function() {
   app.sendMail = function( ev ) {
 		var email = ev.target.getAttribute('data-email');
 		var emailAttachment = ev.target.getAttribute('data-attachment');
-		
-		if ( email.indexOf ( '.email' ) != -1 ) {
-			console.log ( 'PDF ' + email + ' clicked');
-
-			ag.sendMail ('',email,'',[emailAttachment]);
-		} else {
-			console.log ( email + ' clicked. will not attempt to openPDF' );
-		}
-    
+			ag.sendMail ('',email,'',[emailAttachment]);    
   }
 
 	var slide = app.slide.resources = {

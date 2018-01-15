@@ -34,10 +34,11 @@ body {
   
 	ul {
 		float: right;
+		list-style: none;
 
 		li {
-			width: 75px;
-			height: 75px;
+			width: 63.5px;
+			height: 63.5px;
       background-image: url('../../content/img/graphics_bayer-logo-rgb.png');
 			background-size: 100% 100%;
 		}
@@ -535,6 +536,7 @@ body {
     color: $orange;
     font-family: $font__main-bold;
     margin: 65px 63px 29px;
+    letter-spacing: -1px;
   }
   
   &.has-title-icon {
@@ -568,6 +570,7 @@ body {
       font-weight: normal;
       color: $orange;
       margin: 0 0 0 63px;
+      line-height: 44px;
     }
   }
   

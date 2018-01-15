@@ -57,10 +57,11 @@ body {
   overflow: hidden;
   margin: 30px 30px; }
   #mainmenu ul {
-    float: right; }
+    float: right;
+    list-style: none; }
     #mainmenu ul li {
-      width: 75px;
-      height: 75px;
+      width: 63.5px;
+      height: 63.5px;
       background-image: url("../../content/img/graphics_bayer-logo-rgb.png");
       background-size: 100% 100%; }
   #mainmenu.hide {
@@ -407,7 +408,8 @@ body {
     line-height: 1.1;
     color: #e86c1f;
     font-family: "BayerSans Bold", sans-serif;
-    margin: 65px 63px 29px; }
+    margin: 65px 63px 29px;
+    letter-spacing: -1px; }
   .slide.has-title-icon .slide-title {
     display: flex;
     justify-content: flex-start; }
@@ -425,7 +427,8 @@ body {
     font-size: 36px;
     font-weight: normal;
     color: #e86c1f;
-    margin: 0 0 0 63px; }
+    margin: 0 0 0 63px;
+    line-height: 44px; }
   .slide .slide-intro,
   .slide .features-title {
     color: #6d6e70;
@@ -485,10 +488,52 @@ body {
     width: 100%; }
 
 /*--------------------------------------------------------------
-# Study Design
+# Popups
 --------------------------------------------------------------*/
 #popup-text {
   display: none; }
+
+#popup {
+  width: 588px;
+  position: absolute;
+  background-color: #FFFFFF;
+  padding: 20px 30px 40px;
+  left: 184px;
+  z-index: 99999;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
+  #popup h3 {
+    color: #e86c1f; }
+  #popup p {
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.3; }
+
+#popup-background {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  top: 0;
+  z-index: 9999; }
+
+#close-popup {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 30px;
+  line-height: 1;
+  padding: 10px 18px 12px;
+  color: #FFFFFF;
+  background: #e86c1f;
+  border-radius: 40px;
+  margin-left: 20px; }
+
+.popup-slides .popup-slide {
+  display: none; }
+  .popup-slides .popup-slide.active {
+    display: block; }
 
 /*--------------------------------------------------------------
 # Footnote Links
@@ -498,7 +543,8 @@ sup {
   font-size: 0.4em;
   font-weight: normal;
   position: relative;
-  top: -0.2em; }
+  top: -0.2em;
+  text-transform: lowercase; }
 
 sup.reg,
 sup.ordinal,
@@ -556,27 +602,6 @@ h1 span.asterisk, h2 span.asterisk {
   #mainfooter .hide {
     display: none; }
 
-#eyleaLogo {
-  width: 158px;
-  height: 40px;
-  background: url("../../content_EN/img/Eylea_Pr_Tag_En_4C.png") no-repeat 0 0;
-  background-size: 100% auto;
-  margin: 22px 10px;
-  float: right; }
-  #eyleaLogo.show {
-    opacity: 1;
-    transition: opacity 0.4s ease-out;
-    -webkit-transition: opacity 0.4s ease-out;
-    transition-delay: 0.4s;
-    -webkit-transition-delay: 0.4s; }
-  #eyleaLogo.hide {
-    opacity: 0;
-    transition: opacity 0s ease-in;
-    -webkit-transition: opacity 0s ease-in; }
-
-sup {
-  text-transform: lowercase; }
-
 /*--------------------------------------------------------------
 # Intro
 --------------------------------------------------------------*/
@@ -600,7 +625,7 @@ sup {
     #introduction h1 sup.reg {
       font-size: 20px;
       position: relative;
-      top: 5px; }
+      top: 3px; }
     #introduction h1 .amp {
       font-family: "BayerSans Bold", sans-serif;
       color: #e86c1f;
@@ -646,17 +671,22 @@ sup {
       height: 360px; }
       #our_offerings .offering-images .image #labels,
       #our_offerings .offering-text .image #labels {
-        width: 340px;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 150px;
-        margin-left: 91px;
+        width: 413px;
+        margin-top: 174px;
+        margin-left: 83px;
         list-style-type: none; }
         #our_offerings .offering-images .image #labels .label,
         #our_offerings .offering-text .image #labels .label {
           color: #e86c1f;
           font-size: 18px;
-          font-family: "BayerSans Bold", sans-serif; }
+          font-family: "BayerSans Bold", sans-serif;
+          display: inline-block; }
+          #our_offerings .offering-images .image #labels .label.one,
+          #our_offerings .offering-text .image #labels .label.one {
+            margin-right: 57px; }
+          #our_offerings .offering-images .image #labels .label.two,
+          #our_offerings .offering-text .image #labels .label.two {
+            margin-right: 80px; }
     #our_offerings .offering-images .text,
     #our_offerings .offering-text .text {
       width: 295px;
@@ -664,7 +694,7 @@ sup {
       color: #6d6e70;
       font-family: "BayerSansCond Regular", sans-serif;
       font-size: 22px;
-      margin: 25px 85px; }
+      margin: 35px 85px; }
 
 #medrad {
   background-image: url("../../content/img/System_with_workstation_r1.png");
@@ -675,30 +705,32 @@ sup {
     margin-right: 70px;
     margin-top: 35px; }
   #medrad .arrow-bubble {
-    margin-right: 312px;
-    margin-top: 3px; }
+    margin-right: 368px;
+    margin-top: 10px; }
     #medrad .arrow-bubble div {
       width: 98px;
       height: 63px; }
       #medrad .arrow-bubble div#injections {
+        margin-right: 20px;
         background-image: url("../../content/img/injections.png"); }
       #medrad .arrow-bubble div#consumables {
         background-image: url("../../content/img/consumables.png"); }
 
 #smartpack {
-  background-image: url("../../content/img/System_with_workstation_r1.png");
-  background-size: 82.1296296296296%;
-  background-position-y: 118px; }
+  background-image: url("../../content/img/smartpack-background.png");
+  background-size: 420px 284px;
+  background-position-y: 225px;
+  background-position-x: 40px; }
   #smartpack .slide-subtitle {
     margin-bottom: 50px; }
   #smartpack .features-list {
     justify-content: flex-end;
-    margin-right: 70px;
+    margin-right: 105px;
     margin-top: 35px; }
     #smartpack .features-list .list-title {
       margin-bottom: 60px; }
   #smartpack .arrow-bubble {
-    margin-right: 150px;
+    margin-right: 250px;
     margin-top: 52px; }
     #smartpack .arrow-bubble #free-trial {
       width: 300.5px;
@@ -708,7 +740,7 @@ sup {
         color: #e86c1f;
         font-family: "BayerSansCond Regular", sans-serif;
         font-size: 17px;
-        margin: 20px 0 0 65px; }
+        margin: 24px 0 0 56px; }
         #smartpack .arrow-bubble #free-trial .trial-text span {
           font-family: "BayerSans Bold", sans-serif; }
 
@@ -777,7 +809,8 @@ sup {
 #reliability .slide-title .title-icon {
   width: 50px;
   height: 63.5px;
-  background-image: url("../../content/img/reliability-shield.png"); }
+  background-image: url("../../content/img/reliability-shield.png");
+  margin-top: -14px; }
 
 #reliability .slide-intro {
   color: #e86c1f; }
@@ -842,9 +875,12 @@ sup {
   #technological_deployments .slide-title .title-icon {
     width: 62px;
     height: 65.5px;
-    background-image: url("../../content/img/techno-box.png"); }
+    background-image: url("../../content/img/techno-box.png");
+    margin-top: -21px;
+    margin-right: 9px; }
   #technological_deployments .slide-intro {
-    color: #e86c1f; }
+    color: #e86c1f;
+    margin-top: 10px; }
   #technological_deployments #deployments-nav {
     position: relative; }
     #technological_deployments #deployments-nav .deployment-link {
@@ -854,28 +890,29 @@ sup {
         font-size: 17px;
         line-height: 18px; }
       #technological_deployments #deployments-nav .deployment-link.first {
-        top: 130px;
-        left: 290px; }
+        top: 148px;
+        left: 279px; }
         #technological_deployments #deployments-nav .deployment-link.first span {
           color: #383473; }
       #technological_deployments #deployments-nav .deployment-link.second {
-        top: 136px;
-        right: 192px; }
+        top: 147px;
+        right: 190px; }
         #technological_deployments #deployments-nav .deployment-link.second span {
           color: #006738; }
       #technological_deployments #deployments-nav .deployment-link.third {
-        top: 232px;
-        left: 287px; }
+        top: 250px;
+        left: 275px; }
         #technological_deployments #deployments-nav .deployment-link.third span {
           color: #00a79d; }
       #technological_deployments #deployments-nav .deployment-link.fourth {
-        top: 250px;
-        right: 237px; }
+        top: 267px;
+        right: 231px; }
         #technological_deployments #deployments-nav .deployment-link.fourth span {
           color: #d6df23; }
 
 .slide.scanner-connectivity .slide-title {
-  margin-left: 45px; }
+  margin-left: 45px;
+  color: #383473; }
   .slide.scanner-connectivity .slide-title span.title-icon {
     width: 82px;
     height: 63px;
@@ -1085,7 +1122,8 @@ sup {
       height: 71.5px;
       background-image: url("../../content/img/capital-access-program-icon.png");
       margin-right: 14px;
-      margin-top: -29px; }
+      margin-top: -24px;
+      margin-left: 15px; }
   #capital_access_program #capital-access-programs {
     font-family: "BayerSansCond Regular", sans-serif;
     color: #6d6e70;
@@ -1140,6 +1178,19 @@ sup {
       font-size: 17px;
       margin: 25px 0 0 65px; }
 
+#resources .resource-border {
+  width: 776px;
+  height: 12px;
+  position: absolute;
+  background-image: url("../../content/img/resource-border.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left: 100px; }
+  #resources .resource-border.one {
+    top: 309px; }
+  #resources .resource-border.two {
+    top: 488px; }
+
 #resources #resources-grid {
   width: 750px;
   margin: 0 auto;
@@ -1161,27 +1212,23 @@ sup {
       margin-top: -15px; }
     #resources #resources-grid .column .resource img {
       width: 85px;
-      height: 64px; }
+      height: 64px;
+      border: 1px solid #6d6e70; }
     #resources #resources-grid .column .resource .links {
       display: flex;
-      justify-content: center; }
+      justify-content: center;
+      margin: 0 auto; }
       #resources #resources-grid .column .resource .links div {
         display: block;
-        background-image: url("../../content/img/pdf-email-link.png");
         background-size: 100%;
         background-repeat: no-repeat;
-        width: 60px;
-        height: 44px; }
-        #resources #resources-grid .column .resource .links div span {
-          display: block;
-          margin: 16px 0 0 20px;
-          color: #e86c1f;
-          font-family: "Arial Rounded Bold", sans-serif;
-          font-size: 9px; }
+        width: 65px;
+        height: 44.5px; }
         #resources #resources-grid .column .resource .links div.pdf {
-          margin-right: 10px; }
-        #resources #resources-grid .column .resource .links div.email span {
-          margin-left: 23px; }
+          margin-right: 10px;
+          background-image: url("../../content/img/pdf-link.png"); }
+        #resources #resources-grid .column .resource .links div.email {
+          background-image: url("../../content/img/email-link.png"); }
 
 /*
 @import "template-3-secondary-nav";

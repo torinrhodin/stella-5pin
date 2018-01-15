@@ -14,20 +14,23 @@
       height: 360px;
       
       #labels {
-        width: 340px;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 150px;
-        margin-left: 91px;
+        width: 413px;
+        margin-top: 174px;
+        margin-left: 83px;
         list-style-type: none;
-        
+                
         .label {
           color: $orange;
           font-size: 18px;
           font-family: $font__main-bold;
+          display: inline-block;
 
-          &:last-of-type {
+          &.one {
+            margin-right: 57px;
+          }
 
+          &.two {
+            margin-right: 80px;
           }
         }
       }
@@ -39,7 +42,7 @@
       color: $gray;
       font-family: $font__main-regular;
       font-size: 22px;
-      margin: 25px 85px;
+      margin: 35px 85px;
     }
   }
   
@@ -57,14 +60,15 @@
   }
   
   .arrow-bubble {
-    margin-right: 312px;
-    margin-top: 3px;    
+    margin-right: 368px;
+    margin-top: 10px;    
     
     div {
       width: 98px;
       height: 63px;
 
       &#injections {
+        margin-right: 20px;
         background-image: url('../../content/img/injections.png');  
       }
 
@@ -80,9 +84,10 @@
 }
 
 #smartpack {
-	background-image: url('../../content/img/System_with_workstation_r1.png');  
-	background-size: 82.1296296296296%;
-	background-position-y: 118px;
+	background-image: url('../../content/img/smartpack-background.png');  
+	background-size: 420px 284px; 
+  background-position-y: 225px;
+  background-position-x: 40px;
 
   .slide-subtitle {
     margin-bottom: 50px;    
@@ -90,7 +95,7 @@
 
   .features-list {
     justify-content: flex-end;
-    margin-right: 70px;
+    margin-right: 105px;
     margin-top: 35px;
 
     .list-title {
@@ -100,10 +105,9 @@
   }
 
   .arrow-bubble {
+    margin-right: 250px;
+    margin-top: 52px;
 
-    margin-right: 150px;
-    margin-top: 52px;    
-    
     #free-trial {
       width: 300.5px;
       height: 63px;
@@ -113,7 +117,7 @@
         color: $orange;
         font-family: $font__main;
         font-size: 17px;
-        margin: 20px 0 0 65px;
+        margin: 24px 0 0 56px;
         
         span {
           font-family: $font__main-bold;
@@ -225,6 +229,7 @@
       width: 50px;
       height: 63.5px;
       background-image: url('../../content/img/reliability-shield.png');
+      margin-top: -14px;
     }
   }
   
@@ -326,11 +331,14 @@
       width: 62px;
       height: 65.5px;
       background-image: url('../../content/img/techno-box.png');
+      margin-top: -21px;
+      margin-right: 9px;
     }
   }
   
   .slide-intro {
     color: $orange;
+    margin-top: 10px;
   }
 
   #deployments-nav {
@@ -346,36 +354,36 @@
       }
           
       &.first {
-        top: 130px;
-        left: 290px;        
-
+        top: 148px;
+        left: 279px;
+    
         span {
           color: $purple;
         }
       }
 
       &.second {
-        top: 136px;
-        right: 192px;        
-
+        top: 147px;
+        right: 190px;
+    
         span {
           color: $darkGreen;
         }
       }
 
       &.third {
-        top: 232px;
-        left: 287px;
-
+        top: 250px;
+        left: 275px;
+    
         span {
           color: $teal;
         }
       }
 
       &.fourth {
-        top: 250px;
-        right: 237px;
-
+        top: 267px;
+        right: 231px;
+    
         span {
           color: $lemonlime;
         }
@@ -389,6 +397,7 @@
 .slide.scanner-connectivity {
   .slide-title {
     margin-left: 45px;
+    color: $purple;
     
     span.title-icon {
       width: 82px;
@@ -720,7 +729,8 @@
       height: 71.5px;
       background-image: url('../../content/img/capital-access-program-icon.png');
       margin-right: 14px;
-      margin-top: -29px;
+      margin-top: -24px;
+      margin-left: 15px;
     }
   }
   
@@ -801,6 +811,24 @@
 
 #resources {
   
+  .resource-border {
+    width: 776px;
+    height: 12px;
+    position: absolute;
+    background-image: url('../../content/img/resource-border.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 100px;
+
+    &.one {
+      top: 309px;
+    }
+    
+    &.two {
+      top: 488px;
+    }
+  }
+  
   #resources-grid {
     width: 750px;
     margin: 0 auto;
@@ -838,37 +866,28 @@
         img {
           width: 85px;
           height: 64px;
+          border: 1px solid $gray;
         }
         
         .links {
           display: flex;
           justify-content: center;
+          margin: 0 auto;
           
           div {
             display: block;
-            background-image: url('../../content/img/pdf-email-link.png');
             background-size: 100%;
             background-repeat: no-repeat;
-            width: 60px;
-            height: 44px;
-            
-            span {
-              display: block;
-              margin: 16px 0 0 20px;
-              color: $orange;
-              font-family: $font__arial;
-              font-size: 9px;
-
-            }
-            
+            width: 65px;
+            height: 44.5px;
+                  
             &.pdf {
               margin-right: 10px;
+              background-image: url('../../content/img/pdf-link.png');
             }
             
             &.email {
-              span {
-                margin-left: 23px;
-              }
+              background-image: url('../../content/img/email-link.png');
             }
           }
         }
