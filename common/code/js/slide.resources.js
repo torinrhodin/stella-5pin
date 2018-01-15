@@ -52,7 +52,7 @@ document.addEventListener('presentationInit', function() {
 			r18 : '#email-9',
 		},
 		onEnter: function(ele) {      
-			console.log('enter');
+			console.log('enter ' + app.slideshow.current);
 
 			// Attach Swipe Events
 			document.addEventListener('swiperight', this._swipePrev);
@@ -79,12 +79,16 @@ document.addEventListener('presentationInit', function() {
 		},
 		onExit: function(ele) {
 			console.log('exit');
-			
+
 			// Remove Swipe Event
 			document.removeEventListener('swiperight', this._swipePrev);
+			document.removeEventListener('swipeleft', this._swipeNext);
 		},
 		_swipePrev: function() {
-			app.collection.previous()
-		}
+			app.slideshow.previous();
+		},
+		_swipeNext: function() {
+			app.slideshow.next();
+		},
 	};  
 }); 

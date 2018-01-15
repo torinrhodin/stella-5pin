@@ -9,8 +9,8 @@ document.addEventListener('presentationInit', function() {
 			app.elements.medradLogo.className = "hide";
 			app.elements.smartpackLogo.className = "hide";
 
-			// Disable color Bayer Logo
-			app.elements.menu.classList.remove('color-logo');
+			// Enable white Bayer Logo
+			app.elements.menu.classList.add('white');
 
 			// Enable white menu burger
 			app.elements.flyoutMenu.classList.add('white');
@@ -28,7 +28,7 @@ document.addEventListener('presentationInit', function() {
 			app.elements.smartpackLogo.className = "show";
 
 			// Enable color Bayer Logo
-			app.elements.menu.classList.add('color-logo');
+			app.elements.menu.classList.remove('white');
 
 			// Disable white menu burger
 			app.elements.flyoutMenu.classList.remove('white');

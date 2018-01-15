@@ -61,12 +61,12 @@ body {
     #mainmenu ul li {
       width: 75px;
       height: 75px;
-      background: url("../../content/img/Logo_Cross_Print_Wht.svg") no-repeat 0 0;
+      background-image: url("../../content/img/graphics_bayer-logo-rgb.png");
       background-size: 100% 100%; }
   #mainmenu.hide {
     display: none; }
-  #mainmenu.color-logo li {
-    background-image: url("../../content/img/graphics_bayer-logo-rgb.png"); }
+  #mainmenu.white li {
+    background: url("../../content/img/Logo_Cross_Print_Wht.svg") no-repeat 0 0; }
 
 /*--------------------------------------------------------------
 # Nav

@@ -106,8 +106,14 @@
 			"type":"slideshow",
 			"valid":true
 		},
+		"smartpack_intro":{
+			"content":["smartpack"],
+			"name":"Smartpack pillars",
+			"type":"slideshow",
+			"valid":true
+		},
 		"smartpack_navigation":{
-			"content":["smartpack","smartpack_pillars"],
+			"content":["smartpack_pillars"],
 			"name":"Smartpack pillars",
 			"type":"slideshow",
 			"valid":true
@@ -187,7 +193,7 @@
 	  "stellant_app" : {
 			"name" : "stellant",
 			"type" : "collection",
-  		"content" : ["home","offerings_navigation","medrad_navigation","smartpack_navigation","reliability_pillar","reliability_virtualcare_slide","technology_pillar","scanner_intro","scanner_detail","automated_documentation_intro","automated_documentation_steps_slide","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"]
+  		"content" : ["home","offerings_navigation","medrad_navigation","smartpack_intro","smartpack_navigation","reliability_pillar","reliability_virtualcare_slide","technology_pillar","scanner_intro","scanner_detail","automated_documentation_intro","automated_documentation_steps_slide","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"]
 		}
 	}
 }

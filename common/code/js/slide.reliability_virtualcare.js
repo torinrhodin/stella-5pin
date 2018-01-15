@@ -3,15 +3,24 @@ document.addEventListener('presentationInit', function() {
 		elements: {
 		},
 		onEnter: function(ele) {
+			console.log('enter ' + app.slideshow.current);
+
+			// Attach Swipe Events
 			document.addEventListener('swiperight', this._swipePrev);
 			document.addEventListener('swipeleft', this._swipeNext);
-
-			console.log('enter ' + app.slideshow.current);
-			app.elements.menu.classList.add('color-logo');
-
 		},
 		onExit: function(ele) {
 			console.log('exit');
+
+			// Remove Swipe Event
+			document.removeEventListener('swiperight', this._swipePrev);
+			document.removeEventListener('swipeleft', this._swipeNext);
+		},
+		_swipePrev: function() {
+			app.slideshow.previous();
+		},
+		_swipeNext: function() {
+			app.slideshow.next();
 		},
 	};
 });
