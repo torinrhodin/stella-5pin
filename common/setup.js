@@ -156,6 +156,7 @@
 		console.log('close popup MAIN');
 		app.elements['popup'].style.display = "none";
 		app.elements['popup-background'].style.display = "none";
+		app.elements['popup'].removeAttribute("class");
 	});
 
 })(window);
