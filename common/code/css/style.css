@@ -136,8 +136,6 @@ body {
   #flyout-menu.white label .burger .bar,
   #flyout-menu.white label .burger::after {
     background: #fff; }
-  #flyout-menu nav#orig-menu {
-    display: none; }
   #flyout-menu nav {
     position: fixed;
     top: 0;
@@ -198,7 +196,10 @@ body {
         content: '';
         background: linear-gradient(to bottom, #e38d5e 36%, #c87c53 100%); }
       #flyout-menu nav label span {
-        padding: 20px 50px 20px 20px;
+        font-family: "BayerSans Bold", sans-serif;
+        font-size: 18px;
+        line-height: 1.1;
+        padding: 25px 50px 20px 25px;
         text-align: left; }
       #flyout-menu nav label:hover, #flyout-menu nav label:focus,
       #flyout-menu nav label [class="flyout"]:checked + label {
@@ -218,7 +219,7 @@ body {
         background-size: 40px 35px; }
       #flyout-menu nav .icon.link2 {
         background-image: url("../../content/img/nav-check-orange.png");
-        background-size: 40px 44px; }
+        background-size: 35px 38px; }
       #flyout-menu nav .icon.link3 {
         background-image: url("../../content/img/nav-injection-orange.png");
         background-size: 46px 44px; }
@@ -230,7 +231,7 @@ body {
         background-size: 45px 32px; }
       #flyout-menu nav .icon.link6 {
         background-image: url("../../content/img/nav-resources-orange.png");
-        background-size: 35px 46px; }
+        background-size: 35px 44px; }
     #flyout-menu nav label:hover > .icon,
     #flyout-menu nav label:focus > .icon,
     #flyout-menu nav [class="flyout"]:checked + label > .icon {
@@ -259,11 +260,6 @@ body {
       #flyout-menu nav label:focus > .icon.link6,
       #flyout-menu nav [class="flyout"]:checked + label > .icon.link6 {
         background-image: url("../../content/img/nav-resources-white.png"); }
-    #flyout-menu nav label:hover .pdf3,
-    #flyout-menu nav label:focus .pdf3,
-    #flyout-menu nav [class="flyout"]:checked + label .pdf3 {
-      clip-path: url(#av);
-      fill: #e86d1f; }
   #flyout-menu .spacer {
     width: 100%;
     height: 61px;
@@ -280,32 +276,8 @@ body {
     right: 25px; }
   #flyout-menu #lab2 .icon {
     right: 28px; }
-  #flyout-menu .check1 {
-    clip-path: url(#c); }
-  #flyout-menu .check2 {
-    clip-path: url(#a);
-    fill: none;
-    stroke-width: 3.9;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10; }
-  #flyout-menu .check3 {
-    clip-path: url(#a); }
-  #flyout-menu .pdf0 {
-    clip-path: url(#cv);
-    fill: none;
-    stroke-width: 5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10; }
-  #flyout-menu .pdf3 {
-    clip-path: url(#av);
-    fill: #F1F2F2; }
-  #flyout-menu .calc1 {
-    clip-path: url(#ac);
-    fill: none;
-    stroke-width: 2;
-    stroke-miterlimit: 10; }
+  #flyout-menu #lab6 .icon {
+    right: 23px; }
   #flyout-menu .alt-link {
     display: none;
     position: absolute;
@@ -324,7 +296,7 @@ body {
     width: 1000px;
     top: 180px; }
   #flyout-menu #link3-sub .sub {
-    top: 300px; }
+    top: 305px; }
   #flyout-menu #link4-sub .sub {
     top: 420px; }
   #flyout-menu #link4-sub .sub2 {
@@ -332,15 +304,16 @@ body {
     left: 405px; }
   #flyout-menu .chevron {
     position: absolute;
-    width: 15px;
-    height: 44px;
-    background-image: url("../../content/img/nav-chevron.png"); }
+    width: 12px;
+    height: 35px;
+    background: url("../../content/img/nav-chevron.png") no-repeat 0 0;
+    background-size: 100%; }
   #flyout-menu .sub > .chevron {
     left: -22px;
     top: 28px; }
   #flyout-menu .sub2 > .chevron {
     left: 56px;
-    top: -50px;
+    top: -45px;
     transform: rotate(90deg); }
   #flyout-menu #lab4 .sub2 {
     left: 402px; }
@@ -355,6 +328,9 @@ body {
     width: 100%;
     display: block; }
   #flyout-menu .sub-slide-cap {
+    font-family: "BayerSans Bold", sans-serif;
+    font-size: 14px;
+    text-align: center;
     color: #fff;
     padding-top: 10px; }
   #flyout-menu [class="flyout"]:checked + label .sub,
@@ -624,7 +600,11 @@ sup {
     #introduction h1 sup.reg {
       font-size: 20px;
       position: relative;
-      top: -12px; }
+      top: 5px; }
+    #introduction h1 .amp {
+      font-family: "BayerSans Bold", sans-serif;
+      color: #e86c1f;
+      margin: 0 3px 0 13px; }
     #introduction h1 .title-start,
     #introduction h1 .title-today {
       font-size: 40px;

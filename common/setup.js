@@ -44,13 +44,13 @@
 				goTo: "stellant_app.home.introduction"
 			},
 			{
-				title: "Our Offering",
+				title: "Our offering",
 				idName: "link2",
 				labelName: "lab2",
 				goTo: "stellant_app.offerings_navigation.our_offerings"
 			},
 			{
-				title: "MEDRAD<br>Stellant CT<br>Injection<br>System",
+				title: "MEDRAD<sup>&reg;</sup><br>Stellant CT<br>Injection<br>System",
 				idName: "link3",
 				labelName: "lab3",
 				parentGoTo: "stellant_app.medrad_navigation.medrad",
