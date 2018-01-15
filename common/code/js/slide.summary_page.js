@@ -1,32 +1,26 @@
 document.addEventListener('presentationInit', function() {
 	var slide = app.slide.summary_page = {
 		elements: {
-  		studyDesignLink: ".reveal-study-design",
-  		popupText: "#popup-text"
 		},
 		onEnter: function(ele) {
 			console.log('enter ' + app.slideshow.current);
 
-			var studyDesignLink = slide.element.studyDesignLink;
-      app.addEvent('click', slide._studyDesignClick, studyDesignLink);
+			// Attach Swipe Events
+			document.addEventListener('swiperight', this._swipePrev);
+			document.addEventListener('swipeleft', this._swipeNext);
 		},
 		onExit: function(ele) {
 			console.log('exit');
+
+			// Remove Swipe Event
+			document.removeEventListener('swiperight', this._swipePrev);
+			document.removeEventListener('swipeleft', this._swipeNext);
 		},
-		_studyDesignClick: function(event) {
-			var popupText = slide.element.popupText.innerHTML;
-			var studyDesign = app.elements['study-design'];
-			var studyDesignBG = app.elements['study-design-background'];
-  		
-  		// Open Study Design
-		  studyDesign.children[1].innerHTML = popupText;
-		  studyDesign.style.display = "block";
-      studyDesignBG.style.display = "block";
-
-		  app.nav.disableSwipe();
-
-		  // Close Study Design
-		  // Event attached in setup.js
-		}
+		_swipePrev: function() {
+			app.slideshow.previous();
+		},
+		_swipeNext: function() {
+			app.slideshow.next();
+		},
 	};
 });
