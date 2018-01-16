@@ -1,7 +1,4 @@
 document.addEventListener('presentationInit', function() {
-	var popup = app.elements['popup'];
-	var popupBG = app.elements['popup-background'];
-
 	var slide = app.slide.medrad = {
 		elements: {
 			popupLink1: "#injections",
@@ -17,7 +14,8 @@ document.addEventListener('presentationInit', function() {
 			document.addEventListener('swipeleft', this._swipeNext);
 
 			// Add popup click
-			app.addEvent('click', slide._popupLinkClick, slide.element.popupLink1);
+			app.addEvent('click', slide._launchPopup1, slide.element.popupLink1);
+			app.addEvent('click', slide._launchPopup2, slide.element.popupLink2);
 		},
 		onExit: function(ele) {
 			console.log('exit');
@@ -39,25 +37,13 @@ document.addEventListener('presentationInit', function() {
 			}
 			
 		},
-		_popupNavigate: function(event) {
-			// var element = document.getElementById(event.target.id);
-			console.log('nav', event);
-			// console.log(element.getAttribute('data-direction'));
-		},
-		_popupLinkClick: function(event) {
-			console.log('a click');
-
+		_launchPopup1: function(event) {
 			var popupText = slide.element.popupText1.innerHTML;
-  		
-  		// Open Study Design
-			var lastChild = popup.children.length - 1;
-			console.log(popup.children[lastChild]);
-		  popup.children[lastChild].innerHTML = popupText;
-		  popup.style.display = "block";
-      popupBG.style.display = "block";
-
-		  // Close Study Design
-		  // Event attached in setup.js
-		}
+      app.popup._init(popupText, true);
+		},
+		_launchPopup2: function(event) {
+			var popupText = slide.element.popupText2.innerHTML;
+      app.popup._init(popupText, true);
+		},
 	};
 });

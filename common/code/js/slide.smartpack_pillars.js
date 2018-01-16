@@ -60,14 +60,7 @@ document.addEventListener('presentationInit', function() {
       var popupClass = this.closest('article').getAttribute('id');
 			var popupText = slide.element.popupText.innerHTML;
   		
-  		// Open Popup
-  		var lastChild = popup.children.length - 1;
-		  popup.children[lastChild].innerHTML = popupText;
-		  popup.style.display = "block";
-      popupBG.style.display = "block";
-      popup.classList.add(popupClass);
-		  // Close Popup
-		  // Event attached in setup.js
+  		app.popup._init(popupText);
 		}
 	};
 }); 
