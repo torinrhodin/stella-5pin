@@ -2,9 +2,9 @@ document.addEventListener('presentationInit', function() {
 	var slide = app.slide.medrad = {
 		elements: {
 			popupLink1: "#injections",
-			popupText1: ".popup-injections",
+			popupText1: "#popup-text .popup-injections",
 			popupLink2: "#consumables",
-			popupText2: ".popup-consumables"
+			popupText2: "#popup-text .popup-consumables"
 		},
 		onEnter: function(ele) {
 			console.log('enter');
@@ -24,18 +24,15 @@ document.addEventListener('presentationInit', function() {
 			document.removeEventListener('swiperight', this._swipePrev);
 			document.removeEventListener('swipeleft', this._swipeNext);
 		},
-
 		_swipePrev: function() {
-			if( popup.style.display != 'block' ) {
+			if( app.popup.initialized === false ) {
 				app.slideshow.previous();	
 			}
-			
 		},
 		_swipeNext: function() {
-			if( popup.style.display != 'block' ) {
+			if( app.popup.initialized === false ) {
 				app.slideshow.next();
-			}
-			
+			}			
 		},
 		_launchPopup1: function(event) {
 			var popupText = slide.element.popupText1.innerHTML;

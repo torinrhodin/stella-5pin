@@ -152,15 +152,6 @@
   // Initialize presentation
   app.init();
 
- //  // Attach Close Study Design
-	// app.elements['close-popup'].addEventListener('click', function(){
-	// 	console.log('close popup MAIN');
-
-	// 	app.elements['popup'].style.display = "none";
-	// 	app.elements['popup-background'].style.display = "none";
-	// 	app.elements['popup'].removeAttribute("class");
-	// });
-
 })(window);
 
 // Opening PDFs:
