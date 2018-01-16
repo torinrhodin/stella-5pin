@@ -1,0 +1,90 @@
+/*--------------------------------------------------------------
+# Resources Slide
+--------------------------------------------------------------*/
+
+#resources {
+  
+  .resource-border {
+    width: 776px;
+    height: 12px;
+    position: absolute;
+    background-image: url('../../content/img/resource-border.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 100px;
+
+    &.one {
+      top: 309px;
+    }
+    
+    &.two {
+      top: 488px;
+    }
+  }
+  
+  #resources-grid {
+    width: 750px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    
+    .column {
+      
+      &.first,
+      &.third {
+        width: 281px;
+      }
+            
+      .title,
+      .thumb {
+        margin-bottom: 10px;
+      
+      }
+      
+      .resource {
+        text-align: center;
+        color: $gray;
+        font-family: $font__main;
+        font-size: 15px;
+        min-width: 150px;
+        margin-bottom: 30px;
+
+        &.stellant {
+          
+          .title {
+            margin-top: -15px;
+          }
+        }
+
+        img {
+          width: 85px;
+          height: 64px;
+          border: 1px solid $gray;
+        }
+        
+        .links {
+          display: flex;
+          justify-content: center;
+          margin: 0 auto;
+          
+          div {
+            display: block;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 65px;
+            height: 44.5px;
+                  
+            &.pdf {
+              margin-right: 10px;
+              background-image: url('../../content/img/pdf-link.png');
+            }
+            
+            &.email {
+              background-image: url('../../content/img/email-link.png');
+            }
+          }
+        }
+      }
+    }
+  }
+}

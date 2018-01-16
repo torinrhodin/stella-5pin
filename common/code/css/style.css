@@ -508,8 +508,20 @@ body {
   #popup #popup-prev,
   #popup #popup-next {
     position: absolute; }
-  #popup h3 {
+  #popup h2,
+  #popup h3,
+  #popup h4 {
     color: #e86c1f; }
+  #popup h3,
+  #popup h4 {
+    font-family: "BayerSansCond Regular", sans-serif; }
+  #popup h2 {
+    font-family: "BayerSans Bold", sans-serif;
+    font-size: 47.5px; }
+  #popup h3 {
+    font-size: 36px; }
+  #popup h4 {
+    font-size: 24px; }
   #popup p {
     margin-top: 8px;
     font-size: 13px;
@@ -701,6 +713,9 @@ h1 span.asterisk, h2 span.asterisk {
       font-size: 22px;
       margin: 35px 85px; }
 
+/*--------------------------------------------------------------
+# Medrad styling
+--------------------------------------------------------------*/
 #medrad {
   background-image: url("../../content/img/System_with_workstation_r1.png");
   background-position-y: 200px;
@@ -721,6 +736,9 @@ h1 span.asterisk, h2 span.asterisk {
       #medrad .arrow-bubble div#consumables {
         background-image: url("../../content/img/consumables.png"); }
 
+/*--------------------------------------------------------------
+# SmartPACK Slides
+--------------------------------------------------------------*/
 #smartpack {
   background-image: url("../../content/img/smartpack-background.png");
   background-size: 420px 284px;
@@ -1143,6 +1161,9 @@ h1 span.asterisk, h2 span.asterisk {
     #capital_access_program #capital-access-programs b {
       font-family: "BayerSans Bold", sans-serif; }
 
+/*--------------------------------------------------------------
+# Summary Slide
+--------------------------------------------------------------*/
 #summary_page #summary-page-image {
   width: 418px;
   height: 280.5px;
@@ -1183,6 +1204,9 @@ h1 span.asterisk, h2 span.asterisk {
       font-size: 17px;
       margin: 25px 0 0 65px; }
 
+/*--------------------------------------------------------------
+# Resources Slide
+--------------------------------------------------------------*/
 #resources .resource-border {
   width: 776px;
   height: 12px;
@@ -1234,15 +1258,5 @@ h1 span.asterisk, h2 span.asterisk {
           background-image: url("../../content/img/pdf-link.png"); }
         #resources #resources-grid .column .resource .links div.email {
           background-image: url("../../content/img/email-link.png"); }
-
-/*
-@import "template-3-secondary-nav";
-@import "template-4-efficacy-chart";
-@import "template-5-dosing-chart";
-@import "template-6-real-world-detail";
-@import "template-7-tolerability-table";
-@import "template-8-MOA";
-@import "template-9-info";
-*/
 
 /*# sourceMappingURL=style.css.map */

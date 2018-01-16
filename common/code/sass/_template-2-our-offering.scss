@@ -1,0 +1,49 @@
+/*--------------------------------------------------------------
+# Our Offerings
+--------------------------------------------------------------*/
+
+#our_offerings {
+	background-image: url('../../content/img/SubLanding_r2.png');
+
+  .offering-images,
+  .offering-text {
+    display: flex;
+    justify-content: space-between;
+    .image {
+      width: 50%;
+      height: 360px;
+      
+      #labels {
+        width: 413px;
+        margin-top: 174px;
+        margin-left: 83px;
+        list-style-type: none;
+                
+        .label {
+          color: $orange;
+          font-size: 18px;
+          font-family: $font__main-bold;
+          display: inline-block;
+
+          &.one {
+            margin-right: 57px;
+          }
+
+          &.two {
+            margin-right: 80px;
+          }
+        }
+      }
+    }
+    
+    .text {
+      width: 295px;
+      text-align: center;
+      color: $gray;
+      font-family: $font__main-regular;
+      font-size: 22px;
+      margin: 35px 85px;
+    }
+  }
+  
+}
