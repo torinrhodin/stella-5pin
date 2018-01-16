@@ -61,7 +61,8 @@ document.addEventListener('presentationInit', function() {
 			var popupText = slide.element.popupText.innerHTML;
   		
   		// Open Popup
-		  popup.children[1].innerHTML = popupText;
+  		var lastChild = popup.children.length - 1;
+		  popup.children[lastChild].innerHTML = popupText;
 		  popup.style.display = "block";
       popupBG.style.display = "block";
 

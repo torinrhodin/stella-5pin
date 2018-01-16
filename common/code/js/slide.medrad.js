@@ -7,8 +7,7 @@ document.addEventListener('presentationInit', function() {
 			popupLink1: "#injections",
 			popupText1: ".popup-injections",
 			popupLink2: "#consumables",
-			popupText2: ".popup-consumables",
-			popupNavLinks: [".popup-nav li", "all"]
+			popupText2: ".popup-consumables"
 		},
 		onEnter: function(ele) {
 			console.log('enter');
@@ -51,18 +50,11 @@ document.addEventListener('presentationInit', function() {
 			var popupText = slide.element.popupText1.innerHTML;
   		
   		// Open Study Design
-		  popup.children[1].innerHTML = popupText;
+			var lastChild = popup.children.length - 1;
+			console.log(popup.children[lastChild]);
+		  popup.children[lastChild].innerHTML = popupText;
 		  popup.style.display = "block";
       popupBG.style.display = "block";
-
-			// Define array of Popup Nav Links
-			var popupNavLinks = slide.element.popupNavLinks;
-			console.log(popupNavLinks);
-			// Bulk add events for Popup Nav Links
-			for (i = 0; i < popupNavLinks.length; i++) {
-				// app.addEvent('click', slide._popupNavigate, popupNavLinks[i]);
-				document.addEventListener('click', slide._popupNavigate, popupNavLinks[i]);
-			}
 
 		  // Close Study Design
 		  // Event attached in setup.js

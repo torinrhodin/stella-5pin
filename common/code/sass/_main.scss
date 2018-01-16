@@ -584,8 +584,7 @@ body {
     margin-top: 25px;
   }
 
-// Features Lists 
-
+  // Features Lists 
   .features-list {
     display: flex;
 
@@ -668,15 +667,22 @@ body {
 }
 
 #popup {
-  width: 588px;
+  width: 85%;
+  height: 620px;
   position: absolute;
   background-color: #FFFFFF;
+  margin: 0 5%;
   padding: 20px 30px 40px;
-  left: 184px;
+  left: 0;
   z-index: 99999;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
+
+  #popup-prev,
+  #popup-next {
+    position: absolute;
+  }
   
   h3 {
     color: $orange;

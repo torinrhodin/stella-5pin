@@ -494,15 +494,20 @@ body {
   display: none; }
 
 #popup {
-  width: 588px;
+  width: 85%;
+  height: 620px;
   position: absolute;
   background-color: #FFFFFF;
+  margin: 0 5%;
   padding: 20px 30px 40px;
-  left: 184px;
+  left: 0;
   z-index: 99999;
   top: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%); }
+  #popup #popup-prev,
+  #popup #popup-next {
+    position: absolute; }
   #popup h3 {
     color: #e86c1f; }
   #popup p {
