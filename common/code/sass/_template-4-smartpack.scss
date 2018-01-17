@@ -281,49 +281,40 @@
     
     .deployment-link {
       position: absolute;
-      
-      span {
-        font-family: $font__main-bold;
-        font-size: 17px;
-        line-height: 18px;
+      font-family: $font__main-bold;
+      font-size: 17px;
+      line-height: 12px;
+      padding: 10px 25px 10px 60px;
+
+      sup {
+        font-size: 0.9em;
+        top: 6px;
       }
           
       &.first {
-        top: 148px;
-        left: 279px;
-    
-        span {
-          color: $purple;
-        }
+        color: $purple;
+        top: 138px;
+        left: 219px;
       }
 
       &.second {
-        top: 147px;
-        right: 190px;
-    
-        span {
-          color: $darkGreen;
-        }
+        color: $darkGreen;
+        top: 137px;
+        right: 165px;
+        line-height: 18px;
       }
 
       &.third {
-        top: 250px;
-        left: 275px;
-    
-        span {
-          color: $teal;
-        }
+        color: $teal;
+        top: 240px;
+        left: 215px;
       }
 
       &.fourth {
-        top: 267px;
-        right: 231px;
-    
-        span {
-          color: $lemonlime;
-        }
+        color: $lemonlime;
+        top: 257px;
+        right: 206px;
       }
-
     }
   }
 

@@ -1,7 +1,7 @@
 document.addEventListener('presentationInit', function() {
 	var slide = app.slide.technological_deployments = {
 		elements: {
-			slideLinks: ["#deployments-nav .deployment-link .text", "all"],
+			slideLinks: ["#deployments-nav .deployment-link", "all"],
 		},
 		onEnter: function(ele) {
 			console.log('enter ' + app.slideshow.current);
