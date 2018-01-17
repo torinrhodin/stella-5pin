@@ -50,13 +50,41 @@
   
   #injections-slide-one {
     background-image: url('../../content/img/injections-slide-one.png');  
-    width: 684.5px;
-    height: 375px;
-    background-size: 95%;
+    width: 680.5px;
+    height: 315px;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 40px;
     position: absolute;
-    margin-left: 36px;
+    margin-left: 16px;
+
+    p {
+      font-size: 25.5px;
+      font-family: $font__main-cond-bold;
+      color: $orange;
+      line-height: 30px;
+      position: absolute;
+      right: 60px;
+      bottom: 50px
+    }
+  }
+  
+  #injection-measures {
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 431px;
+    font-size: 16px;
+    line-height: 20px;
+    color: $gray;
+    font-family: $font__main;
+    b {
+      font-family: $font__main-cond-bold;
+      color: $orange;
+      font-size: 22px;
+    }
   }
   
   #injections-slide-two {
