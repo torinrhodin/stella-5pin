@@ -49,23 +49,24 @@
 				title: "MEDRAD<sup>&reg;</sup><br>Stellant CT<br>Injection<br>System",
 				idName: "link3",
 				labelName: "lab3",
-				parentGoTo: "stellant_app.medrad_navigation.medrad",
-				isParent: true,
-				subLinks: [
-					[
-						{
-							title: "Contrast media",
-							thumb: "content/img/contrast.jpg",
-							goTo: "stellant_app.medrad_navigation.medrad"
-						},
-						{
-							title: "Consumables",
-							thumb: "content/img/consumables.jpg",
-							goTo: "stellant_app.medrad_navigation.medrad"
-						}
-					],
-					[]
-				]
+				goTo: "stellant_app.medrad_navigation.medrad"
+				// parentGoTo: "stellant_app.medrad_navigation.medrad",
+				// isParent: true,
+				// subLinks: [
+				// 	[
+				// 		{
+				// 			title: "Contrast media",
+				// 			thumb: "content/img/contrast.jpg",
+				// 			goTo: "stellant_app.medrad_navigation.medrad"
+				// 		},
+				// 		{
+				// 			title: "Consumables",
+				// 			thumb: "content/img/consumables.jpg",
+				// 			goTo: "stellant_app.medrad_navigation.medrad"
+				// 		}
+				// 	],
+				// 	[]
+				// ]
 			},
 			{
 				title: "SmartPACK+",
