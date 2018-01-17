@@ -30,7 +30,7 @@
   // Initiate modules
 	app.flyoutMenu = new FlyoutMenu({
 		attachTo: 'stellant_app',
-		activeFor: ["introduction,offerings_navigation","medrad_slideshow","smartpack_navigation","reliability_pillar","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide"],
+		activeFor: ["introduction,offerings_navigation","medrad_slideshow","smartpack_navigation","reliability_pillar","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide","calculator_slide"],
 	  links: [
 	  	{
 	  		title: "Home",
@@ -127,6 +127,12 @@
 				labelName: "lab6",
 				goTo: "stellant_app.resources_slide.resources"
 			},
+			{
+				title: "Calculator",
+				idName: "link7",
+				labelName: "lab7",
+				goTo: "stellant_app.calculator_slide.calculator"
+			}
 	  ]
 	});
 

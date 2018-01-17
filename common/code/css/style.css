@@ -11,7 +11,7 @@
 # Fonts
 --------------------------------------------------------------*/
 @font-face {
-  font-family: 'BayerSansCond Regular';
+  font-family: 'BayerSans Regular';
   src: url("../../content/fonts/BayerSans-Regular.otf") format("opentype");
   font-style: normal; }
 
@@ -70,7 +70,195 @@ body {
     background: url("../../content/img/Logo_Cross_Print_Wht.svg") no-repeat 0 0; }
 
 /*--------------------------------------------------------------
-# Nav
+# Slide
+--------------------------------------------------------------*/
+#presentation section > .slide,
+#presentation section > .slide > .slide {
+  padding: 0; }
+
+.slide {
+  text-align: left;
+  background: no-repeat 0 0 #fff;
+  background-size: 100% 100%;
+  overflow: hidden; }
+  .slide h1 {
+    font-family: "BayerSans Regular", sans-serif;
+    color: #e86c1f; }
+  .slide .footer {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: 40px; }
+    .slide .footer .left-logo {
+      background: url("../../content/img/MEDRAD_Stellant_HorizDesc_Global_WHITE.svg") no-repeat;
+      width: 230px;
+      height: 40px;
+      margin-left: 50px; }
+    .slide .footer .right-logo {
+      background: url("../../content/img/16518_b_rad_smartpack_logo_bl02_WHITE.svg") no-repeat;
+      width: 175px;
+      height: 54px;
+      margin-right: 50px; }
+  .slide #main_navigationContainer h2 {
+    margin-top: 0px; }
+  .slide img {
+    height: auto; }
+  .slide .slide-title {
+    width: 950px;
+    font-size: 50px;
+    line-height: 1.1;
+    color: #e86c1f;
+    font-family: "BayerSans Bold", sans-serif;
+    margin: 65px 63px 29px;
+    letter-spacing: -1px; }
+  .slide.has-title-icon .slide-title {
+    display: flex;
+    justify-content: flex-start; }
+    .slide.has-title-icon .slide-title span {
+      display: block; }
+      .slide.has-title-icon .slide-title span.title-icon {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-right: 23.5px; }
+  .slide.has-subtitle .slide-title {
+    margin-bottom: 0px;
+    font-size: 46.5px; }
+  .slide.has-subtitle .slide-subtitle {
+    font-family: "BayerSans Regular", sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: #e86c1f;
+    margin: 0 0 0 63px;
+    line-height: 44px; }
+  .slide .slide-intro,
+  .slide .features-title {
+    color: #6d6e70;
+    font-family: "BayerSans Regular", sans-serif;
+    font-size: 24px;
+    line-height: 29.5px;
+    margin-left: 63px;
+    margin-top: 25px; }
+  .slide .features-list {
+    display: flex; }
+    .slide .features-list ul li {
+      display: flex;
+      justify-content: flex-start;
+      color: #e86c1f;
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-family: "BayerSans Bold", sans-serif;
+      line-height: 29px; }
+      .slide .features-list ul li.list-title {
+        color: #6d6e70;
+        display: list-item;
+        list-style: none; }
+      .slide .features-list ul li span {
+        padding-top: 5px;
+        padding-left: 8px;
+        font-size: 24px; }
+      .slide .features-list ul li .circle {
+        display: block;
+        -webkit-border-radius: 999px;
+        -moz-border-radius: 999px;
+        border-radius: 999px;
+        width: 30px;
+        height: 31px;
+        padding: 0 0 0 1px;
+        border: 3px solid #8cc63e;
+        color: #8cc63e;
+        text-align: center;
+        font: 25px Arial, sans-serif; }
+      .slide .features-list ul li .plus-sign {
+        line-height: 31px; }
+  .slide .arrow-bubble {
+    display: flex;
+    justify-content: flex-end; }
+    .slide .arrow-bubble div {
+      background-size: 100%; }
+  .slide .pre-footer {
+    position: absolute;
+    bottom: 105px;
+    background-size: 100%; }
+  .slide .key {
+    position: absolute;
+    bottom: 26px;
+    text-align: center;
+    color: #6d6e70;
+    font-family: "BayerSans Regular", sans-serif;
+    font-size: 13px;
+    width: 100%; }
+
+/*--------------------------------------------------------------
+# Footnote Links
+--------------------------------------------------------------*/
+sup {
+  vertical-align: super;
+  font-size: 0.4em;
+  font-weight: normal;
+  position: relative;
+  top: -0.2em;
+  text-transform: lowercase; }
+
+sup.reg,
+sup.ordinal,
+sup.cross {
+  font-size: 0.7em;
+  top: 0.1em;
+  left: 1px; }
+
+span.asterisk {
+  font-size: 1.4em;
+  position: relative;
+  top: 0.2em;
+  left: 1px; }
+
+h1 sup, h2 sup {
+  font-weight: bold; }
+
+h1 sup.reg, h2 sup.reg {
+  font-size: 0.4em;
+  top: -0.2em;
+  left: 2px; }
+
+h1 sup.ordinal, h2 sup.ordinal {
+  font-size: 0.5em;
+  top: -0.1em;
+  left: 2px;
+  text-transform: lowercase; }
+
+h1 span.asterisk, h2 span.asterisk {
+  font-size: 0.8em;
+  position: relative;
+  top: -0.2em;
+  left: 2px; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#mainfooter {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 26px; }
+  #mainfooter #medradLogo {
+    background: url("../../content/img/MEDRAD_Stellant_HorizDesc_Global_Orange.svg") no-repeat;
+    width: 230px;
+    height: 40px;
+    margin-left: 50px; }
+  #mainfooter #smartpackLogo {
+    background: url("../../content/img/16518_b_rad_smartpack_logo_bl02_RGB.svg") no-repeat;
+    width: 175px;
+    height: 54px;
+    margin-right: 50px; }
+  #mainfooter .hide {
+    display: none; }
+
+/*--------------------------------------------------------------
+# Nav - Flyout Menu
 --------------------------------------------------------------*/
 .navigation-menu,
 .navigation-menu li.parent-menu ul {
@@ -233,6 +421,9 @@ body {
       #flyout-menu nav .icon.link6 {
         background-image: url("../../content/img/nav-resources-orange.png");
         background-size: 35px 44px; }
+      #flyout-menu nav .icon.link7 {
+        background-image: url("../../content/img/nav-calculator-orange.png");
+        background-size: 35px 44px; }
     #flyout-menu nav label:hover > .icon,
     #flyout-menu nav label:focus > .icon,
     #flyout-menu nav [class="flyout"]:checked + label > .icon {
@@ -261,6 +452,10 @@ body {
       #flyout-menu nav label:focus > .icon.link6,
       #flyout-menu nav [class="flyout"]:checked + label > .icon.link6 {
         background-image: url("../../content/img/nav-resources-white.png"); }
+      #flyout-menu nav label:hover > .icon.link7,
+      #flyout-menu nav label:focus > .icon.link7,
+      #flyout-menu nav [class="flyout"]:checked + label > .icon.link7 {
+        background-image: url("../../content/img/nav-calculator-white.png"); }
   #flyout-menu .spacer {
     width: 100%;
     height: 61px;
@@ -367,127 +562,6 @@ body {
     transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
 
 /*--------------------------------------------------------------
-# Slide
---------------------------------------------------------------*/
-#presentation section > .slide,
-#presentation section > .slide > .slide {
-  padding: 0; }
-
-.slide {
-  text-align: left;
-  background: no-repeat 0 0 #fff;
-  background-size: 100% 100%;
-  overflow: hidden; }
-  .slide h1 {
-    font-family: "BayerSansCond Regular", sans-serif;
-    color: #e86c1f; }
-  .slide .footer {
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    bottom: 40px; }
-    .slide .footer .left-logo {
-      background: url("../../content/img/MEDRAD_Stellant_HorizDesc_Global_WHITE.svg") no-repeat;
-      width: 230px;
-      height: 40px;
-      margin-left: 50px; }
-    .slide .footer .right-logo {
-      background: url("../../content/img/16518_b_rad_smartpack_logo_bl02_WHITE.svg") no-repeat;
-      width: 175px;
-      height: 54px;
-      margin-right: 50px; }
-  .slide #main_navigationContainer h2 {
-    margin-top: 0px; }
-  .slide img {
-    height: auto; }
-  .slide .slide-title {
-    width: 950px;
-    font-size: 50px;
-    line-height: 1.1;
-    color: #e86c1f;
-    font-family: "BayerSans Bold", sans-serif;
-    margin: 65px 63px 29px;
-    letter-spacing: -1px; }
-  .slide.has-title-icon .slide-title {
-    display: flex;
-    justify-content: flex-start; }
-    .slide.has-title-icon .slide-title span {
-      display: block; }
-      .slide.has-title-icon .slide-title span.title-icon {
-        background-size: 100%;
-        background-repeat: no-repeat;
-        margin-right: 23.5px; }
-  .slide.has-subtitle .slide-title {
-    margin-bottom: 0px;
-    font-size: 46.5px; }
-  .slide.has-subtitle .slide-subtitle {
-    font-family: "BayerSansCond Regular", sans-serif;
-    font-size: 36px;
-    font-weight: normal;
-    color: #e86c1f;
-    margin: 0 0 0 63px;
-    line-height: 44px; }
-  .slide .slide-intro,
-  .slide .features-title {
-    color: #6d6e70;
-    font-family: "BayerSansCond Regular", sans-serif;
-    font-size: 24px;
-    line-height: 29.5px;
-    margin-left: 63px;
-    margin-top: 25px; }
-  .slide .features-list {
-    display: flex; }
-    .slide .features-list ul li {
-      display: flex;
-      justify-content: flex-start;
-      color: #e86c1f;
-      margin-bottom: 10px;
-      font-size: 24px;
-      font-family: "BayerSans Bold", sans-serif;
-      line-height: 29px; }
-      .slide .features-list ul li.list-title {
-        color: #6d6e70;
-        display: list-item;
-        list-style: none; }
-      .slide .features-list ul li span {
-        padding-top: 5px;
-        padding-left: 8px;
-        font-size: 24px; }
-      .slide .features-list ul li .circle {
-        display: block;
-        -webkit-border-radius: 999px;
-        -moz-border-radius: 999px;
-        border-radius: 999px;
-        width: 30px;
-        height: 31px;
-        padding: 0 0 0 1px;
-        border: 3px solid #8cc63e;
-        color: #8cc63e;
-        text-align: center;
-        font: 25px Arial, sans-serif; }
-      .slide .features-list ul li .plus-sign {
-        line-height: 31px; }
-  .slide .arrow-bubble {
-    display: flex;
-    justify-content: flex-end; }
-    .slide .arrow-bubble div {
-      background-size: 100%; }
-  .slide .pre-footer {
-    position: absolute;
-    bottom: 105px;
-    background-size: 100%; }
-  .slide .key {
-    position: absolute;
-    bottom: 26px;
-    text-align: center;
-    color: #6d6e70;
-    font-family: "BayerSansCond Regular", sans-serif;
-    font-size: 13px;
-    width: 100%; }
-
-/*--------------------------------------------------------------
 # Popups
 --------------------------------------------------------------*/
 #popup-text {
@@ -507,25 +581,53 @@ body {
   -webkit-transform: translateY(-50%); }
   #popup #popup-prev,
   #popup #popup-next {
-    position: absolute; }
-  #popup h2,
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 95px;
+    margin-top: -50px;
+    background: url("../../content/img/popup-arrow.png") no-repeat 0 0;
+    background-size: 100%;
+    z-index: 1; }
+    #popup #popup-prev.inactive-nav,
+    #popup #popup-next.inactive-nav {
+      display: none; }
+  #popup #popup-next {
+    right: 30px;
+    transform: rotate(180deg); }
   #popup h3,
-  #popup h4 {
+  #popup h4,
+  #popup h5 {
     color: #e86c1f; }
-  #popup h3,
-  #popup h4 {
-    font-family: "BayerSansCond Regular", sans-serif; }
-  #popup h2 {
+  #popup h4,
+  #popup h5 {
+    font-family: "BayerSans Regular", sans-serif; }
+  #popup h3 {
     font-family: "BayerSans Bold", sans-serif;
     font-size: 47.5px; }
-  #popup h3 {
-    font-size: 36px; }
   #popup h4 {
-    font-size: 24px; }
+    font-size: 36px;
+    line-height: 37.5px;
+    margin-bottom: 5px; }
+  #popup h5 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px; }
+    #popup h5.gray {
+      color: #6d6e70; }
   #popup p {
+    font-family: "BayerSans Regular", sans-serif;
     margin-top: 8px;
-    font-size: 13px;
-    line-height: 1.3; }
+    font-size: 12.5px;
+    line-height: 1.3;
+    letter-spacing: -.5px; }
+    #popup p b {
+      font-family: "BayerSans Bold", sans-serif; }
+    #popup p a {
+      color: #e86c1f;
+      font-family: "BayerSans Bold", sans-serif; }
+    #popup p sup.reg {
+      top: .2em; }
 
 #popup-background {
   height: 100%;
@@ -539,85 +641,24 @@ body {
   position: absolute;
   top: -20px;
   right: -20px;
-  font-size: 30px;
+  font-size: 36px;
+  font-weight: normal;
   line-height: 1;
-  padding: 10px 18px 12px;
+  padding: 0px 11px 6px 13px;
   color: #FFFFFF;
   background: #e86c1f;
   border-radius: 40px;
   margin-left: 20px; }
 
 .popup-slides .popup-slide {
-  display: none; }
-  .popup-slides .popup-slide.active {
+  display: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform-origin 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), -webkit-transform 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), visibility 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: -ms-transform-origin 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), transform 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), visibility 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: transform-origin 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), transform 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), visibility 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+  .popup-slides .popup-slide.active-slide {
     display: block; }
-
-/*--------------------------------------------------------------
-# Footnote Links
---------------------------------------------------------------*/
-sup {
-  vertical-align: super;
-  font-size: 0.4em;
-  font-weight: normal;
-  position: relative;
-  top: -0.2em;
-  text-transform: lowercase; }
-
-sup.reg,
-sup.ordinal,
-sup.cross {
-  font-size: 0.7em;
-  top: 0.1em;
-  left: 1px; }
-
-span.asterisk {
-  font-size: 1.4em;
-  position: relative;
-  top: 0.2em;
-  left: 1px; }
-
-h1 sup, h2 sup {
-  font-weight: bold; }
-
-h1 sup.reg, h2 sup.reg {
-  font-size: 0.4em;
-  top: -0.2em;
-  left: 2px; }
-
-h1 sup.ordinal, h2 sup.ordinal {
-  font-size: 0.5em;
-  top: -0.1em;
-  left: 2px;
-  text-transform: lowercase; }
-
-h1 span.asterisk, h2 span.asterisk {
-  font-size: 0.8em;
-  position: relative;
-  top: -0.2em;
-  left: 2px; }
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#mainfooter {
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: absolute;
-  bottom: 26px; }
-  #mainfooter #medradLogo {
-    background: url("../../content/img/MEDRAD_Stellant_HorizDesc_Global_Orange.svg") no-repeat;
-    width: 230px;
-    height: 40px;
-    margin-left: 50px; }
-  #mainfooter #smartpackLogo {
-    background: url("../../content/img/16518_b_rad_smartpack_logo_bl02_RGB.svg") no-repeat;
-    width: 175px;
-    height: 54px;
-    margin-right: 50px; }
-  #mainfooter .hide {
-    display: none; }
 
 /*--------------------------------------------------------------
 # Intro
@@ -709,7 +750,7 @@ h1 span.asterisk, h2 span.asterisk {
       width: 295px;
       text-align: center;
       color: #6d6e70;
-      font-family: "BayerSansCond Regular", sans-serif;
+      font-family: "BayerSans Regular", sans-serif;
       font-size: 22px;
       margin: 35px 85px; }
 
@@ -736,6 +777,70 @@ h1 span.asterisk, h2 span.asterisk {
       #medrad .arrow-bubble div#consumables {
         background-image: url("../../content/img/consumables.png"); }
 
+.popup-slide {
+  position: relative;
+  height: 620px; }
+  .popup-slide .header {
+    margin-left: 36px;
+    margin-top: 50px; }
+  .popup-slide #injections-slide-one {
+    background-image: url("../../content/img/injections-slide-one.png");
+    width: 684.5px;
+    height: 375px;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 36px; }
+  .popup-slide #injections-slide-two {
+    background-image: url("../../content/img/injections-slide-two.png");
+    width: 705px;
+    height: 326px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 56px;
+    position: absolute;
+    left: 93px; }
+  .popup-slide .slide-footer {
+    height: 126px;
+    background-image: url("../../content/img/pre-footer-full-width.png");
+    position: absolute;
+    bottom: -2px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: -30px;
+    width: 930px; }
+    .popup-slide .slide-footer div {
+      font-size: 21px;
+      font-family: "BayerSans Bold", sans-serif;
+      color: #FFFFFF;
+      margin-left: 46px;
+      margin-top: 37px;
+      line-height: 29.5px; }
+  .popup-slide .text-slide {
+    width: 716.5px;
+    margin-left: 80px;
+    margin-top: 32px; }
+  .popup-slide #consumables-slide-one {
+    width: 250px;
+    height: 325px;
+    background-image: url("../../content/img/consumables-slide-one.png");
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-left: 78px; }
+  .popup-slide .features-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 78px; }
+    .popup-slide .features-list ul {
+      margin-right: 110px; }
+  .popup-slide .key {
+    text-align: left;
+    margin-left: 36px; }
+
 /*--------------------------------------------------------------
 # SmartPACK Slides
 --------------------------------------------------------------*/
@@ -761,7 +866,7 @@ h1 span.asterisk, h2 span.asterisk {
       background-image: url("../../content/img/arrow-bubble-long.png"); }
       #smartpack .arrow-bubble #free-trial .trial-text {
         color: #e86c1f;
-        font-family: "BayerSansCond Regular", sans-serif;
+        font-family: "BayerSans Regular", sans-serif;
         font-size: 17px;
         margin: 24px 0 0 56px; }
         #smartpack .arrow-bubble #free-trial .trial-text span {
@@ -778,7 +883,7 @@ h1 span.asterisk, h2 span.asterisk {
   display: flex;
   justify-content: space-between;
   margin: 48px 63px 0;
-  font-family: "BayerSansCond Regular", sans-serif; }
+  font-family: "BayerSans Regular", sans-serif; }
   #smartpack_pillars #pillars .pillar {
     width: 275px;
     height: 325px;
@@ -820,6 +925,11 @@ h1 span.asterisk, h2 span.asterisk {
     margin-left: -20px;
     margin-top: 72.5px; }
 
+#popup.smartpack_pillars #popup-content {
+  margin: 30px 20px;
+  background-size: 100%;
+  background-image: url("../../content/img/info-link.png"); }
+
 #reliability #VirtualCare-logo {
   width: 200px;
   height: 62.5px;
@@ -846,7 +956,7 @@ h1 span.asterisk, h2 span.asterisk {
   #reliability .features-list li span {
     padding-top: 1px;
     font-size: 24px;
-    font-family: "BayerSansCond Regular", sans-serif; }
+    font-family: "BayerSans Regular", sans-serif; }
     #reliability .features-list li span b {
       font-family: "BayerSans Bold", sans-serif; }
   #reliability .features-list li .list-icon {
@@ -954,7 +1064,7 @@ h1 span.asterisk, h2 span.asterisk {
     #scanner_connectivity_intro .features-list ul li {
       margin-bottom: 15px; }
       #scanner_connectivity_intro .features-list ul li.list-title {
-        font-family: "BayerSansCond Regular", sans-serif;
+        font-family: "BayerSans Regular", sans-serif;
         margin-bottom: 20px; }
       #scanner_connectivity_intro .features-list ul li .list-icon {
         height: 35px;
@@ -1011,7 +1121,7 @@ h1 span.asterisk, h2 span.asterisk {
     #automated_documentation .features-list ul li {
       margin-bottom: 15px; }
       #automated_documentation .features-list ul li.list-title {
-        font-family: "BayerSansCond Regular", sans-serif;
+        font-family: "BayerSans Regular", sans-serif;
         margin-bottom: 20px; }
       #automated_documentation .features-list ul li span {
         padding-left: 12px; }
@@ -1051,6 +1161,12 @@ h1 span.asterisk, h2 span.asterisk {
   background-position-x: 58.5px;
   background-position-y: 305px;
   background-size: 296.5px 284.5px; }
+  #personalized_protocols #personalized-protocols-pop-link {
+    width: 200px;
+    height: 65px;
+    position: absolute;
+    left: 105px;
+    bottom: 224px; }
   #personalized_protocols .slide-title {
     margin-left: 45px;
     color: #d6df23; }
@@ -1066,7 +1182,7 @@ h1 span.asterisk, h2 span.asterisk {
     #personalized_protocols .features-list ul li {
       margin-bottom: 15px; }
       #personalized_protocols .features-list ul li.list-title {
-        font-family: "BayerSansCond Regular", sans-serif;
+        font-family: "BayerSans Regular", sans-serif;
         margin-bottom: 20px; }
       #personalized_protocols .features-list ul li .list-icon {
         height: 35px;
@@ -1114,7 +1230,7 @@ h1 span.asterisk, h2 span.asterisk {
     #data_driven_insights .features-list ul li {
       margin-bottom: 15px; }
       #data_driven_insights .features-list ul li.list-title {
-        font-family: "BayerSansCond Regular", sans-serif;
+        font-family: "BayerSans Regular", sans-serif;
         margin-bottom: 20px;
         margin-left: -110px;
         font-size: 23px; }
@@ -1148,7 +1264,7 @@ h1 span.asterisk, h2 span.asterisk {
       margin-top: -24px;
       margin-left: 15px; }
   #capital_access_program #capital-access-programs {
-    font-family: "BayerSansCond Regular", sans-serif;
+    font-family: "BayerSans Regular", sans-serif;
     color: #6d6e70;
     font-size: 23.5px;
     line-height: 24.5px;
@@ -1188,7 +1304,7 @@ h1 span.asterisk, h2 span.asterisk {
     height: 63.5px; }
     #summary_page #summary-arrow-links #risk-free-link .trial-text {
       color: #e86c1f;
-      font-family: "BayerSansCond Regular", sans-serif;
+      font-family: "BayerSans Regular", sans-serif;
       font-size: 17px;
       margin: 25px 0 0 65px; }
       #summary_page #summary-arrow-links #risk-free-link .trial-text span {
@@ -1200,7 +1316,7 @@ h1 span.asterisk, h2 span.asterisk {
     height: 63.5px; }
     #summary_page #summary-arrow-links #learn-more-link .learn-more-text {
       color: #e86c1f;
-      font-family: "BayerSansCond Regular", sans-serif;
+      font-family: "BayerSans Regular", sans-serif;
       font-size: 17px;
       margin: 25px 0 0 65px; }
 
@@ -1233,7 +1349,7 @@ h1 span.asterisk, h2 span.asterisk {
   #resources #resources-grid .column .resource {
     text-align: center;
     color: #6d6e70;
-    font-family: "BayerSansCond Regular", sans-serif;
+    font-family: "BayerSans Regular", sans-serif;
     font-size: 15px;
     min-width: 150px;
     margin-bottom: 30px; }
@@ -1258,5 +1374,11 @@ h1 span.asterisk, h2 span.asterisk {
           background-image: url("../../content/img/pdf-link.png"); }
         #resources #resources-grid .column .resource .links div.email {
           background-image: url("../../content/img/email-link.png"); }
+
+#calculator .slide-title {
+  font-family: "BayerSans Regular", sans-serif;
+  font-size: 30px;
+  color: #6d6e70;
+  margin-top: 85px; }
 
 /*# sourceMappingURL=style.css.map */
