@@ -20,6 +20,11 @@
     span {
       font-size: 36px;
       color: $white;
+
+      &.first,
+      &.second {
+        font-family: $font__main-bold;
+      }
     }
     
 		sup.reg,
