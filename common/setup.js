@@ -5,8 +5,7 @@
   global.app = new Presentation({
     type:'json',
     globalElements:[
-    	'medradLogo',
-    	'smartpackLogo',
+    	'medradLogo'
     ]
   });
  
@@ -30,7 +29,6 @@
   // Initiate modules
 	app.flyoutMenu = new FlyoutMenu({
 		attachTo: 'stellant_app',
-		activeFor: ["introduction,offerings_navigation","medrad_slideshow","smartpack_navigation","reliability_pillar","technology_pillar","scanner_slides","automated_documentation_slides","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide","calculator_slide"],
 	  links: [
 	  	{
 	  		title: "Home",
@@ -140,8 +138,11 @@
 	// Main Menu (Bayer Logo)
 	app.menu = new Menu({
 		attachTo: 'stellant_app',
-	  links: [
+	  headerLinks: [
 			{ title:"", goTo:"stellant_app.home.introduction" }
+	  ],
+	  footerLinks: [
+			{ title:"", goTo:"stellant_app.summary_page_slide.summary_page" }
 	  ]
 	});
 

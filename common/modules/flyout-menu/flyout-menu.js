@@ -134,7 +134,7 @@
 
 		// Add markup to index page
 		_insert:function () {
-			navcheck = '<input type="checkbox" id="navcheck" role="button" title="menu" onclick="Clear();">';
+			navcheck = '<input type="checkbox" id="navcheck" role="button" title="menu" onclick="app.flyoutMenu._clearMenu();">';
       navcheck += '<label for="navcheck" aria-hidden="true" title="menu">';
       navcheck += '<span class="burger"><span class="bar"></span></span>';
       navcheck += '</label>';
@@ -202,10 +202,9 @@
 					var subContainer = document.getElementById(subContainerID);
 					subContainer.classList.add('active');
 				}
-			}
 
 			// GoTo link
-			if (attr === false) {
+			} else if (attr === false) {
 				event.preventDefault();
 
 			} else if (attr) {
@@ -218,8 +217,11 @@
 
 				if (name === 'app') {
 					eval(attr);
-				}
-				else {
+				} else if ( subcontent === app.currentSlide ) {
+					event.preventDefault();
+					app.flyoutMenu._closeMenu();
+
+				} else {
 					app.goTo(name, content, subcontent);
 				}
 
@@ -235,7 +237,25 @@
 
 		// Close menu on slide enter
 		_closeMenu:function () {
+			console.log('close menu');
+
 			document.getElementById('navcheck').checked =  false;
+		},
+
+		// Clear menu
+		_clearMenu:function () {
+			console.log('clear menu');
+
+      var clearRadioGroup = function(GroupName) {
+        var ele = document.getElementsByName(GroupName);
+        for(var i=0;i<ele.length;i++)
+          ele[i].checked = false;
+      }
+			
+			clearRadioGroup('flyoutmain');
+			
+			var subContainers = document.getElementsByClassName('sub-container');
+			subContainers.className = 'sub-container';
 		}
 	};
 })();

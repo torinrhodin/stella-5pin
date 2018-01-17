@@ -5,11 +5,10 @@ document.addEventListener('presentationInit', function() {
 		onEnter: function(ele) {			
 			console.log('enter introduction');
 
-			// Hide footer logo
-			app.elements.medradLogo.className = "hide";
-			app.elements.smartpackLogo.className = "hide";
+			// Set Footer styles
+			app.elements.footerMenu.classList.add('home');
 
-			// Enable white Bayer Logo
+			// Enable white logos
 			app.elements.menu.classList.add('white');
 
 			// Enable white menu burger
@@ -22,11 +21,10 @@ document.addEventListener('presentationInit', function() {
 		onExit: function(ele) {
 			console.log('exit');
 
-			// Show footer logo
-			app.elements.medradLogo.className = "show";
-			app.elements.smartpackLogo.className = "show";
+			// Set Footer styles
+			app.elements.footerMenu.classList.remove('home');
 
-			// Enable color Bayer Logo
+			// Enable color logos
 			app.elements.menu.classList.remove('white');
 
 			// Disable white menu burger

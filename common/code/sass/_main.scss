@@ -312,14 +312,27 @@ h1, h2 {
     margin-left: 50px;
   }
 
-  #smartpackLogo {
-    background: url('../../content/img/16518_b_rad_smartpack_logo_bl02_RGB.svg') no-repeat;
-    width: 175px;
-    height: 54px;
-    margin-right: 50px;
+  #stellant_appFooter {
+    list-style: none;
+
+    li {
+      background: url('../../content/img/16518_b_rad_smartpack_logo_bl02_RGB.svg') no-repeat;
+      width: 175px;
+      height: 54px;
+      margin-right: 50px;
+    }
   }
-  
-  .hide {
-    display: none;
+
+  &.home {
+    height: 63px;
+    justify-content: flex-end;
+
+    #medradLogo {
+      display: none;
+    }
+
+    #stellant_appFooter li {
+      background-image: none;
+    }
   }
 }
