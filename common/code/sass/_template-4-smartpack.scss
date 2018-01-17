@@ -29,7 +29,8 @@
 
     #free-trial {
       width: 300.5px;
-      height: 63px;
+      height: 64px;
+      background-repeat: no-repeat;
       background-image: url('../../content/img/arrow-bubble-long.png');  
       
       .trial-text {
@@ -120,7 +121,8 @@
     div {
       background-size: 100%;
       background-image: url('../../content/img/info-link.png');
-      height: 63px;
+      background-repeat: no-repeat;
+      height: 64px;
       width: 100px;
       margin-left: -20px;
       margin-top: 72.5px;
@@ -429,8 +431,9 @@
   #automated-documention-pop-link {
     background-image: url('../../content/img/automated-documentation-pop-link.png');
     background-size: 100%;
+    background-repeat: no-repeat;
     width: 335px;
-    height: 63px;
+    height: 64px;
     position: absolute;
     left: 63px;
     bottom: 138px;
