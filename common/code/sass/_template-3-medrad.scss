@@ -18,11 +18,12 @@
     
     div {
       width: 98px;
-      height: 63px;
+      height: 64px;
+      background-repeat: no-repeat;
 
       &#injections {
         margin-right: 20px;
-        background-image: url('../../content/img/injections.png');  
+        background-image: url('../../content/img/injections.png');
       }
 
       &#consumables {
