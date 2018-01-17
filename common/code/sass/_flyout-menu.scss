@@ -227,7 +227,6 @@
     label:hover > .icon,
     label:focus > .icon,
     [class="flyout"]:checked + label > .icon {
-      background-position: bottom;
 
       &.link1 {
         background-image: url('../../content/img/nav-home-white.png');
