@@ -150,6 +150,16 @@
   
   .key {
     text-align: left;
-    margin-left: 36px;    
+    margin-left: 36px;
+    
+    .astrix {
+      vertical-align: super;
+      font-size: 0.8em;
+      font-weight: normal;
+      position: absolute;
+      top: 0em;
+      text-transform: lowercase;
+      left: -6px;      
+    }  
   }
 }
