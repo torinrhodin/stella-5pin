@@ -132,7 +132,15 @@
 // smartpack pillars popup 
 
 #popup {
-  &.smartpack_pillars {}
+  &.smartpack_pillars {
+    
+    #popup-content {
+      margin: 30px 20px;
+      background-size: 100%;
+      background-image: url('../../content/img/info-link.png');
+      
+    }
+  }
 }
 
 
