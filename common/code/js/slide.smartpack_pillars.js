@@ -1,7 +1,4 @@
 document.addEventListener('presentationInit', function() {
-	var popup = app.elements['popup'];
-	var popupBG = app.elements['popup-background'];
-
 	var slide = app.slide.smartpack_pillars = {
 		elements: {
 			slideLinks: ["#pillars .pillar", "all"],
@@ -24,7 +21,7 @@ document.addEventListener('presentationInit', function() {
 			}
 
 			// Add popup click
-			app.addEvent('click', slide._popupLinkClick, slide.element.popupLink);
+			app.addEvent('click', slide._launchPopup, slide.element.popupLink);
 		},
 		onExit: function(ele) {
 			console.log('exit');
@@ -33,18 +30,15 @@ document.addEventListener('presentationInit', function() {
 			document.removeEventListener('swiperight', this._swipePrev);
 			document.removeEventListener('swipeleft', this._swipeNext);
 		},
-
 		_swipePrev: function() {
-			if( popup.style.display != 'block' ) {
+			if( app.popup.initialized === false ) {
 				app.slideshow.previous();	
 			}
-			
 		},
 		_swipeNext: function() {
-			if( popup.style.display != 'block' ) {
+			if( app.popup.initialized === false ) {
 				app.slideshow.next();
-			}
-			
+			}			
 		},
 		_slideClick: function(event) {
 			console.log('clicked');
@@ -55,19 +49,11 @@ document.addEventListener('presentationInit', function() {
 
 			app.goTo(appID, slideshowName, slideName);
 		},
-		_popupLinkClick: function(event) {
-			console.log('a click');
+		_launchPopup: function(event) {
       var popupClass = this.closest('article').getAttribute('id');
 			var popupText = slide.element.popupText.innerHTML;
   		
-  		// Open Popup
-  		var lastChild = popup.children.length - 1;
-		  popup.children[lastChild].innerHTML = popupText;
-		  popup.style.display = "block";
-      popupBG.style.display = "block";
-      popup.classList.add(popupClass);
-		  // Close Popup
-		  // Event attached in setup.js
+  		app.popup._init(popupText);
 		}
 	};
 }); 

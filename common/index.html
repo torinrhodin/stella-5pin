@@ -21,8 +21,8 @@
       <div id="popup-background" style="display: none;"></div>
       <div id="popup" style="display: none;">
         <div id="close-popup">x</div>
-        <div id="popup-prev">&larr;</div>
-        <div id="popup-next">&rarr;</div>
+        <div id="popup-prev" data-direction="-1" class="inactive-nav"></div>
+        <div id="popup-next" data-direction="1" class="inactive-nav"></div>
         <div id="popup-content"></div>
       </div>
 
@@ -59,6 +59,7 @@
 
     <!-- CUSTOM APP MODULES -->  
     <script src="modules/flyout-menu/flyout-menu.js" type="text/javascript" charset="utf-8"></script>
+    <script src="modules/popup/popup.js" type="text/javascript" charset="utf-8"></script>
     
     <!-- CUSTOM APP JAVASCRIPT -->  
     <script src="code/js/slide.introduction.js"></script>

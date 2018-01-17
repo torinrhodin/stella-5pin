@@ -7,11 +7,6 @@
     globalElements:[
     	'medradLogo',
     	'smartpackLogo',
-    	'popup',
-    	'popup-background',
-    	'popup-prev',
-    	'popup-next',
-    	'close-popup'
     ]
   });
  
@@ -143,6 +138,11 @@
 	  ]
 	});
 
+  // Popups
+	app.popup = new Popup({
+		attachTo: 'stellant_app'
+	});
+
 	// Loader
 	app.loader = new Loader({ delay : 1000 , type : 'bar' });
 
@@ -151,30 +151,6 @@
 
   // Initialize presentation
   app.init();
-
-  // Popups:
-  // Attach Popup Slideshow Prev
-	app.elements['popup-prev'].addEventListener('click', function(){
-		console.log('prev!');
-		var content = document.getElementById('popup-content');
-		console.log(content);
-	});
-
-  // Attach Popup Slideshow Next
-	app.elements['popup-next'].addEventListener('click', function(){
-		console.log('next!');
-		var content = document.getElementById('popup-content');
-		console.log(content);
-	});
-
-  // Attach Close Study Design
-	app.elements['close-popup'].addEventListener('click', function(){
-		console.log('close popup MAIN');
-		
-		app.elements['popup'].style.display = "none";
-		app.elements['popup-background'].style.display = "none";
-		app.elements['popup'].removeAttribute("class");
-	});
 
 })(window);
 
