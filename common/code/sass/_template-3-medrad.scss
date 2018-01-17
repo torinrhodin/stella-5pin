@@ -35,3 +35,92 @@
   }
 
 }
+
+// slide theming
+
+.popup-slide {
+  position: relative;
+  height: 620px;
+  
+  .header {
+    margin-left: 36px;
+    margin-top: 50px;  
+  }
+  
+  #injections-slide-one {
+    background-image: url('../../content/img/injections-slide-one.png');  
+    width: 684.5px;
+    height: 375px;
+    background-size: 95%;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    position: absolute;
+    margin-left: 36px;
+  }
+  
+  #injections-slide-two {
+    background-image: url('../../content/img/injections-slide-two.png');  
+    width: 705px;
+    height: 326px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 56px;
+    position: absolute;
+    left: 93px;
+  }
+  
+  .slide-footer {
+    height: 126px;
+    background-image: url('../../content/img/pre-footer-full-width.png');
+    position: absolute;
+    bottom: -2px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: -30px;
+    width: 930px;    
+    
+    div {
+      font-size: 21px;
+      font-family: "BayerSans Bold", sans-serif;
+      color: $white;
+      margin-left: 46px;
+      margin-top: 37px;
+      line-height: 29.5px;
+    }
+  }
+  
+  .text-slide {
+    width: 716.5px;
+    margin-left: 80px;
+    margin-top: 32px;
+  }
+  
+// consumables 
+
+  #consumables-slide-one {
+    width: 250px;
+    height: 325px;
+    background-image: url('../../content/img/consumables-slide-one.png');
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-left: 78px;
+  }
+  
+  .features-list {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: 78px;
+
+    ul {
+      margin-right: 110px;
+    }
+  }
+  
+  .key {
+    text-align: left;
+    margin-left: 36px;    
+  }
+}

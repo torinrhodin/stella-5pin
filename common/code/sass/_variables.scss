@@ -21,7 +21,7 @@ $teal: #00a79d;
 # Fonts
 --------------------------------------------------------------*/
 @font-face {
-    font-family: 'BayerSansCond Regular';
+    font-family: 'BayerSans Regular';
     src: url('../../content/fonts/BayerSans-Regular.otf') format('opentype');
     font-style: normal;
 }
@@ -39,9 +39,9 @@ $teal: #00a79d;
 }
 
 $font__header: 'BayerSans Bold', sans-serif;
-$font__main: 'BayerSansCond Regular', sans-serif;
+$font__main: 'BayerSans Regular', sans-serif;
 $font__arial: 'Arial Rounded Bold', sans-serif;
-$font__main-regular: 'BayerSansCond Regular', sans-serif;
+$font__main-regular: 'BayerSans Regular', sans-serif;
 $font__main-medium: 'Arial', sans-serif;
 $font__main-bold: 'BayerSans Bold', sans-serif;
 $font__main-bold-italic: 'Arial', sans-serif;

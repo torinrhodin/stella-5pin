@@ -688,6 +688,7 @@ body {
     margin-top: -50px;
     background: url('../../content/img/popup-arrow.png') no-repeat 0 0;
     background-size: 100%;
+    z-index: 1;
 
     &.inactive-nav {
       display: none;
@@ -699,35 +700,58 @@ body {
     transform: rotate(180deg);
   }
   
-  h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     color: $orange;
   }
   
-  h3,
-  h4 {
+  h4,
+  h5 {
     font-family: $font__main;
   }
   
-  h2 {
+  h3 {
     font-family: $font__main-bold;
     font-size: 47.5px;
   }
   
-  h3 {
+  h4 {
     font-size: 36px;
+    line-height: 37.5px;
+    margin-bottom: 5px;
   }
   
-  h4 {
+  h5 {
     font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1px;
+
+    &.gray {
+      color: $gray;
+    }
   }
   
 
   p {
+    font-family: $font__main;
     margin-top: 8px;
-    font-size: 13px;
+    font-size: 12.5px;
     line-height: 1.3;
+    letter-spacing: -.5px;
+
+    b {
+      font-family: $font__main-bold;
+    }
+    
+    a {
+      color: $orange;
+      font-family: $font__main-bold;      
+    }
+    
+    sup.reg {
+      top: .2em;
+    }
   }
 }
 
