@@ -21,6 +21,11 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'BayerSansCond Bold';
+  src: url("../../content/fonts/BayerSansCond-Bold.otf") format("opentype");
+  font-style: normal; }
+
+@font-face {
   font-family: 'Arial Rounded Bold';
   src: url("../../content/fonts/Arial-Rounded-Bold.ttf") format("truetype");
   font-style: normal; }
@@ -107,7 +112,7 @@ body {
     height: auto; }
   .slide .slide-title {
     width: 950px;
-    font-size: 50px;
+    font-size: 48px;
     line-height: 1.1;
     color: #e86c1f;
     font-family: "BayerSans Bold", sans-serif;
@@ -336,7 +341,7 @@ h1 span.asterisk, h2 span.asterisk {
     justify-content: space-around;
     align-items: flex-start;
     transform: translate3d(0, 0, 0);
-    width: 220px;
+    width: 200px;
     /* material acceleration */
     transform: translateX(-100%);
     will-change: transform;
@@ -378,7 +383,7 @@ h1 span.asterisk, h2 span.asterisk {
       transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1); }
       #flyout-menu nav label:after {
         position: absolute;
-        width: 15px;
+        width: 10px;
         right: 0;
         top: 0;
         height: 100%;
@@ -405,25 +410,32 @@ h1 span.asterisk, h2 span.asterisk {
       right: 25px; }
       #flyout-menu nav .icon.link1 {
         background-image: url("../../content/img/nav-home-orange.png");
-        background-size: 40px 35px; }
+        background-size: 36px 32px;
+        right: 28px; }
       #flyout-menu nav .icon.link2 {
         background-image: url("../../content/img/nav-check-orange.png");
-        background-size: 35px 38px; }
+        background-size: 34px 38px;
+        right: 28px; }
       #flyout-menu nav .icon.link3 {
         background-image: url("../../content/img/nav-injection-orange.png");
-        background-size: 46px 44px; }
+        background-size: 46px 44px;
+        right: 18px; }
       #flyout-menu nav .icon.link4 {
         background-image: url("../../content/img/nav-smartpack-orange.png");
-        background-size: 46px 38px; }
+        background-size: 46px 38px;
+        right: 18px; }
       #flyout-menu nav .icon.link5 {
         background-image: url("../../content/img/nav-summary-orange.png");
-        background-size: 45px 32px; }
+        background-size: 47px 42px;
+        right: 21px; }
       #flyout-menu nav .icon.link6 {
         background-image: url("../../content/img/nav-resources-orange.png");
-        background-size: 35px 44px; }
+        background-size: 34px 44px;
+        right: 30px; }
       #flyout-menu nav .icon.link7 {
         background-image: url("../../content/img/nav-calculator-orange.png");
-        background-size: 35px 44px; }
+        background-size: 34px 44px;
+        right: 30px; }
     #flyout-menu nav label:hover > .icon,
     #flyout-menu nav label:focus > .icon,
     #flyout-menu nav [class="flyout"]:checked + label > .icon {
@@ -458,22 +470,12 @@ h1 span.asterisk, h2 span.asterisk {
         background-image: url("../../content/img/nav-calculator-white.png"); }
   #flyout-menu .spacer {
     width: 100%;
-    height: 61px;
+    height: 51px;
     background: #d96633;
     position: absolute;
     top: 0;
     border-bottom: 2px solid #4d4d4c;
     -webkit-box-sizing: border-box; }
-  #flyout-menu #lab1 .icon,
-  #flyout-menu #lab4 .icon,
-  #flyout-menu #lab5 .icon,
-  #flyout-menu #lab6 .icon,
-  #flyout-menu #lab7 .icon {
-    right: 25px; }
-  #flyout-menu #lab2 .icon {
-    right: 28px; }
-  #flyout-menu #lab6 .icon {
-    right: 23px; }
   #flyout-menu .alt-link {
     display: none;
     position: absolute;
@@ -485,18 +487,16 @@ h1 span.asterisk, h2 span.asterisk {
   #flyout-menu .sub2 {
     position: absolute;
     width: 1000px;
-    top: 5px;
     left: 250px;
     display: none; }
   #flyout-menu .sub2 {
-    width: 1000px;
-    top: 180px; }
+    width: 1000px; }
   #flyout-menu #link3-sub .sub {
-    top: 305px; }
+    top: 265px; }
   #flyout-menu #link4-sub .sub {
-    top: 420px; }
+    top: 368px; }
   #flyout-menu #link4-sub .sub2 {
-    top: 600px;
+    top: 548px;
     left: 405px; }
   #flyout-menu .chevron {
     position: absolute;
@@ -535,7 +535,7 @@ h1 span.asterisk, h2 span.asterisk {
   #flyout-menu .sub-container.active .sub, #flyout-menu .sub-container.active .sub2 {
     display: block; }
   #flyout-menu .first-link {
-    margin-top: 61px; }
+    margin-top: 51px; }
   #flyout-menu [id="navcheck"]:checked + label::before {
     opacity: 1;
     pointer-events: auto; }
@@ -559,7 +559,9 @@ h1 span.asterisk, h2 span.asterisk {
   #flyout-menu [id="navcheck"]:checked + label .burger {
     width: 32px;
     transform: translateX(160px);
-    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    top: 10px;
+    left: -3px; }
 
 /*--------------------------------------------------------------
 # Popups
@@ -608,7 +610,8 @@ h1 span.asterisk, h2 span.asterisk {
   #popup h4 {
     font-size: 36px;
     line-height: 37.5px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    letter-spacing: -1px; }
   #popup h5 {
     font-size: 24px;
     line-height: 28px;
@@ -676,6 +679,8 @@ h1 span.asterisk, h2 span.asterisk {
     #introduction h1 span {
       font-size: 36px;
       color: #FFFFFF; }
+      #introduction h1 span.first, #introduction h1 span.second {
+        font-family: "BayerSans Bold", sans-serif; }
     #introduction h1 sup.reg,
     #introduction h1 .title-start,
     #introduction h1 .title-today {
@@ -730,7 +735,7 @@ h1 span.asterisk, h2 span.asterisk {
       #our_offerings .offering-images .image #labels,
       #our_offerings .offering-text .image #labels {
         width: 413px;
-        margin-top: 174px;
+        margin-top: 180px;
         margin-left: 83px;
         list-style-type: none; }
         #our_offerings .offering-images .image #labels .label,
@@ -770,7 +775,8 @@ h1 span.asterisk, h2 span.asterisk {
     margin-top: 10px; }
     #medrad .arrow-bubble div {
       width: 98px;
-      height: 63px; }
+      height: 64px;
+      background-repeat: no-repeat; }
       #medrad .arrow-bubble div#injections {
         margin-right: 20px;
         background-image: url("../../content/img/injections.png"); }
@@ -785,13 +791,36 @@ h1 span.asterisk, h2 span.asterisk {
     margin-top: 50px; }
   .popup-slide #injections-slide-one {
     background-image: url("../../content/img/injections-slide-one.png");
-    width: 684.5px;
-    height: 375px;
-    background-size: 95%;
+    width: 680.5px;
+    height: 315px;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 40px;
     position: absolute;
-    margin-left: 36px; }
+    margin-left: 16px; }
+    .popup-slide #injections-slide-one p {
+      font-size: 25.5px;
+      font-family: "BayerSansCond Bold", sans-serif;
+      color: #e86c1f;
+      line-height: 30px;
+      position: absolute;
+      right: 60px;
+      bottom: 50px; }
+  .popup-slide #injection-measures {
+    position: absolute;
+    bottom: 50px;
+    left: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 431px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #6d6e70;
+    font-family: "BayerSans Regular", sans-serif; }
+    .popup-slide #injection-measures b {
+      font-family: "BayerSansCond Bold", sans-serif;
+      color: #e86c1f;
+      font-size: 22px; }
   .popup-slide #injections-slide-two {
     background-image: url("../../content/img/injections-slide-two.png");
     width: 705px;
@@ -840,6 +869,14 @@ h1 span.asterisk, h2 span.asterisk {
   .popup-slide .key {
     text-align: left;
     margin-left: 36px; }
+    .popup-slide .key .astrix {
+      vertical-align: super;
+      font-size: 0.8em;
+      font-weight: normal;
+      position: absolute;
+      top: 0em;
+      text-transform: lowercase;
+      left: -6px; }
 
 /*--------------------------------------------------------------
 # SmartPACK Slides
@@ -862,7 +899,8 @@ h1 span.asterisk, h2 span.asterisk {
     margin-top: 52px; }
     #smartpack .arrow-bubble #free-trial {
       width: 300.5px;
-      height: 63px;
+      height: 64px;
+      background-repeat: no-repeat;
       background-image: url("../../content/img/arrow-bubble-long.png"); }
       #smartpack .arrow-bubble #free-trial .trial-text {
         color: #e86c1f;
@@ -873,7 +911,7 @@ h1 span.asterisk, h2 span.asterisk {
           font-family: "BayerSans Bold", sans-serif; }
 
 #smartpack_pillars .slide-title {
-  font-size: 46.5px; }
+  font-size: 45px; }
 
 #smartpack_pillars .slide-subtitle {
   font-size: 24px;
@@ -920,7 +958,8 @@ h1 span.asterisk, h2 span.asterisk {
   #smartpack_pillars .arrow-bubble div {
     background-size: 100%;
     background-image: url("../../content/img/info-link.png");
-    height: 63px;
+    background-repeat: no-repeat;
+    height: 64px;
     width: 100px;
     margin-left: -20px;
     margin-top: 72.5px; }
@@ -1017,31 +1056,31 @@ h1 span.asterisk, h2 span.asterisk {
   #technological_deployments #deployments-nav {
     position: relative; }
     #technological_deployments #deployments-nav .deployment-link {
-      position: absolute; }
-      #technological_deployments #deployments-nav .deployment-link span {
-        font-family: "BayerSans Bold", sans-serif;
-        font-size: 17px;
-        line-height: 18px; }
+      position: absolute;
+      font-family: "BayerSans Bold", sans-serif;
+      font-size: 17px;
+      line-height: 12px;
+      padding: 10px 25px 10px 60px; }
+      #technological_deployments #deployments-nav .deployment-link sup {
+        font-size: 0.9em;
+        top: 6px; }
       #technological_deployments #deployments-nav .deployment-link.first {
-        top: 148px;
-        left: 279px; }
-        #technological_deployments #deployments-nav .deployment-link.first span {
-          color: #383473; }
+        color: #383473;
+        top: 138px;
+        left: 219px; }
       #technological_deployments #deployments-nav .deployment-link.second {
-        top: 147px;
-        right: 190px; }
-        #technological_deployments #deployments-nav .deployment-link.second span {
-          color: #006738; }
+        color: #006738;
+        top: 137px;
+        right: 165px;
+        line-height: 18px; }
       #technological_deployments #deployments-nav .deployment-link.third {
-        top: 250px;
-        left: 275px; }
-        #technological_deployments #deployments-nav .deployment-link.third span {
-          color: #00a79d; }
+        color: #00a79d;
+        top: 240px;
+        left: 215px; }
       #technological_deployments #deployments-nav .deployment-link.fourth {
-        top: 267px;
-        right: 231px; }
-        #technological_deployments #deployments-nav .deployment-link.fourth span {
-          color: #d6df23; }
+        color: #d6df23;
+        top: 257px;
+        right: 206px; }
 
 .slide.scanner-connectivity .slide-title {
   margin-left: 45px;
@@ -1110,8 +1149,9 @@ h1 span.asterisk, h2 span.asterisk {
   #automated_documentation #automated-documention-pop-link {
     background-image: url("../../content/img/automated-documentation-pop-link.png");
     background-size: 100%;
+    background-repeat: no-repeat;
     width: 335px;
-    height: 63px;
+    height: 64px;
     position: absolute;
     left: 63px;
     bottom: 138px; }
@@ -1267,7 +1307,7 @@ h1 span.asterisk, h2 span.asterisk {
     font-family: "BayerSans Regular", sans-serif;
     color: #6d6e70;
     font-size: 23.5px;
-    line-height: 24.5px;
+    line-height: 30.5px;
     position: absolute;
     top: 405px;
     left: 116px;
