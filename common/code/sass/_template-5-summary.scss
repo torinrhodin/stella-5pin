@@ -58,3 +58,22 @@
     } 
   }
 }
+
+#popup {
+  
+  .summary-header {
+    margin-left: 36px;
+    margin-top: 50px;      
+  }
+  
+  .summary {
+    background-image: url('../../content/img/summary-popup.png');  
+    width: 808.5px;
+    height: 363px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 56px;
+    position: absolute;
+    left: 69px;
+  }
+}
