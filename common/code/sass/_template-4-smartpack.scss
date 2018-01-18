@@ -66,9 +66,9 @@
     font-family: $font__main;
 
     .pillar {
-      width: 275px;
+      width: 274px;
       height: 325px;
-      background-size: 100%;
+      background-size: contain;
 
       .pillar-title {
         color: $white;
@@ -119,13 +119,13 @@
     justify-content: center;
 
     div {
-      background-size: 100%;
+      background-size: contain;
       background-image: url('../../content/img/info-link.png');
       background-repeat: no-repeat;
       height: 64px;
       width: 100px;
       margin-left: -20px;
-      margin-top: 72.5px;
+      margin-top: 39.5px;
     }
   }
   
@@ -138,7 +138,7 @@
     
     #popup-content {
       margin: 30px 20px;
-      background-size: 100%;
+      background-size: contain;
       background-image: url('../../content/img/info-link.png');
       
     }
@@ -152,7 +152,7 @@
     width: 200px;
     height: 62.5px;
     background-image: url('../../content/img/VirtualCare-logo.png');
-    background-size: 100%;
+    background-size: contain;
     position: absolute;
     top: 30px;
     right: 150px;
@@ -198,19 +198,19 @@
         padding: 0;
   
         &.clock-icon {
-          background-size: 100%;
+          background-size: contain;
           background-image: url('../../content/img/clock-icon.png');
           background-repeat: no-repeat;
         }
   
         &.computer-icon {
-          background-size: 100%;
+          background-size: contain;
           background-image: url('../../content/img/computer-icon.png');
           background-repeat: no-repeat;
         }
   
         &.phone-icon {
-          background-size: 100%;
+          background-size: contain;
           background-image: url('../../content/img/phone-icon.png');
           background-repeat: no-repeat;
         }
@@ -245,7 +245,7 @@
     margin-top: 50px;
     margin-right: 50px;
     background-image: url('../../content/img/reliability-shield-large.png');
-    background-size: 100%;
+    background-size: contain;
   }
   
   ul {
@@ -359,7 +359,7 @@
           height: 35px;
           width: 40px;
           padding: 0;
-          background-size: 100%;
+          background-size: contain;
         
           &.bullseye-icon {
             background-image: url('../../content/img/bullseye-icon.png');
@@ -421,7 +421,7 @@
     
   #automated-documention-pop-link {
     background-image: url('../../content/img/automated-documentation-pop-link.png');
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 335px;
     height: 64px;
@@ -458,7 +458,7 @@
           height: 35px;
           width: 35px;
           padding: 0;
-          background-size: 100%;
+          background-size: contain;
           background-repeat: no-repeat;
         
           &.import-icon {
@@ -545,7 +545,7 @@
           height: 35px;
           width: 35px;
           padding: 0;
-          background-size: 100%;
+          background-size: contain;
           background-repeat: no-repeat;
         
           &.wrench-icon {
@@ -626,7 +626,7 @@
           height: 35px;
           width: 35px;
           padding: 0;
-          background-size: 100%;
+          background-size: contain;
           background-repeat: no-repeat;
         
           &.vial-icon {
@@ -700,7 +700,7 @@
   .popup-image {
     background-image: url('../../content/img/pillars-popup.png');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: contain;
     width: 816.5px;
     height: 332px;
     margin-left: 36px;
@@ -753,7 +753,7 @@
         height: 364.5px;
         background-image: url('../../content/img/auto-doc-image-one.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 80px auto 0;
       }
       
@@ -762,7 +762,7 @@
         height: 321px;
         background-image: url('../../content/img/protocols-image-one.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 40px auto 0;
       }
     }
@@ -782,7 +782,7 @@
         height: 514.5px;
         background-image: url('../../content/img/auto-doc-image-two.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 80px 0 0 150px;
       }
       
@@ -791,7 +791,7 @@
         height: 321px;
         background-image: url('../../content/img/protocols-image-two.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 80px auto 0;
       }
 
@@ -804,7 +804,7 @@
         height: 226.5px;
         background-image: url('../../content/img/auto-doc-image-three.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 105px auto 0;
       }
       
@@ -813,7 +813,7 @@
         height: 301px;
         background-image: url('../../content/img/protocols-image-three.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 80px auto 0;
       }
 
@@ -834,7 +834,7 @@
         height: 514.5px;
         background-image: url('../../content/img/auto-doc-image-four.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 80px 0 0 150px;
       }
       
@@ -843,7 +843,7 @@
         height: 319.5px;
         background-image: url('../../content/img/protocols-image-four.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 80px auto 0;
       }
       
@@ -856,7 +856,7 @@
         height: 333px;
         background-image: url('../../content/img/protocols-image-five.png');
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         margin: 80px auto 0;
       }
 
