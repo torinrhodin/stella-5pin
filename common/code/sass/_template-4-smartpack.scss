@@ -686,3 +686,25 @@
     }
   }
 }
+
+#smartpack-pillars-popup {
+  .header {
+    margin-left: 36px;
+    margin-top: 50px;    
+
+    h5 {
+      margin-top: 10px;
+    }
+  }
+  
+  .popup-image {
+    background-image: url('../../content/img/pillars-popup.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 816.5px;
+    height: 332px;
+    margin-left: 36px;
+    margin-top: 30px;    
+  }
+}
+

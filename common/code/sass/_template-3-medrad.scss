@@ -147,19 +147,69 @@
       margin-right: 110px;
     }
   }
-  
-  .key {
-    text-align: left;
-    margin-left: 36px;
     
-    .astrix {
-      vertical-align: super;
-      font-size: 0.8em;
-      font-weight: normal;
+  #consumables-slide-two {
+    width: 629.5px;
+    height: 455px;
+    background-image: url('../../content/img/consumables-slide-two.png');
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 90px;
+    bottom: 100px;
+    z-index: -1;
+  }
+  
+  #consumables-details {
+    
+    .detail {
       position: absolute;
-      top: 0em;
-      text-transform: lowercase;
-      left: -6px;      
-    }  
+
+      &.one {
+        bottom: 60px;
+        left: 140px
+      }
+
+      &.two {
+        bottom: 80px;
+        left: 440px;
+      }
+
+      &.three {
+        bottom: 185px;
+        right: 40px;
+      }
+
+      .circle {
+        display: block;
+        -webkit-border-radius: 999px;
+        -moz-border-radius: 999px;
+        border-radius: 999px;
+        width: 30px;
+        height: 31px;
+        padding: 0 0 0 1px;
+        border: 3px solid $green;
+        color: $green;
+        text-align: center;
+        font: 21.5px Arial, sans-serif;
+        margin-bottom: 10px;
+      }
+  
+      .number {
+        line-height: 31px;
+      }
+      
+      .text {
+        font-size: 16px;
+        line-height: 20px;
+        color: $gray;
+        font-family: $font__main;
+        b {
+          font-family: $font__main-cond-bold;
+          color: $orange;
+          font-size: 21px;
+        }
+      }
+    }
   }
 }
