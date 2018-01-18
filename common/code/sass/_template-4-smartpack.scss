@@ -708,3 +708,14 @@
   }
 }
 
+#popup {
+  &.scanner_connectivity_detail {
+    height: 473px;
+    background-image: url(../../content/img/scanner-connectivity-detail-zoom.png);
+    background-repeat: no-repeat;
+    background-size: 821px 466px;
+    background-position-x: 36px;
+    background-position-y: 37px;
+  }
+  
+}
