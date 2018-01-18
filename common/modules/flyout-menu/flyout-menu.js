@@ -51,12 +51,12 @@
 						self.initialized = true;
 					}
 
-					if (app.loaded.type === 'slideshow') {
-						document.addEventListener('slideEnter', self._closeMenu);
-					}
-					else {
-						document.addEventListener('sectionEnter', self._closeMenu);
-					}
+					// if (app.loaded.type === 'slideshow') {
+					// 	document.addEventListener('slideEnter', self._closeMenu);
+					// }
+					// else {
+					// 	document.addEventListener('sectionEnter', self._closeMenu);
+					// }
 				}
 			});
 		},
@@ -90,19 +90,29 @@
 
 					sub += '<div id="' + item.idName + '-sub" class="sub-container">';
 
+					var subLinkLoop = function(subLinkArray) {
+						var subMarkup = '';
+
+						for( i=0; i<subLinkArray.length; i++ ) {
+							var subLink = subLinkArray[i];
+							subLink.popupLink = subLink.popupLink || "";
+
+							subMarkup += '<div class="sub-slide-wrap">';
+							subMarkup += '<div class="sub-slide-thumb">';
+							subMarkup += '<img data-goto="' + subLink.goTo + '" src="' + subLink.thumb + '" data-popup-link="' + subLink.popupLink + '">'
+							subMarkup += '</div>';
+							subMarkup += '<div class="sub-slide-cap">' + subLink.title + '</div>';
+							subMarkup += '</div>';
+						}
+
+						return subMarkup;
+					};
+
 					var subLinksFirst = item.subLinks[0];
 					if( subLinksFirst.length > 0 ) {
 						sub += '<div class="sub">';
 						sub += '<div class="chevron"></div>';
-
-						for( i=0; i<subLinksFirst.length; i++ ) {
-							var subLink = subLinksFirst[i];
-							sub += '<div class="sub-slide-wrap">';
-							sub += '<div class="sub-slide-thumb"><img data-goto="' + subLink.goTo + '" src="' + subLink.thumb + '"></div>';
-							sub += '<div class="sub-slide-cap">' + subLink.title + '</div>';
-							sub += '</div>';
-						}
-
+						sub += subLinkLoop(subLinksFirst);
 						sub += '</div>';
 					}
 
@@ -110,15 +120,7 @@
 					if( subLinksSecond.length > 0 ) {
 						sub += '<div class="sub2">';
 						sub += '<div class="chevron"></div>';
-
-						for( i=0; i<subLinksSecond.length; i++ ) {
-							var subLink = subLinksSecond[i];
-							sub += '<div class="sub-slide-wrap">';
-							sub += '<div class="sub-slide-thumb"><img data-goto="' + subLink.goTo + '" src="' + subLink.thumb + '"></div>';
-							sub += '<div class="sub-slide-cap">' + subLink.title + '</div>';
-							sub += '</div>';
-						}
-
+						sub += subLinkLoop(subLinksSecond);
 						sub += '</div>';
 					}
 
@@ -163,6 +165,7 @@
 			var ele = event.target;
 			var state = ele.getAttribute('data-state');
 			var parentGoTo = ele.getAttribute('data-parent-goto');
+			var popupLink = ele.getAttribute('data-popup-link');
 			var attr, linkArr, name, content, subcontent;
 			attr = ele.getAttribute('data-goto');
 
@@ -184,7 +187,7 @@
 
 			clearSubs();
 
-			// Parent Links
+			// Check if Parent Links
 			if ( parentGoTo ) {
 
 				if( state === 'active' ) {
@@ -202,9 +205,15 @@
 					var subContainer = document.getElementById(subContainerID);
 					subContainer.classList.add('active');
 				}
+			}
+
+			// Check if links to a Popup
+			if ( popupLink ) {
+				app.flyoutMenu.activePopup = popupLink;
+			}
 
 			// GoTo link
-			} else if (attr === false) {
+			if (attr === false) {
 				event.preventDefault();
 
 			} else if (attr) {
@@ -217,12 +226,14 @@
 
 				if (name === 'app') {
 					eval(attr);
-				} else if ( subcontent === app.currentSlide ) {
+				
+				} else if ( subcontent === app.currentSlide && !popupLink ) {
 					event.preventDefault();
 					app.flyoutMenu._closeMenu();
 
 				} else {
 					app.goTo(name, content, subcontent);
+					app.flyoutMenu._closeMenu();
 				}
 
 				deactivateParents();

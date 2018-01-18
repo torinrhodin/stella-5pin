@@ -36,6 +36,11 @@
 			"valid":true,
 			"file" : "reliability_virtualcare.html"
 		},
+		"reliability_calculator" : {
+			"name" : "Reliability Calculator",
+			"valid":true,
+			"file" : "reliability_calculator.html"
+		},
 		"technological_deployments" : {
 			"name" : "Technology deployments",
 			"valid":true,
@@ -86,7 +91,7 @@
 			"valid":true,
 			"file" : "resources.html"
 		},
-		"colculator" : {
+		"calculator" : {
 			"name" : "Calculator",
 			"valid":true,
 			"file" : "calculator.html"
@@ -132,6 +137,12 @@
 		"reliability_virtualcare_slide":{
 			"content":["reliability_virtualcare"],
 			"name":"Reliability Slides",
+			"type":"slideshow",
+			"valid":true
+		},
+		"reliability_calculator_slide":{
+			"content":["reliability_calculator"],
+			"name":"Reliability Calculator Slide",
 			"type":"slideshow",
 			"valid":true
 		},
@@ -204,7 +215,7 @@
 	  "stellant_app" : {
 			"name" : "stellant",
 			"type" : "collection",
-  		"content" : ["home","offerings_navigation","medrad_navigation","smartpack_intro","smartpack_navigation","reliability_pillar","reliability_virtualcare_slide","technology_pillar","scanner_intro","scanner_detail","automated_documentation_intro","automated_documentation_steps_slide","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide","calculator_slide"]
+  		"content" : ["home","offerings_navigation","medrad_navigation","smartpack_intro","smartpack_navigation","reliability_pillar","reliability_virtualcare_slide","reliability_calculator_slide","technology_pillar","scanner_intro","scanner_detail","automated_documentation_intro","automated_documentation_steps_slide","personalized_protocols_slide","data_driven_insights_slide","capital_access_program_slide","summary_page_slide","resources_slide","calculator_slide"]
 		}
 	}
 }
