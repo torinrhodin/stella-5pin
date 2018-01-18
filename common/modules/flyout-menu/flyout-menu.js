@@ -51,12 +51,12 @@
 						self.initialized = true;
 					}
 
-					if (app.loaded.type === 'slideshow') {
-						document.addEventListener('slideEnter', self._closeMenu);
-					}
-					else {
-						document.addEventListener('sectionEnter', self._closeMenu);
-					}
+					// if (app.loaded.type === 'slideshow') {
+					// 	document.addEventListener('slideEnter', self._closeMenu);
+					// }
+					// else {
+					// 	document.addEventListener('sectionEnter', self._closeMenu);
+					// }
 				}
 			});
 		},
@@ -226,12 +226,14 @@
 
 				if (name === 'app') {
 					eval(attr);
-				} else if ( subcontent === app.currentSlide ) {
+				
+				} else if ( subcontent === app.currentSlide && !popupLink ) {
 					event.preventDefault();
 					app.flyoutMenu._closeMenu();
 
 				} else {
 					app.goTo(name, content, subcontent);
+					app.flyoutMenu._closeMenu();
 				}
 
 				deactivateParents();
