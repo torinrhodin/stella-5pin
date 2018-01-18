@@ -70,7 +70,6 @@
 		},
 
 		_hideSlideshowNav:function() {
-			console.log('hihse');
 			this.prevLink.classList.add(this.inactiveClass);
 			this.nextLink.classList.add(this.inactiveClass);
 		},
@@ -110,13 +109,11 @@
 			var activeSlideIndex = app.popup._getIndex(activeSlide);
 
 	  	if( direction === -1 && activeSlideIndex > 0 ) {
-	  		console.log('prev!');
 	  		activeSlide.classList.remove(activeClass);
 	  		activeSlide.previousElementSibling.classList.add(activeClass);
 	  	}
 
 	  	if ( direction === 1 && activeSlideIndex < (slides.length - 1) ) {
-	  		console.log('next!');
 	  		activeSlide.classList.remove(activeClass);
 	  		activeSlide.nextElementSibling.classList.add(activeClass);
 	  	}

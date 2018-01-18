@@ -616,7 +616,7 @@ h1 span.asterisk, h2 span.asterisk {
     margin-bottom: 5px;
     letter-spacing: -1px; }
   #popup h5 {
-    font-size: 24px;
+    font-size: 23px;
     line-height: 28px;
     letter-spacing: -1px; }
     #popup h5.gray {
@@ -634,6 +634,17 @@ h1 span.asterisk, h2 span.asterisk {
       font-family: "BayerSans Bold", sans-serif; }
     #popup p sup.reg {
       top: .2em; }
+  #popup .key {
+    text-align: left;
+    margin-left: 36px; }
+    #popup .key .astrix {
+      vertical-align: super;
+      font-size: 0.8em;
+      font-weight: normal;
+      position: absolute;
+      top: 0em;
+      text-transform: lowercase;
+      left: -6px; }
 
 #popup-background {
   height: 100%;
@@ -869,17 +880,51 @@ h1 span.asterisk, h2 span.asterisk {
     margin-top: 78px; }
     .popup-slide .features-list ul {
       margin-right: 110px; }
-  .popup-slide .key {
-    text-align: left;
-    margin-left: 36px; }
-    .popup-slide .key .astrix {
-      vertical-align: super;
-      font-size: 0.8em;
-      font-weight: normal;
-      position: absolute;
-      top: 0em;
-      text-transform: lowercase;
-      left: -6px; }
+  .popup-slide #consumables-slide-two {
+    width: 629.5px;
+    height: 455px;
+    background-image: url("../../content/img/consumables-slide-two.png");
+    position: absolute;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    left: 90px;
+    bottom: 100px;
+    z-index: -1; }
+  .popup-slide #consumables-details .detail {
+    position: absolute; }
+    .popup-slide #consumables-details .detail.one {
+      bottom: 60px;
+      left: 140px; }
+    .popup-slide #consumables-details .detail.two {
+      bottom: 80px;
+      left: 440px; }
+    .popup-slide #consumables-details .detail.three {
+      bottom: 185px;
+      right: 40px; }
+    .popup-slide #consumables-details .detail .circle {
+      display: block;
+      -webkit-border-radius: 999px;
+      -moz-border-radius: 999px;
+      border-radius: 999px;
+      width: 30px;
+      height: 31px;
+      padding: 0 0 0 1px;
+      border: 3px solid #8cc63e;
+      color: #8cc63e;
+      text-align: center;
+      font: 21.5px Arial, sans-serif;
+      margin-bottom: 10px; }
+    .popup-slide #consumables-details .detail .number {
+      line-height: 31px; }
+    .popup-slide #consumables-details .detail .text {
+      font-size: 16px;
+      line-height: 20px;
+      color: #6d6e70;
+      font-family: "BayerSans Regular", sans-serif; }
+      .popup-slide #consumables-details .detail .text b {
+        font-family: "BayerSansCond Bold", sans-serif;
+        color: #e86c1f;
+        font-size: 21px; }
 
 /*--------------------------------------------------------------
 # SmartPACK Slides
@@ -1238,7 +1283,7 @@ h1 span.asterisk, h2 span.asterisk {
         #personalized_protocols .features-list ul li .list-icon.patient-icon {
           background-image: url("../../content/img/patient-icon.png"); }
         #personalized_protocols .features-list ul li .list-icon.checkmark-icon {
-          background-image: url("../../content/img/checkmark.png"); }
+          background-image: url("../../content/img/checkmark-icon.png"); }
         #personalized_protocols .features-list ul li .list-icon.waves-icon {
           background-image: url("../../content/img/waves-icon.png"); }
 
@@ -1320,6 +1365,138 @@ h1 span.asterisk, h2 span.asterisk {
     #capital_access_program #capital-access-programs b {
       font-family: "BayerSans Bold", sans-serif; }
 
+#smartpack-pillars-popup .header {
+  margin-left: 36px;
+  margin-top: 50px; }
+  #smartpack-pillars-popup .header h5 {
+    margin-top: 10px; }
+
+#smartpack-pillars-popup .popup-image {
+  background-image: url("../../content/img/pillars-popup.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 816.5px;
+  height: 332px;
+  margin-left: 36px;
+  margin-top: 30px; }
+
+#popup.automated_documentation_steps {
+  height: 428px;
+  background-image: url("../../content/img/auto-doc-zoom.png");
+  background-repeat: no-repeat;
+  background-size: 98%;
+  background-position-x: 10px;
+  background-position-y: 25px; }
+
+#popup.scanner_connectivity_detail {
+  height: 473px;
+  background-image: url("../../content/img/scanner-connectivity-detail-zoom.png");
+  background-repeat: no-repeat;
+  background-size: 821px 466px;
+  background-position-x: 36px;
+  background-position-y: 37px; }
+
+#popup .small-header {
+  margin-left: 36px;
+  margin-top: 50px; }
+  #popup .small-header h3 {
+    font-size: 23.5px;
+    font-family: "BayerSans Bold", sans-serif;
+    color: #e86c1f;
+    margin-bottom: 10px; }
+  #popup .small-header p {
+    font-size: 23.5px;
+    font-family: "BayerSans Regular", sans-serif;
+    color: #6d6e70; }
+
+#popup .popup-slide.one .auto-doc-image {
+  width: 648px;
+  height: 364.5px;
+  background-image: url("../../content/img/auto-doc-image-one.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 80px auto 0; }
+
+#popup .popup-slide.one .protocols-image {
+  width: 572px;
+  height: 321px;
+  background-image: url("../../content/img/protocols-image-one.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 40px auto 0; }
+
+#popup .popup-slide.two .small-header.side {
+  position: absolute;
+  margin-left: 0;
+  right: 23px;
+  width: 280px;
+  top: 0px;
+  margin-top: 0px; }
+
+#popup .popup-slide.two .auto-doc-image {
+  width: 380px;
+  height: 514.5px;
+  background-image: url("../../content/img/auto-doc-image-two.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 80px 0 0 150px; }
+
+#popup .popup-slide.two .protocols-image {
+  width: 572px;
+  height: 321px;
+  background-image: url("../../content/img/protocols-image-two.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 80px auto 0; }
+
+#popup .popup-slide.three .auto-doc-image {
+  width: 601px;
+  height: 226.5px;
+  background-image: url("../../content/img/auto-doc-image-three.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 105px auto 0; }
+
+#popup .popup-slide.three .protocols-image {
+  width: 478px;
+  height: 301px;
+  background-image: url("../../content/img/protocols-image-three.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 80px auto 0; }
+
+#popup .popup-slide.four .small-header.side {
+  position: absolute;
+  margin-left: 0;
+  right: 23px;
+  width: 280px;
+  top: 0px;
+  margin-top: 0px; }
+
+#popup .popup-slide.four .auto-doc-image {
+  width: 380px;
+  height: 514.5px;
+  background-image: url("../../content/img/auto-doc-image-four.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 80px 0 0 150px; }
+
+#popup .popup-slide.four .protocols-image {
+  width: 555px;
+  height: 319.5px;
+  background-image: url("../../content/img/protocols-image-four.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 80px auto 0; }
+
+#popup .popup-slide.five .protocols-image {
+  width: 634.5px;
+  height: 333px;
+  background-image: url("../../content/img/protocols-image-five.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 80px auto 0; }
+
 /*--------------------------------------------------------------
 # Summary Slide
 --------------------------------------------------------------*/
@@ -1362,6 +1539,20 @@ h1 span.asterisk, h2 span.asterisk {
       font-family: "BayerSans Regular", sans-serif;
       font-size: 17px;
       margin: 25px 0 0 65px; }
+
+#popup .summary-header {
+  margin-left: 36px;
+  margin-top: 50px; }
+
+#popup .summary {
+  background-image: url("../../content/img/summary-popup.png");
+  width: 808.5px;
+  height: 363px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 56px;
+  position: absolute;
+  left: 69px; }
 
 /*--------------------------------------------------------------
 # Resources Slide
@@ -1418,6 +1609,7 @@ h1 span.asterisk, h2 span.asterisk {
         #resources #resources-grid .column .resource .links div.email {
           background-image: url("../../content/img/email-link.png"); }
 
+#reliability_calculator .slide-title,
 #calculator .slide-title {
   font-family: "BayerSans Regular", sans-serif;
   font-size: 30px;
