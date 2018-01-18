@@ -709,13 +709,162 @@
 }
 
 #popup {
+  &.automated_documentation_steps {
+    height: 428px;
+    background-image: url('../../content/img/auto-doc-zoom.png');
+    background-repeat: no-repeat;
+    background-size: 98%;
+    background-position-x: 10px;
+    background-position-y: 25px
+  }
+
   &.scanner_connectivity_detail {
     height: 473px;
-    background-image: url(../../content/img/scanner-connectivity-detail-zoom.png);
+    background-image: url('../../content/img/scanner-connectivity-detail-zoom.png');
     background-repeat: no-repeat;
     background-size: 821px 466px;
     background-position-x: 36px;
     background-position-y: 37px;
   }
+
+  
+  .small-header {
+    margin-left: 36px;
+    margin-top: 50px;    
+    
+    h3 {
+      font-size: 23.5px;
+      font-family: $font__main-bold;
+      color: $orange;
+      margin-bottom: 10px;
+    }  
+    
+    p {
+      font-size: 23.5px;
+      font-family: $font__main-regular;
+      color: $gray;
+    }  
+  }
+
+  .popup-slide {
+    &.one {
+      .auto-doc-image {
+        width: 648px;
+        height: 364.5px;
+        background-image: url('../../content/img/auto-doc-image-one.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 80px auto 0;
+      }
+      
+      .protocols-image {
+        width: 572px;
+        height: 321px;
+        background-image: url('../../content/img/protocols-image-one.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 40px auto 0;
+      }
+    }
+  
+    &.two {
+      .small-header.side {
+        position: absolute;
+        margin-left: 0;
+        right: 23px;
+        width: 280px;
+        top: 0px;
+        margin-top: 0px;
+      }
+      
+      .auto-doc-image {
+        width: 380px;
+        height: 514.5px;
+        background-image: url('../../content/img/auto-doc-image-two.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 80px 0 0 150px;
+      }
+      
+      .protocols-image {
+        width: 572px;
+        height: 321px;
+        background-image: url('../../content/img/protocols-image-two.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 80px auto 0;
+      }
+
+
+    }
+    
+    &.three {
+      .auto-doc-image {
+        width: 601px;
+        height: 226.5px;
+        background-image: url('../../content/img/auto-doc-image-three.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 105px auto 0;
+      }
+      
+      .protocols-image {
+        width: 478px;
+        height: 301px;
+        background-image: url('../../content/img/protocols-image-three.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 80px auto 0;
+      }
+
+    }
+
+    &.four {
+      .small-header.side {
+        position: absolute;
+        margin-left: 0;
+        right: 23px;
+        width: 280px;
+        top: 0px;
+        margin-top: 0px;
+      }
+      
+      .auto-doc-image {
+        width: 380px;
+        height: 514.5px;
+        background-image: url('../../content/img/auto-doc-image-four.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 80px 0 0 150px;
+      }
+      
+      .protocols-image {
+        width: 555px;
+        height: 319.5px;
+        background-image: url('../../content/img/protocols-image-four.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 80px auto 0;
+      }
+      
+    }
+
+    &.five {
+      
+      .protocols-image {
+        width: 634.5px;
+        height: 333px;
+        background-image: url('../../content/img/protocols-image-five.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 80px auto 0;
+      }
+
+    }
+
+  }
+  
+  
   
 }
+

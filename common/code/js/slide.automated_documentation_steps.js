@@ -13,6 +13,10 @@ document.addEventListener('presentationInit', function() {
 			
 			// Add popup click
 			app.addEvent('click', slide._launchPopup, slide.element.popupLink);
+
+			// Add popup close click
+			app.addEvent('click', slide._removeClass, app.popup.closeLink);
+
 		},
 		onExit: function(ele) {
 			console.log('exit');
@@ -30,8 +34,11 @@ document.addEventListener('presentationInit', function() {
 		_launchPopup: function(event) {
       var popupClass = this.closest('article').getAttribute('id');
 			var popupText = slide.element.popupText.innerHTML;
-  		
+  		app.popup.ele.classList.add(popupClass);
   		app.popup._init(popupText);
-		}
+		},
+		_removeClass: function(event) {
+  		app.popup.ele.removeAttribute("class");
+    }
 	};
 });
