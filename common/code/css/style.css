@@ -26,6 +26,11 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'BayerSans Italic';
+  src: url("../../content/fonts/BayerSans-Italic.otf") format("opentype");
+  font-style: normal; }
+
+@font-face {
   font-family: 'Arial Rounded Bold';
   src: url("../../content/fonts/Arial-Rounded-Bold.ttf") format("truetype");
   font-style: normal; }
@@ -41,6 +46,12 @@
   height: 768px;
   position: relative;
   margin: 0 auto; }
+  #presentation h1,
+  #presentation h2,
+  #presentation h3,
+  #presentation h4,
+  #presentation h5 {
+    font-weight: normal; }
 
 body {
   background: #444; }
@@ -117,7 +128,8 @@ body {
     color: #e86c1f;
     font-family: "BayerSans Bold", sans-serif;
     margin: 65px 63px 29px;
-    letter-spacing: -1px; }
+    letter-spacing: -1px;
+    font-weight: normal; }
   .slide.has-title-icon .slide-title {
     display: flex;
     justify-content: flex-start; }
@@ -136,7 +148,10 @@ body {
     font-weight: normal;
     color: #e86c1f;
     margin: 0 0 0 63px;
-    line-height: 44px; }
+    line-height: 44px;
+    letter-spacing: -1px; }
+    .slide.has-subtitle .slide-subtitle sup.reg {
+      top: 7px; }
   .slide .slide-intro,
   .slide .features-title {
     color: #6d6e70;
@@ -144,7 +159,8 @@ body {
     font-size: 24px;
     line-height: 29.5px;
     margin-left: 63px;
-    margin-top: 25px; }
+    margin-top: 17px;
+    font-weight: normal; }
   .slide .features-list {
     display: flex; }
     .slide .features-list ul li {
@@ -210,8 +226,11 @@ sup.reg,
 sup.ordinal,
 sup.cross {
   font-size: 0.7em;
-  top: 0.1em;
-  left: 1px; }
+  top: 4px;
+  left: 0px; }
+
+sup.reg {
+  font-family: "BayerSans Regular", sans-serif; }
 
 span.asterisk {
   font-size: 1.4em;
@@ -219,13 +238,10 @@ span.asterisk {
   top: 0.2em;
   left: 1px; }
 
-h1 sup, h2 sup {
-  font-weight: bold; }
-
 h1 sup.reg, h2 sup.reg {
-  font-size: 0.4em;
-  top: -0.2em;
-  left: 2px; }
+  font-size: 20px;
+  top: 0px;
+  left: 0px; }
 
 h1 sup.ordinal, h2 sup.ordinal {
   font-size: 0.5em;
@@ -303,6 +319,8 @@ h1 span.asterisk, h2 span.asterisk {
       content: '';
       opacity: 0;
       pointer-events: none; }
+    #flyout-menu label#lab3 sup {
+      top: 0em; }
     #flyout-menu label .burger {
       position: fixed;
       top: 1em;
@@ -610,6 +628,9 @@ h1 span.asterisk, h2 span.asterisk {
   #popup h3 {
     font-family: "BayerSans Bold", sans-serif;
     font-size: 47.5px; }
+    #popup h3 sup.reg {
+      top: 9px;
+      font-family: "BayerSans Regular", sans-serif; }
   #popup h4 {
     font-size: 36px;
     line-height: 37.5px;
@@ -700,9 +721,11 @@ h1 span.asterisk, h2 span.asterisk {
     #introduction h1 .title-today {
       -webkit-text-stroke-width: 0; }
     #introduction h1 sup.reg {
-      font-size: 20px;
+      font-size: 18px;
       position: relative;
-      top: 3px; }
+      top: 2px;
+      left: 0px;
+      font-family: "BayerSans Regular", sans-serif; }
     #introduction h1 .amp {
       font-family: "BayerSans Bold", sans-serif;
       color: #e86c1f;
@@ -863,7 +886,10 @@ h1 span.asterisk, h2 span.asterisk {
   .popup-slide .text-slide {
     width: 716.5px;
     margin-left: 80px;
-    margin-top: 32px; }
+    margin-top: 32px;
+    text-align: justify; }
+    .popup-slide .text-slide i {
+      font-family: "BayerSans Italic", sans-serif; }
   .popup-slide #consumables-slide-one {
     width: 250px;
     height: 325px;
@@ -915,7 +941,8 @@ h1 span.asterisk, h2 span.asterisk {
       font: 21.5px Arial, sans-serif;
       margin-bottom: 10px; }
     .popup-slide #consumables-details .detail .number {
-      line-height: 31px; }
+      line-height: 31px;
+      font-family: "Arial Rounded Bold", sans-serif; }
     .popup-slide #consumables-details .detail .text {
       font-size: 16px;
       line-height: 20px;
@@ -924,26 +951,27 @@ h1 span.asterisk, h2 span.asterisk {
       .popup-slide #consumables-details .detail .text b {
         font-family: "BayerSansCond Bold", sans-serif;
         color: #e86c1f;
-        font-size: 21px; }
+        font-size: 21px;
+        font-weight: normal; }
 
 /*--------------------------------------------------------------
 # SmartPACK Slides
 --------------------------------------------------------------*/
 #smartpack {
-  background-image: url("../../content/img/smartpack-background.png");
-  background-size: 420px 284px;
+  background-image: url("../../content/img/smartpack-computer.png");
+  background-size: 410px 361px;
   background-position-y: 225px;
-  background-position-x: 40px; }
+  background-position-x: -7px; }
   #smartpack .slide-subtitle {
     margin-bottom: 50px; }
   #smartpack .features-list {
     justify-content: flex-end;
-    margin-right: 105px;
+    margin-right: 145px;
     margin-top: 35px; }
     #smartpack .features-list .list-title {
       margin-bottom: 60px; }
   #smartpack .arrow-bubble {
-    margin-right: 250px;
+    margin-right: 290px;
     margin-top: 52px; }
     #smartpack .arrow-bubble #free-trial {
       width: 300.5px;
@@ -971,9 +999,9 @@ h1 span.asterisk, h2 span.asterisk {
   margin: 48px 63px 0;
   font-family: "BayerSans Regular", sans-serif; }
   #smartpack_pillars #pillars .pillar {
-    width: 275px;
+    width: 274px;
     height: 325px;
-    background-size: 100%; }
+    background-size: contain; }
     #smartpack_pillars #pillars .pillar .pillar-title {
       color: #FFFFFF;
       font-size: 25px;
@@ -1004,24 +1032,24 @@ h1 span.asterisk, h2 span.asterisk {
 #smartpack_pillars .arrow-bubble {
   justify-content: center; }
   #smartpack_pillars .arrow-bubble div {
-    background-size: 100%;
+    background-size: contain;
     background-image: url("../../content/img/info-link.png");
     background-repeat: no-repeat;
     height: 64px;
     width: 100px;
     margin-left: -20px;
-    margin-top: 72.5px; }
+    margin-top: 39.5px; }
 
 #popup.smartpack_pillars #popup-content {
   margin: 30px 20px;
-  background-size: 100%;
+  background-size: contain;
   background-image: url("../../content/img/info-link.png"); }
 
 #reliability #VirtualCare-logo {
   width: 200px;
   height: 62.5px;
   background-image: url("../../content/img/VirtualCare-logo.png");
-  background-size: 100%;
+  background-size: contain;
   position: absolute;
   top: 30px;
   right: 150px; }
@@ -1045,21 +1073,22 @@ h1 span.asterisk, h2 span.asterisk {
     font-size: 24px;
     font-family: "BayerSans Regular", sans-serif; }
     #reliability .features-list li span b {
-      font-family: "BayerSans Bold", sans-serif; }
+      font-family: "BayerSans Bold", sans-serif;
+      font-weight: normal; }
   #reliability .features-list li .list-icon {
     height: 31px;
     width: 31px;
     padding: 0; }
     #reliability .features-list li .list-icon.clock-icon {
-      background-size: 100%;
+      background-size: contain;
       background-image: url("../../content/img/clock-icon.png");
       background-repeat: no-repeat; }
     #reliability .features-list li .list-icon.computer-icon {
-      background-size: 100%;
+      background-size: contain;
       background-image: url("../../content/img/computer-icon.png");
       background-repeat: no-repeat; }
     #reliability .features-list li .list-icon.phone-icon {
-      background-size: 100%;
+      background-size: contain;
       background-image: url("../../content/img/phone-icon.png");
       background-repeat: no-repeat; }
 
@@ -1082,7 +1111,7 @@ h1 span.asterisk, h2 span.asterisk {
   margin-top: 50px;
   margin-right: 50px;
   background-image: url("../../content/img/reliability-shield-large.png");
-  background-size: 100%; }
+  background-size: contain; }
 
 #reliability_virtualcare ul {
   margin-top: 31px; }
@@ -1114,20 +1143,20 @@ h1 span.asterisk, h2 span.asterisk {
         top: 6px; }
       #technological_deployments #deployments-nav .deployment-link.first {
         color: #383473;
-        top: 138px;
+        top: 151px;
         left: 219px; }
       #technological_deployments #deployments-nav .deployment-link.second {
         color: #006738;
-        top: 137px;
+        top: 150px;
         right: 165px;
         line-height: 18px; }
       #technological_deployments #deployments-nav .deployment-link.third {
         color: #00a79d;
-        top: 240px;
+        top: 250px;
         left: 215px; }
       #technological_deployments #deployments-nav .deployment-link.fourth {
         color: #d6df23;
-        top: 257px;
+        top: 267px;
         right: 206px; }
 
 .slide.scanner-connectivity .slide-title {
@@ -1157,7 +1186,7 @@ h1 span.asterisk, h2 span.asterisk {
         height: 35px;
         width: 40px;
         padding: 0;
-        background-size: 100%; }
+        background-size: contain; }
         #scanner_connectivity_intro .features-list ul li .list-icon.bullseye-icon {
           background-image: url("../../content/img/bullseye-icon.png"); }
         #scanner_connectivity_intro .features-list ul li .list-icon.timer-icon {
@@ -1196,7 +1225,7 @@ h1 span.asterisk, h2 span.asterisk {
   background-size: 300px 285px; }
   #automated_documentation #automated-documention-pop-link {
     background-image: url("../../content/img/automated-documentation-pop-link.png");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 335px;
     height: 64px;
@@ -1219,7 +1248,7 @@ h1 span.asterisk, h2 span.asterisk {
         height: 35px;
         width: 35px;
         padding: 0;
-        background-size: 100%;
+        background-size: contain;
         background-repeat: no-repeat; }
         #automated_documentation .features-list ul li .list-icon.import-icon {
           background-image: url("../../content/img/import-icon.png"); }
@@ -1276,7 +1305,7 @@ h1 span.asterisk, h2 span.asterisk {
         height: 35px;
         width: 35px;
         padding: 0;
-        background-size: 100%;
+        background-size: contain;
         background-repeat: no-repeat; }
         #personalized_protocols .features-list ul li .list-icon.wrench-icon {
           background-image: url("../../content/img/wrench-icon.png"); }
@@ -1309,8 +1338,8 @@ h1 span.asterisk, h2 span.asterisk {
       font-size: 21px;
       font-family: "BayerSans Bold", sans-serif;
       color: #FFFFFF;
-      margin-left: 46px;
-      margin-top: 42px;
+      margin-left: 26px;
+      margin-top: 28px;
       line-height: 29.5px; }
   #data_driven_insights .features-list {
     margin-left: 555px;
@@ -1326,7 +1355,7 @@ h1 span.asterisk, h2 span.asterisk {
         height: 35px;
         width: 35px;
         padding: 0;
-        background-size: 100%;
+        background-size: contain;
         background-repeat: no-repeat; }
         #data_driven_insights .features-list ul li .list-icon.vial-icon {
           background-image: url("../../content/img/vial-icon.png"); }
@@ -1363,18 +1392,21 @@ h1 span.asterisk, h2 span.asterisk {
     display: flex;
     justify-content: space-between; }
     #capital_access_program #capital-access-programs b {
-      font-family: "BayerSans Bold", sans-serif; }
+      font-family: "BayerSans Bold", sans-serif;
+      font-weight: normal; }
 
 #smartpack-pillars-popup .header {
   margin-left: 36px;
   margin-top: 50px; }
   #smartpack-pillars-popup .header h5 {
-    margin-top: 10px; }
+    margin-top: 10px;
+    font-size: 24px;
+    letter-spacing: 0; }
 
 #smartpack-pillars-popup .popup-image {
   background-image: url("../../content/img/pillars-popup.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   width: 816.5px;
   height: 332px;
   margin-left: 36px;
@@ -1403,7 +1435,8 @@ h1 span.asterisk, h2 span.asterisk {
     font-size: 23.5px;
     font-family: "BayerSans Bold", sans-serif;
     color: #e86c1f;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    font-weight: normal; }
   #popup .small-header p {
     font-size: 23.5px;
     font-family: "BayerSans Regular", sans-serif;
@@ -1414,7 +1447,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 364.5px;
   background-image: url("../../content/img/auto-doc-image-one.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 80px auto 0; }
 
 #popup .popup-slide.one .protocols-image {
@@ -1422,7 +1455,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 321px;
   background-image: url("../../content/img/protocols-image-one.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 40px auto 0; }
 
 #popup .popup-slide.two .small-header.side {
@@ -1438,7 +1471,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 514.5px;
   background-image: url("../../content/img/auto-doc-image-two.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 80px 0 0 150px; }
 
 #popup .popup-slide.two .protocols-image {
@@ -1446,7 +1479,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 321px;
   background-image: url("../../content/img/protocols-image-two.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 80px auto 0; }
 
 #popup .popup-slide.three .auto-doc-image {
@@ -1454,7 +1487,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 226.5px;
   background-image: url("../../content/img/auto-doc-image-three.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 105px auto 0; }
 
 #popup .popup-slide.three .protocols-image {
@@ -1462,7 +1495,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 301px;
   background-image: url("../../content/img/protocols-image-three.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 80px auto 0; }
 
 #popup .popup-slide.four .small-header.side {
@@ -1478,7 +1511,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 514.5px;
   background-image: url("../../content/img/auto-doc-image-four.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 80px 0 0 150px; }
 
 #popup .popup-slide.four .protocols-image {
@@ -1486,7 +1519,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 319.5px;
   background-image: url("../../content/img/protocols-image-four.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 80px auto 0; }
 
 #popup .popup-slide.five .protocols-image {
@@ -1494,7 +1527,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 333px;
   background-image: url("../../content/img/protocols-image-five.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: contain;
   margin: 80px auto 0; }
 
 /*--------------------------------------------------------------
@@ -1577,6 +1610,8 @@ h1 span.asterisk, h2 span.asterisk {
   justify-content: space-between; }
   #resources #resources-grid .column.first, #resources #resources-grid .column.third {
     width: 281px; }
+  #resources #resources-grid .column.third {
+    padding-top: 183px; }
   #resources #resources-grid .column .title,
   #resources #resources-grid .column .thumb {
     margin-bottom: 10px; }

@@ -26,6 +26,11 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'BayerSans Italic';
+  src: url("../../content/fonts/BayerSans-Italic.otf") format("opentype");
+  font-style: normal; }
+
+@font-face {
   font-family: 'Arial Rounded Bold';
   src: url("../../content/fonts/Arial-Rounded-Bold.ttf") format("truetype");
   font-style: normal; }
