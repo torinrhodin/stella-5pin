@@ -99,12 +99,12 @@
 							goTo: "stellant_app.scanner_intro.scanner_connectivity_intro"
 						},
 						{
-							title: "Automated<br>Documentation",
+							title: "Automated<br>documentation",
 							thumb: "content/img/automated.jpg",
 							goTo: "stellant_app.automated_documentation_intro.automated_documentation"
 						},
 						{
-							title: "Personalized Protocols",
+							title: "Personalized protocols",
 							thumb: "content/img/automated.jpg",
 							goTo: "stellant_app.personalized_protocols_slide.personalized_protocols"
 						},
