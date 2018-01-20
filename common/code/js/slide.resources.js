@@ -32,7 +32,6 @@ document.addEventListener('presentationInit', function() {
 			r6 : '#pdf-6',
 			r7 : '#pdf-7',
 			r8 : '#pdf-8',
-			r9 : '#pdf-9',
 			r10 : '#email-1',
 			r11 : '#email-2',
 			r12 : '#email-3',
@@ -41,7 +40,6 @@ document.addEventListener('presentationInit', function() {
 			r15 : '#email-6',
 			r16 : '#email-7',
 			r17 : '#email-8',
-			r18 : '#email-9',
 		},
 		onEnter: function(ele) {      
 			console.log('enter ' + app.slideshow.current);
@@ -58,7 +56,6 @@ document.addEventListener('presentationInit', function() {
 			app.addEvent ( app.tap.tap , app.openPDF , slide.element.r6 );
 			app.addEvent ( app.tap.tap , app.openPDF , slide.element.r7 );
 			app.addEvent ( app.tap.tap , app.openPDF , slide.element.r8 );
-			app.addEvent ( app.tap.tap , app.openPDF , slide.element.r9 );
 			app.addEvent ( app.tap.tap , app.sendMail , slide.element.r10 );
 			app.addEvent ( app.tap.tap , app.sendMail , slide.element.r11 );
 			app.addEvent ( app.tap.tap , app.sendMail , slide.element.r12 );
@@ -67,7 +64,6 @@ document.addEventListener('presentationInit', function() {
 			app.addEvent ( app.tap.tap , app.sendMail , slide.element.r15 );
 			app.addEvent ( app.tap.tap , app.sendMail , slide.element.r16 );
 			app.addEvent ( app.tap.tap , app.sendMail , slide.element.r17 );
-			app.addEvent ( app.tap.tap , app.sendMail , slide.element.r18 );
 		},
 		onExit: function(ele) {
 			console.log('exit');
