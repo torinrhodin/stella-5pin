@@ -3,10 +3,10 @@
 --------------------------------------------------------------*/
 
 #smartpack {
-	background-image: url('../../content/img/smartpack-background.png');  
-	background-size: 420px 284px; 
+	background-image: url('../../content/img/smartpack-computer.png');  
+	background-size: 410px 361px; 
   background-position-y: 225px;
-  background-position-x: 40px;
+  background-position-x: -7px;
 
   .slide-subtitle {
     margin-bottom: 50px;    
@@ -14,7 +14,7 @@
 
   .features-list {
     justify-content: flex-end;
-    margin-right: 105px;
+    margin-right: 145px;
     margin-top: 35px;
 
     .list-title {
@@ -24,7 +24,7 @@
   }
 
   .arrow-bubble {
-    margin-right: 250px;
+    margin-right: 290px;
     margin-top: 52px;
 
     #free-trial {
@@ -189,6 +189,7 @@
 
         b {
           font-family: $font__main-bold;
+          font-weight: normal;
         }
       }
     
@@ -293,26 +294,26 @@
           
       &.first {
         color: $purple;
-        top: 138px;
+        top: 151px;
         left: 219px;
       }
 
       &.second {
         color: $darkGreen;
-        top: 137px;
+        top: 150px;
         right: 165px;
         line-height: 18px;
       }
 
       &.third {
         color: $teal;
-        top: 240px;
+        top: 250px;
         left: 215px;
       }
 
       &.fourth {
         color: $lemonlime;
-        top: 257px;
+        top: 267px;
         right: 206px;
       }
     }
@@ -599,8 +600,8 @@
       font-size: 21px;
       font-family: $font__main-bold;
       color: $white;
-      margin-left: 46px;
-      margin-top: 42px;
+      margin-left: 26px;
+      margin-top: 28px;
       line-height: 29.5px;
     }
 
@@ -683,6 +684,7 @@
     
     b {
       font-family: $font__main-bold;
+      font-weight: normal;
     }
   }
 }
@@ -691,9 +693,11 @@
   .header {
     margin-left: 36px;
     margin-top: 50px;    
-
+    
     h5 {
       margin-top: 10px;
+      font-size: 24px;
+      letter-spacing: 0;
     }
   }
   
@@ -737,6 +741,7 @@
       font-family: $font__main-bold;
       color: $orange;
       margin-bottom: 10px;
+      font-weight: normal;
     }  
     
     p {

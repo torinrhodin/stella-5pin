@@ -122,6 +122,11 @@
     width: 716.5px;
     margin-left: 80px;
     margin-top: 32px;
+    text-align: justify;
+    
+    i {
+      font-family: $font__main-italic;
+    }
   }
   
 // consumables 
@@ -197,6 +202,7 @@
   
       .number {
         line-height: 31px;
+        font-family: $font__main-medium;
       }
       
       .text {
@@ -208,6 +214,7 @@
           font-family: $font__main-cond-bold;
           color: $orange;
           font-size: 21px;
+          font-weight: normal;
         }
       }
     }

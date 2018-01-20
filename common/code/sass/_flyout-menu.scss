@@ -39,6 +39,12 @@
       opacity: 0;
       pointer-events: none;
     }
+    
+    &#lab3 {
+      sup {
+        top: 0em;
+      }
+    }
 
     .burger {
       position: fixed;

@@ -53,6 +53,11 @@
   h3 {
     font-family: $font__main-bold;
     font-size: 47.5px;
+    
+    sup.reg {
+      top: 9px;
+      font-family: $font__main;
+    }
   }
   
   h4 {

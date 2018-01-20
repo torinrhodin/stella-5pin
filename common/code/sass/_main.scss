@@ -7,6 +7,14 @@
 	height: $size__height;
   position: relative;
   margin: 0 auto;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: normal;
+  }
 }
 
 body {
@@ -118,6 +126,7 @@ body {
     font-family: $font__main-bold;
     margin: 65px 63px 29px;
     letter-spacing: -1px;
+    font-weight: normal;
   }
   
   &.has-title-icon {
@@ -152,6 +161,11 @@ body {
       color: $orange;
       margin: 0 0 0 63px;
       line-height: 44px;
+      letter-spacing: -1px;
+      
+      sup.reg {
+        top: 7px;
+      }
     }
   }
   
@@ -162,7 +176,8 @@ body {
     font-size: 24px;
     line-height: 29.5px;
     margin-left: 63px;
-    margin-top: 25px;
+    margin-top: 17px;
+    font-weight: normal;
   }
 
   // Features Lists 
@@ -257,8 +272,12 @@ sup.reg,
 sup.ordinal,
 sup.cross {
 	font-size: 0.7em;
-	top: 0.1em;
-	left: 1px;
+	top: 4px;
+	left: 0px;
+}
+
+sup.reg {
+  font-family: $font__main;  
 }
 
 span.asterisk {
@@ -270,13 +289,13 @@ span.asterisk {
 
 h1, h2 {
 	sup {
-		font-weight: bold;
+
 	}
 
 	sup.reg {
-		font-size: 0.4em;
-		top: -0.2em;
-		left: 2px;
+    font-size: 20px;
+    top: 0px;
+    left: 0px;
 	}
 
 	sup.ordinal {

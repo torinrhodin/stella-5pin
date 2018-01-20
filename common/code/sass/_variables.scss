@@ -39,6 +39,12 @@ $teal: #00a79d;
 }
 
 @font-face {
+    font-family: 'BayerSans Italic';
+    src: url('../../content/fonts/BayerSans-Italic.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Arial Rounded Bold';
     src: url('../../content/fonts/Arial-Rounded-Bold.ttf') format('truetype');
     font-style: normal;
@@ -48,11 +54,11 @@ $font__header: 'BayerSans Bold', sans-serif;
 $font__main: 'BayerSans Regular', sans-serif;
 $font__arial: 'Arial Rounded Bold', sans-serif;
 $font__main-regular: 'BayerSans Regular', sans-serif;
-$font__main-medium: 'Arial', sans-serif;
+$font__main-medium: 'Arial Rounded Bold', sans-serif;
 $font__main-bold: 'BayerSans Bold', sans-serif;
 $font__main-cond-bold: 'BayerSansCond Bold', sans-serif;
 $font__main-bold-italic: 'Arial', sans-serif;
-$font__main-italic: 'Arial', sans-serif;
+$font__main-italic: 'BayerSans Italic', sans-serif;
 
 $font__icon: 'HelveticaNeueLTPro-Cn', sans-serif;
 $font__icon-thin: 'HelveticaNeueLTPro-ThCn', sans-serif;
