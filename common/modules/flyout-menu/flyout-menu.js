@@ -51,14 +51,40 @@
 						self.initialized = true;
 					}
 
-					// if (app.loaded.type === 'slideshow') {
-					// 	document.addEventListener('slideEnter', self._closeMenu);
-					// }
-					// else {
-					// 	document.addEventListener('sectionEnter', self._closeMenu);
-					// }
+					if (app.loaded.type === 'slideshow') {
+						document.addEventListener('slideEnter', self._setCurrent);
+					}
+					else {
+						document.addEventListener('sectionEnter', self._setCurrent);
+					}
 				}
 			});
+		},
+
+		_setCurrent:function() {
+			// Clear checked input
+			app.flyoutMenu._clearMenu();
+
+			// Clear active label
+			var labels = document.getElementsByTagName('label');
+			for( i=0; i<labels.length; i++ ) {
+				var label = labels[i];
+				label.classList.remove('active');
+			}
+
+			// Set active label
+			var currentGoTo = app.loaded.id + '.' + app.slideshow.id + '.' + app.slideshow.current;
+			var inputs = document.getElementsByClassName('flyout');
+			for( i=0; i<inputs.length; i++ ) {
+				var input = inputs[i];
+				var goTo = input.getAttribute('data-goto');
+				var parentGoTo = input.getAttribute('data-parent-goto');
+
+				if( currentGoTo === goTo || currentGoTo === parentGoTo ) {
+					var currentLabel = document.querySelectorAll('[for="'+input.id+'"]');
+					currentLabel[0].classList.add('active');
+				}
+			}
 		},
 
 		// Create the HTML of the menu
@@ -136,7 +162,7 @@
 
 		// Add markup to index page
 		_insert:function () {
-			navcheck = '<input type="checkbox" id="navcheck" role="button" title="menu" onclick="app.flyoutMenu._clearMenu();">';
+			navcheck = '<input type="checkbox" id="navcheck" role="button" title="menu">';
       navcheck += '<label for="navcheck" aria-hidden="true" title="menu">';
       navcheck += '<span class="burger"><span class="bar"></span></span>';
       navcheck += '</label>';

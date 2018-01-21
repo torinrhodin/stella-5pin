@@ -421,7 +421,7 @@ h1 span.asterisk, h2 span.asterisk {
         padding: 25px 50px 20px 25px;
         text-align: left; }
       #flyout-menu nav label:hover, #flyout-menu nav label:focus,
-      #flyout-menu nav label [class="flyout"]:checked + label {
+      #flyout-menu nav label [class="flyout"]:checked + label, #flyout-menu nav label.active {
         color: #fff;
         background: linear-gradient(to bottom, #e38d5e 36%, #c87c53 100%);
         border-top: 2px solid rgba(255, 255, 255, 0.95); }
@@ -463,31 +463,38 @@ h1 span.asterisk, h2 span.asterisk {
         right: 30px; }
     #flyout-menu nav label:hover > .icon.link1,
     #flyout-menu nav label:focus > .icon.link1,
-    #flyout-menu nav [class="flyout"]:checked + label > .icon.link1 {
+    #flyout-menu nav [class="flyout"]:checked + label > .icon.link1,
+    #flyout-menu nav label.active > .icon.link1 {
       background-image: url("../../content/img/nav-home-white.png"); }
     #flyout-menu nav label:hover > .icon.link2,
     #flyout-menu nav label:focus > .icon.link2,
-    #flyout-menu nav [class="flyout"]:checked + label > .icon.link2 {
+    #flyout-menu nav [class="flyout"]:checked + label > .icon.link2,
+    #flyout-menu nav label.active > .icon.link2 {
       background-image: url("../../content/img/nav-check-white.png"); }
     #flyout-menu nav label:hover > .icon.link3,
     #flyout-menu nav label:focus > .icon.link3,
-    #flyout-menu nav [class="flyout"]:checked + label > .icon.link3 {
+    #flyout-menu nav [class="flyout"]:checked + label > .icon.link3,
+    #flyout-menu nav label.active > .icon.link3 {
       background-image: url("../../content/img/nav-injection-white.png"); }
     #flyout-menu nav label:hover > .icon.link4,
     #flyout-menu nav label:focus > .icon.link4,
-    #flyout-menu nav [class="flyout"]:checked + label > .icon.link4 {
+    #flyout-menu nav [class="flyout"]:checked + label > .icon.link4,
+    #flyout-menu nav label.active > .icon.link4 {
       background-image: url("../../content/img/nav-smartpack-white.png"); }
     #flyout-menu nav label:hover > .icon.link5,
     #flyout-menu nav label:focus > .icon.link5,
-    #flyout-menu nav [class="flyout"]:checked + label > .icon.link5 {
+    #flyout-menu nav [class="flyout"]:checked + label > .icon.link5,
+    #flyout-menu nav label.active > .icon.link5 {
       background-image: url("../../content/img/nav-summary-white.png"); }
     #flyout-menu nav label:hover > .icon.link6,
     #flyout-menu nav label:focus > .icon.link6,
-    #flyout-menu nav [class="flyout"]:checked + label > .icon.link6 {
+    #flyout-menu nav [class="flyout"]:checked + label > .icon.link6,
+    #flyout-menu nav label.active > .icon.link6 {
       background-image: url("../../content/img/nav-resources-white.png"); }
     #flyout-menu nav label:hover > .icon.link7,
     #flyout-menu nav label:focus > .icon.link7,
-    #flyout-menu nav [class="flyout"]:checked + label > .icon.link7 {
+    #flyout-menu nav [class="flyout"]:checked + label > .icon.link7,
+    #flyout-menu nav label.active > .icon.link7 {
       background-image: url("../../content/img/nav-calculator-white.png"); }
   #flyout-menu .spacer {
     width: 100%;
