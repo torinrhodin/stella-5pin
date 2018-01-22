@@ -61,7 +61,8 @@ body {
 --------------------------------------------------------------*/
 #header {
   width: 100%;
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: 999;
   height: 75px; }
 
@@ -557,6 +558,8 @@ h1 span.asterisk, h2 span.asterisk {
     text-align: center;
     color: #fff;
     padding-top: 10px; }
+    #flyout-menu .sub-slide-cap.active {
+      color: #e86c1f; }
   #flyout-menu [class="flyout"]:checked + label .sub,
   #flyout-menu [class="flyout"]:checked + label .sub2 {
     display: block; }
