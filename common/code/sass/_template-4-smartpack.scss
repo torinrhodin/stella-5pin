@@ -342,6 +342,11 @@
   background-position-y: 256.5px;
   background-size: 387px 347.5px;  
   
+  .slide-subtitle {
+    margin: 10px 0 0 63px;
+    line-height: 34px;
+  }
+  
   .features-list {
     margin-left: 443px;
     margin-top: 51px;
@@ -354,6 +359,7 @@
         &.list-title {
           font-family: $font__main;
           margin-bottom: 20px;
+          letter-spacing: -.5px;
         }
         
         .list-icon {
