@@ -19,6 +19,10 @@
 
     .list-title {
       margin-bottom: 60px;
+      
+      .plus-sign {
+        padding-left: 0px;
+      }
     }
     
   }
@@ -153,6 +157,7 @@
     height: 62.5px;
     background-image: url('../../content/img/VirtualCare-logo.png');
     background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     top: 30px;
     right: 150px;
@@ -720,21 +725,23 @@
 
 #popup {
   &.automated_documentation_steps {
-    height: 428px;
+    height: 406px;
     background-image: url('../../content/img/auto-doc-zoom.png');
     background-repeat: no-repeat;
-    background-size: 98%;
+    background-size: 946px 456px;
     background-position-x: 10px;
-    background-position-y: 25px
+    background-position-y: 7px;
+    width: 90%;
+    margin: 0 2%;    
   }
 
   &.scanner_connectivity_detail {
-    height: 473px;
+    height: 423px;
     background-image: url('../../content/img/scanner-connectivity-detail-zoom.png');
     background-repeat: no-repeat;
-    background-size: 821px 466px;
+    background-size: 822px 467px;
     background-position-x: 36px;
-    background-position-y: 37px;
+    background-position-y: 15px;  
   }
 
   

@@ -15,15 +15,22 @@
     
     #product-name {
       margin-bottom: 20px;
+      
+      span {
+        font-size: 36px;
+      }
     }
     
     span {
-      font-size: 36px;
       color: $white;
 
       &.first,
       &.second {
         font-family: $font__main-bold;
+        
+        .fi-letter-space {
+          letter-spacing: 2px;
+        }
       }
     }
     
