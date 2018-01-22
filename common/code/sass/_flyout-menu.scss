@@ -171,7 +171,8 @@
 
       &:hover,
       &:focus,
-      [class="flyout"]:checked + label {
+      [class="flyout"]:checked + label,
+      &.active {
         color: #fff;
         background: linear-gradient(to bottom, rgba(227,141,94,1) 36%,rgba(200,124,83,1) 100%);
         border-top: 2px solid rgba(255,255,255,0.95);
@@ -232,7 +233,8 @@
 
     label:hover > .icon,
     label:focus > .icon,
-    [class="flyout"]:checked + label > .icon {
+    [class="flyout"]:checked + label > .icon,
+    label.active > .icon {
 
       &.link1 {
         background-image: url('../../content/img/nav-home-white.png');
@@ -371,6 +373,10 @@
     text-align: center;
     color: #fff;
     padding-top: 10px;
+
+    &.active {
+      color: $orange;
+    }
   }
 
   [class="flyout"]:checked + label .sub,

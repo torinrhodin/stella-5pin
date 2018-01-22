@@ -47,7 +47,6 @@
 				title: "MEDRAD<sup>&reg;</sup><br>Stellant CT<br>Injection<br>System",
 				idName: "link3",
 				labelName: "lab3",
-				// goTo: "stellant_app.medrad_navigation.medrad"
 				parentGoTo: "stellant_app.medrad_navigation.medrad",
 				isParent: true,
 				subLinks: [
@@ -72,46 +71,46 @@
 				title: "SmartPACK+",
 				idName: "link4",
 				labelName: "lab4",
-				parentGoTo: "stellant_app.smartpack_intro.smartpack",
+				parentGoTo: "stellant_app.smartpack_collection.smartpack",
 				isParent: true,
 				subLinks: [
 					[
 						{
 							title: "Reliability",
 							thumb: "content/img/reliability.jpg",
-							goTo: "stellant_app.reliability_pillar.reliability"
+							goTo: "stellant_app.smartpack_collection.reliability"
 						},
 						{
 							title: "Technology",
 							thumb: "content/img/technology.jpg",
-							goTo: "stellant_app.technology_pillar.technology"
+							goTo: "stellant_app.smartpack_collection.technological_deployments"
 						},
 						{
 							title: "Access",
 							thumb: "content/img/access.jpg",
-							goTo: "stellant_app.capital_access_program_slide.capital_access_program"
+							goTo: "stellant_app.smartpack_collection.capital_access_program"
 						}
 					],
 					[
 						{
 							title: "Scanner connectivity",
 							thumb: "content/img/scanner.jpg",
-							goTo: "stellant_app.scanner_intro.scanner_connectivity_intro"
+							goTo: "stellant_app.smartpack_collection.scanner_connectivity_intro"
 						},
 						{
 							title: "Automated<br>documentation",
 							thumb: "content/img/automated.jpg",
-							goTo: "stellant_app.automated_documentation_intro.automated_documentation"
+							goTo: "stellant_app.smartpack_collection.automated_documentation"
 						},
 						{
 							title: "Personalized protocols",
 							thumb: "content/img/automated.jpg",
-							goTo: "stellant_app.personalized_protocols_slide.personalized_protocols"
+							goTo: "stellant_app.smartpack_collection.personalized_protocols"
 						},
 						{
 							title: "Data-driven insights",
 							thumb: "content/img/data.jpg",
-							goTo: "stellant_app.data_driven_insights_slide.data_driven_insights"
+							goTo: "stellant_app.smartpack_collection.data_driven_insights"
 						}
 					]
 				]

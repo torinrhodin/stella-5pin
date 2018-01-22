@@ -51,14 +51,71 @@
 						self.initialized = true;
 					}
 
-					// if (app.loaded.type === 'slideshow') {
-					// 	document.addEventListener('slideEnter', self._closeMenu);
-					// }
-					// else {
-					// 	document.addEventListener('sectionEnter', self._closeMenu);
-					// }
+					// Set current for every slide
+					document.addEventListener('slideEnter', self._setCurrent);
 				}
 			});
+		},
+
+		_setCurrent:function() {
+			// Clear checked input
+			app.flyoutMenu._clearMenu();
+
+			// Clear active labels
+			var labels = document.getElementsByTagName('label');
+			for( i=0; i<labels.length; i++ ) {
+				var label = labels[i];
+				label.classList.remove('active');
+			}
+
+			// Clear active captions
+			var captions = document.getElementsByClassName('sub-slide-cap');
+			for( i=0; i<captions.length; i++ ) {
+				var caption = captions[i];
+				caption.classList.remove('active');
+			}
+
+			// Set active parent label			
+			var inputs = document.getElementsByClassName('flyout');
+			for( i=0; i<inputs.length; i++ ) {
+				var input = inputs[i];
+				var el = {};
+				el.goTo = input.getAttribute('data-goto');
+				el.parentGoTo = input.getAttribute('data-parent-goto');
+
+				// Get associated slideshow ID
+				if( el.goTo != '' ) {
+					var goToArr = el.goTo.split('.');
+					el.slideshow = goToArr[1] || '';
+
+				} else if( el.parentGoTo != '' ) {
+					var parentGoToArr = el.parentGoTo.split('.');
+					el.slideshow = parentGoToArr[1] || '';
+
+				}
+
+				// Set active parent slideshow link
+				if( app.slideshow.id === el.slideshow ) {
+					var currentLabel = document.querySelectorAll('[for="'+input.id+'"]');
+					currentLabel[0].classList.add('active');
+				}
+			}
+
+			// Set active sub link
+			var currentGoTo = app.loaded.id + '.' + app.slideshow.id + '.' + app.slideshow.current;
+			var subLinks = document.getElementsByClassName('flyout-sub');
+			for( i=0; i<subLinks.length; i++ ) {
+				var subLink = subLinks[i];
+				var el = {};
+				el.goTo = subLink.getAttribute('data-goto');
+				el.popUp = subLink.getAttribute('data-popup-link');
+				
+				if( currentGoTo === el.goTo && el.popUp === '' ) {
+					var caption = subLink.parentNode.parentNode.getElementsByClassName('sub-slide-cap');
+					caption[0].classList.add('active');
+				}
+			}
+
 		},
 
 		// Create the HTML of the menu
@@ -99,7 +156,7 @@
 
 							subMarkup += '<div class="sub-slide-wrap">';
 							subMarkup += '<div class="sub-slide-thumb">';
-							subMarkup += '<img data-goto="' + subLink.goTo + '" src="' + subLink.thumb + '" data-popup-link="' + subLink.popupLink + '">'
+							subMarkup += '<img class="flyout-sub" data-goto="' + subLink.goTo + '" src="' + subLink.thumb + '" data-popup-link="' + subLink.popupLink + '">'
 							subMarkup += '</div>';
 							subMarkup += '<div class="sub-slide-cap">' + subLink.title + '</div>';
 							subMarkup += '</div>';
@@ -136,7 +193,7 @@
 
 		// Add markup to index page
 		_insert:function () {
-			navcheck = '<input type="checkbox" id="navcheck" role="button" title="menu" onclick="app.flyoutMenu._clearMenu();">';
+			navcheck = '<input type="checkbox" id="navcheck" role="button" title="menu">';
       navcheck += '<label for="navcheck" aria-hidden="true" title="menu">';
       navcheck += '<span class="burger"><span class="bar"></span></span>';
       navcheck += '</label>';
@@ -222,7 +279,7 @@
 				name = linkArr[0];
 				content = linkArr[1] || '';
 				subcontent = linkArr[2] || '';
-				util.addClass(ele, 'selected');
+				// util.addClass(ele, 'selected');
 
 				if (name === 'app') {
 					eval(attr);

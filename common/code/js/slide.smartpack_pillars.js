@@ -41,7 +41,6 @@ document.addEventListener('presentationInit', function() {
 			}			
 		},
 		_slideClick: function(event) {
-			console.log('clicked');
 			var appID = app.loaded.id;
 			var slideshowName = this.getAttribute('data-slideshow');
 			var slideName = this.getAttribute('data-slide');

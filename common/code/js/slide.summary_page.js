@@ -26,15 +26,18 @@ document.addEventListener('presentationInit', function() {
 			document.removeEventListener('swipeleft', this._swipeNext);
 		},
 		_swipePrev: function() {
-			app.slideshow.previous();
+			if( app.popup.initialized === false ) {
+				app.slideshow.previous();	
+			}
 		},
 		_swipeNext: function() {
-			app.slideshow.next();
+			if( app.popup.initialized === false ) {
+				app.slideshow.next();
+			}			
 		},
 		_goToTrial: function(argument) {
 			app.goTo('stellant_app', 'resources_slide', 'resources');
 		},
-
 		_launchPopup: function(event) {
       var popupClass = this.closest('article').getAttribute('id');
 			var popupText = slide.element.popupText.innerHTML;

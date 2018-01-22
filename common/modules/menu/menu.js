@@ -79,7 +79,6 @@
 			//Footer
 			footerMarkup = '';
 			this.footerMenuItems.forEach(function (item) {
-				console.log(item);
 				item.className = item.className || "";
 				var attrs = "";
 
@@ -89,7 +88,6 @@
 
 				var li = '<li data-goto="' + item.goTo + '" class="' + item.className + '"' + attrs + '>' + item.title + '</li>';
 				footerMarkup += li;
-				console.log(footerMarkup);
 			});
 			this.footerMarkup = null;
 			this.footerMarkup = footerMarkup;
