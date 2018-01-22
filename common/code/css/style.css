@@ -721,11 +721,14 @@ h1 span.asterisk, h2 span.asterisk {
     margin: 40px 0px 0 68px; }
     #introduction h1 #product-name {
       margin-bottom: 20px; }
+      #introduction h1 #product-name span {
+        font-size: 36px; }
     #introduction h1 span {
-      font-size: 36px;
       color: #FFFFFF; }
       #introduction h1 span.first, #introduction h1 span.second {
         font-family: "BayerSans Bold", sans-serif; }
+        #introduction h1 span.first .fi-letter-space, #introduction h1 span.second .fi-letter-space {
+          letter-spacing: 2px; }
     #introduction h1 sup.reg,
     #introduction h1 .title-start,
     #introduction h1 .title-today {
@@ -933,7 +936,7 @@ h1 span.asterisk, h2 span.asterisk {
       left: 140px; }
     .popup-slide #consumables-details .detail.two {
       bottom: 80px;
-      left: 440px; }
+      left: 464px; }
     .popup-slide #consumables-details .detail.three {
       bottom: 185px;
       right: 40px; }
@@ -980,6 +983,8 @@ h1 span.asterisk, h2 span.asterisk {
     margin-top: 35px; }
     #smartpack .features-list .list-title {
       margin-bottom: 60px; }
+      #smartpack .features-list .list-title .plus-sign {
+        padding-left: 0px; }
   #smartpack .arrow-bubble {
     margin-right: 290px;
     margin-top: 52px; }
@@ -1060,6 +1065,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 62.5px;
   background-image: url("../../content/img/VirtualCare-logo.png");
   background-size: contain;
+  background-repeat: no-repeat;
   position: absolute;
   top: 30px;
   right: 150px; }
@@ -1184,6 +1190,9 @@ h1 span.asterisk, h2 span.asterisk {
   background-position-x: 27.5px;
   background-position-y: 256.5px;
   background-size: 387px 347.5px; }
+  #scanner_connectivity_intro .slide-subtitle {
+    margin: 10px 0 0 63px;
+    line-height: 34px; }
   #scanner_connectivity_intro .features-list {
     margin-left: 443px;
     margin-top: 51px; }
@@ -1191,7 +1200,8 @@ h1 span.asterisk, h2 span.asterisk {
       margin-bottom: 15px; }
       #scanner_connectivity_intro .features-list ul li.list-title {
         font-family: "BayerSans Regular", sans-serif;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        letter-spacing: -.5px; }
       #scanner_connectivity_intro .features-list ul li .list-icon {
         height: 35px;
         width: 40px;
@@ -1423,20 +1433,22 @@ h1 span.asterisk, h2 span.asterisk {
   margin-top: 30px; }
 
 #popup.automated_documentation_steps {
-  height: 428px;
+  height: 406px;
   background-image: url("../../content/img/auto-doc-zoom.png");
   background-repeat: no-repeat;
-  background-size: 98%;
+  background-size: 946px 456px;
   background-position-x: 10px;
-  background-position-y: 25px; }
+  background-position-y: 7px;
+  width: 90%;
+  margin: 0 2%; }
 
 #popup.scanner_connectivity_detail {
-  height: 473px;
+  height: 423px;
   background-image: url("../../content/img/scanner-connectivity-detail-zoom.png");
   background-repeat: no-repeat;
-  background-size: 821px 466px;
+  background-size: 822px 467px;
   background-position-x: 36px;
-  background-position-y: 37px; }
+  background-position-y: 15px; }
 
 #popup .small-header {
   margin-left: 36px;
@@ -1586,6 +1598,8 @@ h1 span.asterisk, h2 span.asterisk {
 #popup .summary-header {
   margin-left: 36px;
   margin-top: 50px; }
+  #popup .summary-header h3 {
+    letter-spacing: -1px; }
 
 #popup .summary {
   background-image: url("../../content/img/summary-popup.png");
