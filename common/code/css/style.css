@@ -1668,11 +1668,135 @@ h1 span.asterisk, h2 span.asterisk {
         #resources #resources-grid .column .resource .links div.email {
           background-image: url("../../content/img/email-link.png"); }
 
-#reliability_calculator .slide-title,
-#calculator .slide-title {
+#reliability_calculator .slide-subtitle,
+#calculator .slide-subtitle {
   font-family: "BayerSans Regular", sans-serif;
-  font-size: 30px;
+  font-size: 28px; }
+
+#reliability_calculator .main-content,
+#calculator .main-content {
+  font-family: "BayerSans Regular", sans-serif;
+  display: flex;
+  margin: 20px 63px 0; }
+
+#reliability_calculator .sidebar, #reliability_calculator .arrow, #reliability_calculator .calculator,
+#calculator .sidebar,
+#calculator .arrow,
+#calculator .calculator {
+  flex: 1; }
+
+#reliability_calculator .arrow,
+#calculator .arrow {
+  flex-grow: 1; }
+
+#reliability_calculator h4, #reliability_calculator label, #reliability_calculator input, #reliability_calculator strong,
+#calculator h4,
+#calculator label,
+#calculator input,
+#calculator strong {
+  font-family: "BayerSans Bold", sans-serif; }
+
+#reliability_calculator label, #reliability_calculator input, #reliability_calculator legend,
+#calculator label,
+#calculator input,
+#calculator legend {
+  display: block;
+  text-align: center; }
+
+#reliability_calculator input,
+#calculator input {
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box; }
+
+#reliability_calculator .sidebar,
+#calculator .sidebar {
+  flex-grow: 3;
+  background: #e86c1f;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box; }
+  #reliability_calculator .sidebar label,
+  #calculator .sidebar label {
+    line-height: 1.3;
+    color: #FFFFFF; }
+  #reliability_calculator .sidebar input,
+  #calculator .sidebar input {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 10px; }
+
+#reliability_calculator .calculator,
+#calculator .calculator {
+  flex-grow: 8;
   color: #6d6e70;
-  margin-top: 85px; }
+  background: rgba(217, 250, 251, 0.3);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 0 0 20px 20px;
+  margin-top: 50px;
+  position: relative; }
+  #reliability_calculator .calculator h4,
+  #calculator .calculator h4 {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    background: rgba(232, 109, 31, 0.3);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: -50px;
+    left: 0; }
+  #reliability_calculator .calculator fieldset,
+  #calculator .calculator fieldset {
+    margin: 60px 0; }
+    #reliability_calculator .calculator fieldset label, #reliability_calculator .calculator fieldset legend,
+    #calculator .calculator fieldset label,
+    #calculator .calculator fieldset legend {
+      font-size: 18px; }
+    #reliability_calculator .calculator fieldset legend,
+    #calculator .calculator fieldset legend {
+      margin-bottom: 20px; }
+    #reliability_calculator .calculator fieldset input,
+    #calculator .calculator fieldset input {
+      font-size: 16px;
+      height: 40px; }
+  #reliability_calculator .calculator .row,
+  #calculator .calculator .row {
+    display: flex; }
+    #reliability_calculator .calculator .row .col,
+    #calculator .calculator .row .col {
+      flex: 1; }
+  #reliability_calculator .calculator .bottom,
+  #calculator .calculator .bottom {
+    color: #e86c1f; }
+
+#reliability_calculator .arrow-bubble,
+#calculator .arrow-bubble {
+  display: block;
+  margin: 0 63px 20px 0;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+  #reliability_calculator .arrow-bubble #calculation-guide,
+  #calculator .arrow-bubble #calculation-guide {
+    width: 300.5px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-image: url("../../content/img/arrow-bubble-long.png"); }
+    #reliability_calculator .arrow-bubble #calculation-guide .guide-text,
+    #calculator .arrow-bubble #calculation-guide .guide-text {
+      color: #e86c1f;
+      font-family: "BayerSans Regular", sans-serif;
+      font-size: 17px;
+      padding: 24px 0 0 56px; }
+      #reliability_calculator .arrow-bubble #calculation-guide .guide-text span,
+      #calculator .arrow-bubble #calculation-guide .guide-text span {
+        font-family: "BayerSans Bold", sans-serif; }
 
 /*# sourceMappingURL=style.css.map */

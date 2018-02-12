@@ -1,5 +1,65 @@
-<article id="calculator" class="slide calculator" data-ag-name="Calculator">
+<article id="calculator" class="slide calculator has-subtitle" data-ag-name="Calculator">
 
-  <h2 class="slide-title">Calculator coming soon</h2>
+  <h2 class="slide-title">The real cost of equipment<br>downtime events</h2>
+  <h3 class="slide-subtitle">How many patients may be affected by prolonged injector downtime events?</h3>
+
+  <div class="main-content">
+    <form class="sidebar">
+      <fieldset>
+        <label for="ct-scanners">Number of affected CT scanners</label>
+        <input type="text" id="ct-scanners" name="scanners" value="0">
+
+        <label for="scans-per-hour">Average patient scans per hour</label>
+        <input type="text" id="scans-per-hour" name="scans" value="0">
+
+        <label for="">Number of standard operating hours per day</label>
+        <input type="text" id="hours-per-day" name="hours-day" value="0">
+
+        <label for="">Number of standard operating hours per week</label>
+        <input type="text" id="hours-per-week" name="hours-week" value="0">
+      </fieldset>
+    </form>
+
+    <div class="arrow"></div>
+
+    <div class="calculator">
+      <h4>Number of patients affected by downtime events</h4>
+
+      <fieldset>
+        <legend>Length of downtime event</legend>
+
+        <div class="row">
+          <div class="col">
+            <p>Patient volume<br>at risk:</p>
+          </div><!-- .col -->
+
+          <div class="col">
+            <label for="one-hour">One hour</label>
+            <input type="text" id="one-hour" name="hour" value="0">
+          </div><!-- .col -->
+
+          <div class="col">
+            <label for="one-day">One day</label>
+            <input type="text" id="one-day" name="day" value="0">
+          </div><!-- .col -->
+
+          <div class="col">
+            <label for="one-week">One week</label>
+            <input type="text" id="one-week" name="week" value="0">
+          </div><!-- .col -->
+        </div><!-- .row -->
+      </fieldset>
+
+      <div class="bottom">
+        <p>Prolonged downtime events may cause procedures to be delayed or rescheduled, resulting in <strong>increased patient wait time</strong> and <strong>potential delays in diagnosis</strong></p>
+      </div><!-- .footer -->
+    </div><!-- .calculator -->
+  </div><!-- .main-content -->
+
+  <div class="arrow-bubble">
+    <div id="calculation-guide">
+      <div class="guide-text">Calculation guide</div>
+    </div>
+  </div>
 
 </article>

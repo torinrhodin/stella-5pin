@@ -1,5 +1,64 @@
 <article id="reliability_calculator" class="slide reliability-calculator" data-ag-name="Reliability Calculator">
 
-  <h2 class="slide-title">Calculator coming soon</h2>
+  <h2 class="slide-title">The real cost of equipment<br>downtime events</h2>
+  <h3 class="slide-subtitle">How many patients may be affected by prolonged injector downtime events?</h3>
 
+  <form class="sidebar">
+    <fieldset>
+      <label for="ct-scanners">Number of affected CT scanners</label>
+      <input type="text" id="ct-scanners" name="scanners">
+
+      <label for="scans-per-hour">Average patient scans per hour</label>
+      <input type="text" id="scans-per-hour" name="scans">
+
+      <label for="">Number of standard operating hours per day</label>
+      <input type="text" id="hours-per-day" name="hours-day">
+
+      <label for="">Number of standard operating hours per week</label>
+      <input type="text" id="hours-per-week" name="hours-week">
+    </fieldset>
+  </form>
+
+  <div class="arrow"></div>
+
+  <div class="calculator">
+    <div class="header">
+      <h4>Number of patients affected by downtime events</h4>
+    </div>
+
+    <fieldset class="main-content">
+      <legend>Length of downtime event</legend>
+
+      <div class="row">
+        <div class="col">
+          <p>Patient volume<br>at risk:</p>
+        </div>
+
+        <div class="col">
+          <label for="">One hour</label>
+          <input type="text" name="">
+        </div>
+
+        <div class="col">
+          <label for="">One day</label>
+          <input type="text" name="">
+        </div>
+
+        <div class="col">
+          <label for="">One week</label>
+          <input type="text" name="">
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="footer">
+      <p>Prolonged downtime events may cause procedures to be delayed or rescheduled, resulting in increased patient wait time and potential delays in diagnosis</p>
+    </div>
+  </div>
+
+  <div class="arrow-bubble">
+    <div id="calculation-guide">
+      <div class="guide-text">Calculation guide</div>
+    </div>
+  </div>
 </article>
