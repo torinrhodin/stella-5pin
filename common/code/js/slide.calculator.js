@@ -1,7 +1,7 @@
 document.addEventListener('presentationInit', function() {
 	var slide = app.slide.calculator = {
 		elements: {
-			calcInputs: ["form input", "all"],
+			calcLink: ["#calc-link"],
 		},
 		onEnter: function(ele) {
 			console.log('enter ' + app.slideshow.current);
@@ -10,15 +10,7 @@ document.addEventListener('presentationInit', function() {
 			document.addEventListener('swiperight', this._swipePrev);
 			document.addEventListener('swipeleft', this._swipeNext);
 
-			// Define array of Calculator Inputs
-			var calcInputs = slide.element.calcInputs;
-
-			// Bulk add events for Parent Links
-			for (i = 0; i < calcInputs.length; i++) {
-				app.addEvent('keyup', slide._calculate, calcInputs[i]);
-			}
-			console.log(calcInputs);
-
+			app.addEvent('click', slide._goToCalc, slide.element.calcLink);
 		},
 		onExit: function(ele) {
 			console.log('exit');
@@ -33,23 +25,8 @@ document.addEventListener('presentationInit', function() {
 		_swipeNext: function() {
 			app.slideshow.next();
 		},
-		_calculate: function(event) {
-			console.log(event);
-			var calcInputs = slide.element.calcInputs;
-
-			var scanners = calcInputs[0].value;
-			var scansPerHour = calcInputs[1].value;
-			var hoursPerDay = calcInputs[2].value;
-			var hoursPerWeek = calcInputs[3].value;
-
-			var contrastEnhanced = 0.51;
-			var powerAsissted = 0.97;
-
-			var hourDisplay = document.getElementById('one-hour');
-			var hourValue = scanners*scansPerHour*contrastEnhanced*powerAsissted*hoursPerDay;
-
-			if( hourValue === NaN ) { hourValue = 0; }
-			hourDisplay.setAttribute('value',hourValue);
-		},
+		_goToCalc: function(event) {
+			app.goTo('stellant_app','smartpack_collection','reliability_calculator');
+		}
 	};
 });
