@@ -7,16 +7,16 @@
     <form class="sidebar">
       <fieldset>
         <label for="ct-scanners">Number of affected CT scanners</label>
-        <input type="text" id="ct-scanners" name="scanners" placeholder="0" value="">
+        <input type="text" id="ct-scanners" pattern="\d*" name="scanners" placeholder="0" value="">
 
         <label for="scans-per-hour">Average patient scans per hour</label>
-        <input type="text" id="scans-per-hour" name="scans" placeholder="0" value="">
+        <input type="text" id="scans-per-hour" pattern="\d*" name="scans" placeholder="0" value="">
 
         <label for="">Number of standard operating hours per day</label>
-        <input type="text" id="hours-per-day" name="hours-day" placeholder="0" value="">
+        <input type="text" id="hours-per-day" pattern="\d*" name="hours-day" placeholder="0" value="">
 
         <label for="">Number of standard operating hours per week</label>
-        <input type="text" id="hours-per-week" name="hours-week" placeholder="0" value="">
+        <input type="text" id="hours-per-week" pattern="\d*" name="hours-week" placeholder="0" value="">
       </fieldset>
     </form>
 

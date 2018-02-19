@@ -26,7 +26,7 @@
 	.main-content {
 		font-family: $font__main;
 		display: flex;
-		margin: 20px 63px 0;
+		margin: 15px 63px 0;
 	}
 
 	.sidebar, .arrow, .calculator {
@@ -38,7 +38,6 @@
 		display: flex;
 
 		img {
-			// width: 50%;
 			margin: 0 auto;
 			flex: .5;
 			align-self: center;
@@ -54,36 +53,40 @@
 		text-align: center;
 	}
 
-	input, span.input {
+	input[type="text"] {
+		-webkit-appearance: none;
+		border: none;
+		outline: none;
+		width: 100%;
+		height: 45px;
+		font-size: 18px;
+		color: $gray;
+		margin-bottom: 20px;
+		padding: 12px 10px 8px 10px;
+
+		&:focus::-webkit-input-placeholder {
+			opacity: 0;
+		}
+	}
+
+	input[type="text"],
+	span.input {
 		border-radius: 10px;
 		box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.25);
 		box-sizing: border-box;
 	}
-
+	
 	.sidebar {
 		flex-grow: 3;
 		background: $orange;
 		border-radius: 20px;
-		padding: 20px 20px 5px;
+		padding: 20px 20px 0;
 		box-sizing: border-box;
 
 		label {
 			margin-bottom: 3px;
 			line-height: 1.2;
 			color: $white;
-		}
-
-		input {
-			width: 100%;
-			height: 45px;
-			font-size: 18px;
-			color: $gray;
-			margin-bottom: 20px;
-			padding: 12px 10px 8px 10px;
-
-			&:focus::-webkit-input-placeholder {
-				opacity: 0;
-			}
 		}
 	}
 
