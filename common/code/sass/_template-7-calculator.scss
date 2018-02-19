@@ -39,6 +39,7 @@
 
 		img {
 			margin: 0 auto;
+			padding-top: 25px;
 			flex: .5;
 			align-self: center;
 		}
@@ -75,7 +76,7 @@
 		box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.25);
 		box-sizing: border-box;
 	}
-	
+
 	.sidebar {
 		flex-grow: 3;
 		background: $orange;
@@ -97,27 +98,27 @@
 		padding: 21px;
 		box-sizing: border-box;
 		border-radius: 0 0 20px 20px;
-		margin-top: 60px;
+		margin-top: 65px;
 		position: relative;
 
 		h4 {
 			width: 100%;
-			height: 60px;
+			height: 65px;
 			font-family: $font__main-cond-bold;
 			font-size: 21px;
 			text-align: center;
 			border-radius: 20px 20px 0 0;
 			background: $lightOrange;
 			margin: 0;
-			padding: 20px;
+			padding: 23px;
 			box-sizing: border-box;
 			position: absolute;
-			top: -60px;
+			top: -65px;
 			left: 0;
 		}
 
 		fieldset {
-			margin: 60px 0 120px;
+			margin: 60px 0 100px;
 
 			label, legend {
 				font-size: 18px;
@@ -171,6 +172,10 @@
 			line-height: 1.1;
 			color: $orange;
 			text-align: center;
+
+			b {
+				font-family: $font__main-bold;
+			}
 		}
 	}
 
