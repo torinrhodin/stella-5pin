@@ -33,7 +33,6 @@ document.addEventListener('presentationInit', function() {
 			app.slideshow.next();
 		},
 		slideClick: function(event) {
-			console.log('clicked');
 			var appID = app.loaded.id;
 			var slideshowName = this.getAttribute('data-slideshow');
 			var slideName = this.getAttribute('data-slide');

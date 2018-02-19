@@ -128,7 +128,7 @@
 				goTo: "stellant_app.resources_slide.resources"
 			},
 			{
-				title: "Calculator",
+				title: "Tools",
 				idName: "link7",
 				labelName: "lab7",
 				goTo: "stellant_app.calculator_slide.calculator"
@@ -143,7 +143,7 @@
 			{ title:"", goTo:"stellant_app.home.introduction" }
 	  ],
 	  footerLinks: [
-			{ title:"", goTo:"stellant_app.summary_page_slide.summary_page" }
+			// { title:"", goTo:"stellant_app.summary_page_slide.summary_page" }
 	  ]
 	});
 

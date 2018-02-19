@@ -1,5 +1,84 @@
-<article id="reliability_calculator" class="slide reliability-calculator" data-ag-name="Reliability Calculator">
+<article id="reliability_calculator" class="slide has-subtitle reliability-calculator" data-ag-name="Reliability Calculator">
 
-  <h2 class="slide-title">Calculator coming soon</h2>
+  <h2 class="slide-title">The real cost of equipment<br>downtime events</h2>
+  <h3 class="slide-subtitle">How many patients may be affected by prolonged injector downtime events?</h3>
 
+  <div class="main-content">
+    <form class="sidebar">
+      <fieldset>
+        <label for="ct-scanners">Number of affected<br>CT scanners</label>
+        <input type="text" id="ct-scanners" pattern="\d*" name="scanners" placeholder="0" value="">
+
+        <label for="scans-per-hour">Average patient scans<br>per hour</label>
+        <input type="text" id="scans-per-hour" pattern="\d*" name="scans" placeholder="0" value="">
+
+        <label for="">Number of standard operating hours per day</label>
+        <input type="text" id="hours-per-day" pattern="\d*" name="hours-day" placeholder="0" value="">
+
+        <label for="">Number of standard operating hours per week</label>
+        <input type="text" id="hours-per-week" pattern="\d*" name="hours-week" placeholder="0" value="">
+      </fieldset>
+    </form>
+
+    <div class="arrow">
+      <img src="content/img/arrow-bubble.png" width="34" height="34" />
+    </div>
+
+    <div class="calculator">
+      <h4>Number of patients affected by downtime events</h4>
+
+      <fieldset>
+        <legend>Length of downtime event</legend>
+
+        <div class="row">
+          <div class="col">
+            <p>Patient volume<br>at risk:</p>
+          </div><!-- .col -->
+
+          <div class="col">
+            <label for="one-hour">One hour</label>
+            <span id="one-hour" class="input">0</span>
+          </div><!-- .col -->
+
+          <div class="col">
+            <label for="one-day">One day</label>
+            <span id="one-day" class="input">0</span>
+          </div><!-- .col -->
+
+          <div class="col">
+            <label for="one-week">One week</label>
+            <span id="one-week" class="input">0</span>
+          </div><!-- .col -->
+        </div><!-- .row -->
+      </fieldset>
+
+      <div class="bottom">
+        <p>Prolonged downtime events may cause procedures to be delayed or rescheduled, resulting in <b>increased patient wait time</b> and <b>potential delays in diagnosis</b></p>
+      </div><!-- .footer -->
+    </div><!-- .calculator -->
+  </div><!-- .main-content -->
+
+  <div class="arrow-bubble">
+    <div id="calculation-guide">
+      <div class="guide-text">Calculation guide</div>
+    </div>
+  </div>
+
+  <div id="popup-text">
+    <div class="header calculator">
+      <h3>Calculation guide</h3>
+      <h4>Patient procedures</h4>
+    </div><!-- .header -->
+    <div class="content calculator">
+      <p>The potential amount of patient procedures affected resulting from injector downtime events is calculated by multiplying the number of CT scanners impacted by the average number of contrast enhanced power assisted CT scans conducted per hour.</p>
+      <p><b>For example:</b><br>Number of patients affected per day = (1 CT scanner)(12 scans per hour)<br>(51% contrast enhanced*)(97% power assisted*)(8 hours per day) = 47.49<br>(~47 patients)</p>
+    </div><!-- .content -->
+    <div class="bottom calculator">
+      <p>Estimates are based on information provided by the hospital and actual results may vary.</p>
+      <p>Estimates are for demonstration purposes only and Bayer makes no warranty regarding the accuracy of these estimates.</p>
+    </div><!-- .bottom -->
+    <div class="footnote calculator">
+      <p>* “The Imaging Market Guide”. Arlington Medical Resources. Data on file.</p>
+    </div><!-- .footnote -->
+  </div>
 </article>
