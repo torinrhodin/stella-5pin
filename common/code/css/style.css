@@ -1777,7 +1777,7 @@ h1 span.asterisk, h2 span.asterisk {
   flex-grow: 8;
   color: #6d6e70;
   background: #d9fAf1;
-  padding: 21px;
+  padding: 20px;
   box-sizing: border-box;
   border-radius: 0 0 20px 20px;
   margin-top: 65px;
@@ -1832,7 +1832,8 @@ h1 span.asterisk, h2 span.asterisk {
     color: #e86c1f;
     text-align: center; }
     #reliability_calculator .calculator .bottom b {
-      font-family: "BayerSans Bold", sans-serif; }
+      font-family: "BayerSans Bold", sans-serif;
+      font-weight: normal; }
 
 #reliability_calculator .arrow-bubble {
   display: block;
