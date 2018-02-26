@@ -1702,12 +1702,12 @@ h1 span.asterisk, h2 span.asterisk {
         #resources #resources-grid .column .resource .links div.email {
           background-image: url("../../content/img/email-link.png"); }
 
-#calculator .slide-subtitle {
+#tools .slide-subtitle {
   font-family: "BayerSans Regular", sans-serif;
   font-size: 24px;
   color: #e86c1f;
   margin: 65px 63px 29px; }
-  #calculator .slide-subtitle span {
+  #tools .slide-subtitle span {
     display: inline-block;
     padding: 40px 30px;
     vertical-align: top; }
@@ -1812,9 +1812,11 @@ h1 span.asterisk, h2 span.asterisk {
       text-align: center;
       height: 65px;
       padding: 18px;
-      color: #80f0d1;
+      color: #eb6e1f;
       background: #FFFFFF;
-      display: block; }
+      display: block;
+      max-width: 155px;
+      overflow: hidden; }
   #reliability_calculator .calculator .row {
     display: flex; }
     #reliability_calculator .calculator .row .col {

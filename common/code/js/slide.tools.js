@@ -1,5 +1,5 @@
 document.addEventListener('presentationInit', function() {
-	var slide = app.slide.calculator = {
+	var slide = app.slide.tools = {
 		elements: {
 			calcLink: ["#calc-link"],
 		},

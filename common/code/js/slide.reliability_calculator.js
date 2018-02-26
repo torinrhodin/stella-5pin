@@ -14,7 +14,7 @@ document.addEventListener('presentationInit', function() {
 
 			// Define array of Calculator Inputs
 			var calcInputs = slide.element.calcInputs;
-
+			
 			// Bulk add events for Parent Links
 			for (i = 0; i < calcInputs.length; i++) {
 				app.addEvent('keyup', slide._calculate, calcInputs[i]);
@@ -47,7 +47,6 @@ document.addEventListener('presentationInit', function() {
 	    return roundedTempNumber / factor;
 		},
 		_calculate: function(event) {
-			console.log(event);
 			var calcInputs = slide.element.calcInputs;
 
 			var scanners = calcInputs[0].value;
@@ -74,7 +73,7 @@ document.addEventListener('presentationInit', function() {
 			var hourDisplay = document.getElementById('one-hour');
 			var dayDisplay = document.getElementById('one-day');
 			var weekDisplay = document.getElementById('one-week');
-
+			
 			hourDisplay.textContent = hourRounded;
 			dayDisplay.textContent = dayRounded;
 			weekDisplay.textContent = weekRounded;

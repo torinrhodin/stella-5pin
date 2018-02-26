@@ -131,7 +131,7 @@
 				title: "Tools",
 				idName: "link7",
 				labelName: "lab7",
-				goTo: "stellant_app.calculator_slide.calculator"
+				goTo: "stellant_app.tools_slide.tools"
 			}
 	  ]
 	});

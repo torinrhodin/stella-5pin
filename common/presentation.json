@@ -91,10 +91,10 @@
 			"valid":true,
 			"file" : "resources.html"
 		},
-		"calculator" : {
-			"name" : "Calculator",
+		"tools" : {
+			"name" : "Tools",
 			"valid":true,
-			"file" : "calculator.html"
+			"file" : "tools.html"
 		}
 	},
 	"structures" : {
@@ -134,16 +134,16 @@
 			"type":"slideshow",
 			"valid":true
 		},
-		"calculator_slide":{
-			"content":["calculator"],
-			"name":"Calculator Slide",
+		"tools_slide":{
+			"content":["tools"],
+			"name":"Tools Slide",
 			"type":"slideshow",
 			"valid":true
 		},
 	  "stellant_app" : {
 			"name" : "stellant",
 			"type" : "collection",
-  		"content" : ["home","offerings_navigation","medrad_navigation","smartpack_collection","summary_page_slide","resources_slide","calculator_slide"]
+  		"content" : ["home","offerings_navigation","medrad_navigation","smartpack_collection","summary_page_slide","resources_slide","tools_slide"]
 		}
 	}
 }
