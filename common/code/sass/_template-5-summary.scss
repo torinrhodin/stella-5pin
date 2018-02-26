@@ -6,9 +6,9 @@
   
   #summary-page-image {
     width: 418px;
-    height: 280.5px;
+    height: 345px;
     margin-left: 27px;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-right: 55px;
     background-image: url('../../content/img/summary-page.png');
     background-size: 100%;
@@ -22,11 +22,12 @@
     display: flex;
     justify-content: flex-end;
     margin-right: 51px;
-    margin-top: 40px;
+    margin-top: 33px;
     
     #risk-free-link {
       background-image: url('../../content/img/risk-free-link.png');
       background-size: 100%;
+      background-repeat: no-repeat;
       width: 310px;
       height: 63.5px; 
       
@@ -57,6 +58,41 @@
       }
     } 
   }
+
+  .pre-footer {
+    height: 76px;
+    width: 545px;
+    background-image: url('../../content/img/pre-footer-half-width.png');
+    
+    div {
+      font-size: 21px;
+      font-family: $font__main-bold;
+      color: $white;
+      margin-left: 26px;
+      margin-top: 14px;
+      line-height: 29.5px;
+    }
+
+  }
+
+
+  .key {
+    text-align: left;
+    width: 50%;
+    left: 328px;
+    bottom: 30px;
+    
+    .astrix {
+      vertical-align: super;
+      font-size: 0.8em;
+      font-weight: normal;
+      position: absolute;
+      top: 0em;
+      text-transform: lowercase;
+      left: -6px;
+    }
+  }
+
 }
 
 #popup {

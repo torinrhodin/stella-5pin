@@ -208,3 +208,13 @@
     }
   }
 }
+
+#mainfooter {
+  &.hide-easipak {
+    width: 50%;
+    
+    #stellant_appFooter {
+      display: none;
+    }
+  }
+}

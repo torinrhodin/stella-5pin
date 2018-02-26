@@ -8,6 +8,8 @@ document.addEventListener('presentationInit', function() {
 		onEnter: function(ele) {
 			console.log('enter ' + app.slideshow.current);
 
+			app.elements.footerMenu.classList.add('hide-easipak');
+
 			// Attach Swipe Events
 			document.addEventListener('swiperight', this._swipePrev);
 			document.addEventListener('swipeleft', this._swipeNext);
@@ -29,6 +31,9 @@ document.addEventListener('presentationInit', function() {
 			// Remove Swipe Event
 			document.removeEventListener('swiperight', this._swipePrev);
 			document.removeEventListener('swipeleft', this._swipeNext);
+
+			app.elements.footerMenu.classList.remove('hide-easipak');
+
 		},
 		_swipePrev: function() {
 			if( app.popup.initialized === false ) {

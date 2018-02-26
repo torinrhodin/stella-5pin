@@ -114,7 +114,7 @@ body {
       height: 40px;
       margin-left: 50px; }
     .slide .footer .right-logo {
-      background: url("../../content/img/16518_b_rad_smartpack_logo_bl02_WHITE.svg") no-repeat;
+      background: url("../../content/img/16630_b_rad_easipak_logo_KO.svg") no-repeat;
       width: 175px;
       height: 54px;
       margin-right: 50px; }
@@ -263,7 +263,7 @@ h1 span.asterisk, h2 span.asterisk {
   height: 40px;
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
   position: absolute;
   bottom: 26px; }
   #mainfooter #medradLogo {
@@ -274,10 +274,11 @@ h1 span.asterisk, h2 span.asterisk {
   #mainfooter #stellant_appFooter {
     list-style: none; }
     #mainfooter #stellant_appFooter li {
-      background: url("../../content/img/16518_b_rad_smartpack_logo_bl02_RGB.svg") no-repeat;
+      background: url("../../content/img/16630_b_rad_easipak_logo_bl01_CMYK_comm-coat.svg") no-repeat;
       width: 175px;
       height: 54px;
-      margin-right: 50px; }
+      margin-right: 50px;
+      margin-top: -12px; }
   #mainfooter.home {
     height: 63px;
     justify-content: flex-end; }
@@ -1006,34 +1007,53 @@ h1 span.asterisk, h2 span.asterisk {
 --------------------------------------------------------------*/
 #smartpack {
   background-image: url("../../content/img/smartpack-computer.png");
-  background-size: 410px 361px;
-  background-position-y: 225px;
-  background-position-x: -7px; }
+  background-size: 388px 308px;
+  background-position-y: 286px;
+  background-position-x: 67px; }
   #smartpack .slide-subtitle {
-    margin-bottom: 50px; }
-  #smartpack .features-list {
-    justify-content: flex-end;
-    margin-right: 145px;
-    margin-top: 35px; }
-    #smartpack .features-list .list-title {
-      margin-bottom: 60px; }
-      #smartpack .features-list .list-title .plus-sign {
-        padding-left: 0px; }
-  #smartpack .arrow-bubble {
-    margin-right: 290px;
-    margin-top: 52px; }
-    #smartpack .arrow-bubble #free-trial {
-      width: 300.5px;
-      height: 64px;
-      background-repeat: no-repeat;
-      background-image: url("../../content/img/arrow-bubble-long.png"); }
-      #smartpack .arrow-bubble #free-trial .trial-text {
-        color: #e86c1f;
-        font-family: "BayerSans Regular", sans-serif;
-        font-size: 17px;
-        margin: 24px 0 0 56px; }
-        #smartpack .arrow-bubble #free-trial .trial-text span {
-          font-family: "BayerSans Bold", sans-serif; }
+    margin-bottom: 0px; }
+  #smartpack .two-col {
+    display: flex;
+    justify-content: space-between; }
+    #smartpack .two-col .features-list {
+      justify-content: flex-end;
+      margin-right: 75px;
+      margin-top: 19px; }
+      #smartpack .two-col .features-list .list-title {
+        margin-bottom: 25px; }
+        #smartpack .two-col .features-list .list-title .plus-sign {
+          padding-left: 0px; }
+    #smartpack .two-col .arrow-bubble {
+      margin-left: 75px;
+      margin-bottom: 7px;
+      justify-content: flex-start;
+      align-self: flex-end;
+      padding-left: 36px; }
+      #smartpack .two-col .arrow-bubble #free-trial {
+        width: 300.5px;
+        height: 64px;
+        background-repeat: no-repeat;
+        background-image: url("../../content/img/arrow-bubble-long.png"); }
+        #smartpack .two-col .arrow-bubble #free-trial .trial-text {
+          color: #e86c1f;
+          font-family: "BayerSans Regular", sans-serif;
+          font-size: 17px;
+          margin: 24px 0 0 56px; }
+          #smartpack .two-col .arrow-bubble #free-trial .trial-text span {
+            font-family: "BayerSans Bold", sans-serif; }
+  #smartpack .key {
+    text-align: left;
+    width: 50%;
+    left: 328px;
+    bottom: 29px; }
+    #smartpack .key .astrix {
+      vertical-align: super;
+      font-size: 0.8em;
+      font-weight: normal;
+      position: absolute;
+      top: 0em;
+      text-transform: lowercase;
+      left: -6px; }
 
 #smartpack_pillars .slide-title {
   font-size: 45px; }
@@ -1079,7 +1099,9 @@ h1 span.asterisk, h2 span.asterisk {
         margin-top: 100px; }
 
 #smartpack_pillars .arrow-bubble {
-  justify-content: center; }
+  position: absolute;
+  right: 294px;
+  bottom: 64px; }
   #smartpack_pillars .arrow-bubble div {
     background-size: contain;
     background-image: url("../../content/img/info-link.png");
@@ -1088,6 +1110,20 @@ h1 span.asterisk, h2 span.asterisk {
     width: 100px;
     margin-left: -20px;
     margin-top: 39.5px; }
+
+#smartpack_pillars .key {
+  text-align: left;
+  width: 50%;
+  left: 328px;
+  bottom: 65px; }
+  #smartpack_pillars .key .astrix {
+    vertical-align: super;
+    font-size: 0.8em;
+    font-weight: normal;
+    position: absolute;
+    top: 0em;
+    text-transform: lowercase;
+    left: -6px; }
 
 #popup.smartpack_pillars #popup-content {
   margin: 30px 20px;
@@ -1153,6 +1189,12 @@ h1 span.asterisk, h2 span.asterisk {
     margin-left: 46px;
     margin-top: 42px;
     line-height: 29.5px; }
+
+#reliability .key {
+  text-align: left;
+  width: 50%;
+  left: 294px;
+  bottom: 29px; }
 
 #reliability_virtualcare #reliability-shield-large {
   width: 127px;
@@ -1261,6 +1303,11 @@ h1 span.asterisk, h2 span.asterisk {
     position: absolute;
     right: 59px;
     top: 211px; }
+  #scanner_connectivity_detail .key {
+    text-align: left;
+    width: 50%;
+    left: 346px;
+    bottom: 29px; }
 
 .slide.automated-documentation .slide-title {
   margin-left: 45px;
@@ -1271,6 +1318,12 @@ h1 span.asterisk, h2 span.asterisk {
     background-image: url("../../content/img/automated-doc-icon.png");
     margin-right: 0px;
     margin-top: -10px; }
+
+.slide.automated-documentation .key {
+  text-align: left;
+  width: 50%;
+  left: 346px;
+  bottom: 29px; }
 
 #automated_documentation {
   background-image: url("../../content/img/automated-doc-monitor.png");
@@ -1284,7 +1337,7 @@ h1 span.asterisk, h2 span.asterisk {
     width: 335px;
     height: 64px;
     position: absolute;
-    left: 63px;
+    left: 45px;
     bottom: 138px; }
   #automated_documentation .features-list {
     margin-left: 443px;
@@ -1530,6 +1583,9 @@ h1 span.asterisk, h2 span.asterisk {
   background-size: contain;
   margin: 80px 0 0 150px; }
 
+#popup .popup-slide.two .key {
+  bottom: 56px; }
+
 #popup .popup-slide.two .protocols-image {
   width: 572px;
   height: 321px;
@@ -1586,14 +1642,26 @@ h1 span.asterisk, h2 span.asterisk {
   background-size: contain;
   margin: 80px auto 0; }
 
+#initiate_easipak {
+  background-image: url("../../content/img/initiate_easipak.png");
+  background-position-x: 77px;
+  background-position-y: 238px;
+  background-size: 817.5px 367.5px; }
+  #initiate_easipak #initiate-easipak-pop-link {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    bottom: 228px;
+    left: 82px; }
+
 /*--------------------------------------------------------------
 # Summary Slide
 --------------------------------------------------------------*/
 #summary_page #summary-page-image {
   width: 418px;
-  height: 280.5px;
+  height: 345px;
   margin-left: 27px;
-  margin-top: 50px;
+  margin-top: 15px;
   margin-right: 55px;
   background-image: url("../../content/img/summary-page.png");
   background-size: 100%; }
@@ -1605,10 +1673,11 @@ h1 span.asterisk, h2 span.asterisk {
   display: flex;
   justify-content: flex-end;
   margin-right: 51px;
-  margin-top: 40px; }
+  margin-top: 33px; }
   #summary_page #summary-arrow-links #risk-free-link {
     background-image: url("../../content/img/risk-free-link.png");
     background-size: 100%;
+    background-repeat: no-repeat;
     width: 310px;
     height: 63.5px; }
     #summary_page #summary-arrow-links #risk-free-link .trial-text {
@@ -1628,6 +1697,32 @@ h1 span.asterisk, h2 span.asterisk {
       font-family: "BayerSans Regular", sans-serif;
       font-size: 17px;
       margin: 25px 0 0 65px; }
+
+#summary_page .pre-footer {
+  height: 76px;
+  width: 545px;
+  background-image: url("../../content/img/pre-footer-half-width.png"); }
+  #summary_page .pre-footer div {
+    font-size: 21px;
+    font-family: "BayerSans Bold", sans-serif;
+    color: #FFFFFF;
+    margin-left: 26px;
+    margin-top: 14px;
+    line-height: 29.5px; }
+
+#summary_page .key {
+  text-align: left;
+  width: 50%;
+  left: 328px;
+  bottom: 30px; }
+  #summary_page .key .astrix {
+    vertical-align: super;
+    font-size: 0.8em;
+    font-weight: normal;
+    position: absolute;
+    top: 0em;
+    text-transform: lowercase;
+    left: -6px; }
 
 #popup .summary-header {
   margin-left: 36px;
@@ -1855,5 +1950,10 @@ h1 span.asterisk, h2 span.asterisk {
       padding: 24px 0 0 56px; }
       #reliability_calculator .arrow-bubble #calculation-guide .guide-text span {
         font-family: "BayerSans Bold", sans-serif; }
+
+#mainfooter.hide-easipak {
+  width: 50%; }
+  #mainfooter.hide-easipak #stellant_appFooter {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */

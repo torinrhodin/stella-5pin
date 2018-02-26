@@ -4,51 +4,76 @@
 
 #smartpack {
 	background-image: url('../../content/img/smartpack-computer.png');  
-	background-size: 410px 361px; 
-  background-position-y: 225px;
-  background-position-x: -7px;
-
-  .slide-subtitle {
-    margin-bottom: 50px;    
-  }
-
-  .features-list {
-    justify-content: flex-end;
-    margin-right: 145px;
-    margin-top: 35px;
-
-    .list-title {
-      margin-bottom: 60px;
-      
-      .plus-sign {
-        padding-left: 0px;
-      }
-    }
+	background-size: 388px 308px; 
+  background-position-y: 286px;
+  background-position-x: 67px;
     
+  .slide-subtitle {
+    margin-bottom: 0px;    
   }
 
-  .arrow-bubble {
-    margin-right: 290px;
-    margin-top: 52px;
-
-    #free-trial {
-      width: 300.5px;
-      height: 64px;
-      background-repeat: no-repeat;
-      background-image: url('../../content/img/arrow-bubble-long.png');  
-      
-      .trial-text {
-        color: $orange;
-        font-family: $font__main;
-        font-size: 17px;
-        margin: 24px 0 0 56px;
+  .two-col {
+    display: flex;
+    justify-content: space-between;
+    
+    .features-list {
+      justify-content: flex-end;
+      margin-right: 75px;
+      margin-top: 19px;
+  
+      .list-title {
+        margin-bottom: 25px;
         
-        span {
-          font-family: $font__main-bold;
+        .plus-sign {
+          padding-left: 0px;
         }
       }
+      
     }
-  }  
+  
+    .arrow-bubble {
+      margin-left: 75px;
+      margin-bottom: 7px;
+      justify-content: flex-start;
+      align-self: flex-end;
+      padding-left: 36px;
+      
+      #free-trial {
+        width: 300.5px;
+        height: 64px;
+        background-repeat: no-repeat;
+        background-image: url('../../content/img/arrow-bubble-long.png');  
+        
+        .trial-text {
+          color: $orange;
+          font-family: $font__main;
+          font-size: 17px;
+          margin: 24px 0 0 56px;
+          
+          span {
+            font-family: $font__main-bold;
+          }
+        }
+      }
+    }  
+  }
+
+  .key {
+    text-align: left;
+    width: 50%;
+    left: 328px;
+    bottom: 29px;
+    
+    .astrix {
+      vertical-align: super;
+      font-size: 0.8em;
+      font-weight: normal;
+      position: absolute;
+      top: 0em;
+      text-transform: lowercase;
+      left: -6px;
+    }
+  }
 }
 
 #smartpack_pillars {
@@ -119,8 +144,10 @@
   }
 
   .arrow-bubble {
-    justify-content: center;
-
+    position: absolute;
+    right: 294px;
+    bottom: 64px;
+    
     div {
       background-size: contain;
       background-image: url('../../content/img/info-link.png');
@@ -131,7 +158,23 @@
       margin-top: 39.5px;
     }
   }
-  
+
+  .key {
+    text-align: left;
+    width: 50%;
+    left: 328px;
+    bottom: 65px;
+    
+    .astrix {
+      vertical-align: super;
+      font-size: 0.8em;
+      font-weight: normal;
+      position: absolute;
+      top: 0em;
+      text-transform: lowercase;
+      left: -6px;
+    }
+  }
 }
 
 // smartpack pillars popup 
@@ -239,6 +282,14 @@
     }
 
   }
+
+  .key {
+    text-align: left;
+    width: 50%;
+    left: 294px;
+    bottom: 29px;
+  }
+
 }
 
 #reliability_virtualcare {
@@ -407,6 +458,13 @@
     top: 211px;
   }
 
+  .key {
+    text-align: left;
+    width: 50%;
+    left: 346px;
+    bottom: 29px;
+  }
+
 }
 
 .slide.automated-documentation {
@@ -422,6 +480,14 @@
       margin-top: -10px;
     }
   }
+  
+  .key {
+    text-align: left;
+    width: 50%;
+    left: 346px;
+    bottom: 29px;
+  }
+
 }
 
 #automated_documentation {
@@ -437,7 +503,7 @@
     width: 335px;
     height: 64px;
     position: absolute;
-    left: 63px;
+    left: 45px;
     bottom: 138px;
   }
   
@@ -803,6 +869,10 @@
         margin: 80px 0 0 150px;
       }
       
+      .key {
+        bottom: 56px;
+      }
+      
       .protocols-image {
         width: 572px;
         height: 321px;
@@ -885,3 +955,18 @@
   
 }
 
+#initiate_easipak {
+
+  background-image: url('../../content/img/initiate_easipak.png');
+  background-position-x: 77px;
+  background-position-y: 238px;
+  background-size: 817.5px 367.5px;
+
+  #initiate-easipak-pop-link {
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    bottom: 228px;
+    left: 82px;
+  }
+}

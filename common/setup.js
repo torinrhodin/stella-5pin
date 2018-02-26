@@ -68,7 +68,7 @@
 				]
 			},
 			{
-				title: "SmartPACK+",
+				title: "EasiPak",
 				idName: "link4",
 				labelName: "lab4",
 				parentGoTo: "stellant_app.smartpack_collection.smartpack",
@@ -143,7 +143,7 @@
 			{ title:"", goTo:"stellant_app.home.introduction" }
 	  ],
 	  footerLinks: [
-			// { title:"", goTo:"stellant_app.summary_page_slide.summary_page" }
+		  { title:"", goTo:"stellant_app.summary_page_slide.summary_page" }
 	  ]
 	});
 

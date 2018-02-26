@@ -103,7 +103,7 @@ body {
     }
 
     .right-logo {
-      background: url('../../content/img/16518_b_rad_smartpack_logo_bl02_WHITE.svg') no-repeat;
+      background: url('../../content/img/16630_b_rad_easipak_logo_KO.svg') no-repeat;
       width: 175px;
       height: 54px;
       margin-right: 50px;
@@ -321,7 +321,7 @@ h1, h2 {
   height: 40px;
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 100%;
   position: absolute;
   bottom: 26px;
   
@@ -336,10 +336,11 @@ h1, h2 {
     list-style: none;
 
     li {
-      background: url('../../content/img/16518_b_rad_smartpack_logo_bl02_RGB.svg') no-repeat;
+      background: url('../../content/img/16630_b_rad_easipak_logo_bl01_CMYK_comm-coat.svg') no-repeat;
       width: 175px;
       height: 54px;
       margin-right: 50px;
+      margin-top: -12px;
     }
   }
 
