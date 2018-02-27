@@ -1,7 +1,7 @@
 document.addEventListener('presentationInit', function() {
 	var slide = app.slide.initiate_easipak = {
 		elements: {
-			popupLink: "#initiate_easipak-pop-link",
+			popupLink: "#initiate-easipak-pop-link",
 			popupText: "#popup-text"
 		},
 		onEnter: function(ele) {
@@ -37,6 +37,7 @@ document.addEventListener('presentationInit', function() {
 		},
 		_launchPopup: function(event) {
 			var popupText = slide.element.popupText.innerHTML;
+
   		app.popup._init(popupText);
 		}
   };
