@@ -143,7 +143,7 @@
 			{ title:"", goTo:"stellant_app.home.introduction" }
 	  ],
 	  footerLinks: [
-		  { title:"", goTo:"stellant_app.summary_page_slide.summary_page" }
+		  { title:"", goTo:"stellant_app.smartpack_collection.smartpack" }
 	  ]
 	});
 

@@ -1654,6 +1654,13 @@ h1 span.asterisk, h2 span.asterisk {
     bottom: 228px;
     left: 82px; }
 
+#popup .easipak-header {
+  margin-top: 50px; }
+
+#popup .easipak-text p {
+  font-size: 21px;
+  color: #6d6e70; }
+
 /*--------------------------------------------------------------
 # Summary Slide
 --------------------------------------------------------------*/

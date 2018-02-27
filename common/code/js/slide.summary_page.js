@@ -36,7 +36,7 @@ document.addEventListener('presentationInit', function() {
 			}			
 		},
 		_goToTrial: function(argument) {
-			app.goTo('stellant_app', 'resources_slide', 'resources');
+			app.goTo('stellant_app', 'initiate_easipak_slide', 'initiate_easipak');
 		},
 		_launchPopup: function(event) {
       var popupClass = this.closest('article').getAttribute('id');

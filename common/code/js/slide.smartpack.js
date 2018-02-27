@@ -27,7 +27,7 @@ document.addEventListener('presentationInit', function() {
 			app.slideshow.next();
 		},
 		_goToTrial: function(argument) {
-			app.goTo('stellant_app', 'resources_slide', 'resources');
+			app.goTo('stellant_app', 'initiate_easipak_slide', 'initiate_easipak');
 		},
 	};
 });
