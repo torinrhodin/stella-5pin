@@ -1,5 +1,5 @@
 document.addEventListener('presentationInit', function() {
-	var slide = app.slide.reliability_calculator = {
+	var slide = app.slide.calculator = {
 		elements: {
 			calcInputs: ["form input", "all"],
 			popupLink: "#calculation-guide",

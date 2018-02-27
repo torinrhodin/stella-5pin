@@ -100,6 +100,11 @@
 			"name" : "Tools",
 			"valid":true,
 			"file" : "tools.html"
+		},
+		"calculator" : {
+			"name" : "Calculator",
+			"valid":true,
+			"file" : "calculator.html"
 		}
 	},
 	"structures" : {
@@ -146,7 +151,7 @@
 			"valid":true
 		},
 		"tools_slide":{
-			"content":["tools"],
+			"content":["tools", "calculator"],
 			"name":"Tools Slide",
 			"type":"slideshow",
 			"valid":true

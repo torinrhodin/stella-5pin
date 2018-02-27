@@ -26,7 +26,7 @@ document.addEventListener('presentationInit', function() {
 			app.slideshow.next();
 		},
 		_goToCalc: function(event) {
-			app.goTo('stellant_app','smartpack_collection','reliability_calculator');
+			app.goTo('stellant_app','tools_slide','calculator');
 		}
 	};
 });
