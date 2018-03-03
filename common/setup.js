@@ -77,7 +77,7 @@
 					[
 						{
 							title: "Reliability",
-							thumb: "content/img/reliability.jpg",
+							thumb: "content/img/reliability.png",
 							goTo: "stellant_app.smartpack_collection.reliability"
 						},
 						{
@@ -87,29 +87,29 @@
 						},
 						{
 							title: "Access",
-							thumb: "content/img/access.jpg",
+							thumb: "content/img/access.png",
 							goTo: "stellant_app.smartpack_collection.capital_access_program"
 						}
 					],
 					[
 						{
 							title: "Scanner connectivity",
-							thumb: "content/img/scanner.jpg",
+							thumb: "content/img/scanner.png",
 							goTo: "stellant_app.smartpack_collection.scanner_connectivity_intro"
 						},
 						{
 							title: "Automated<br>documentation",
-							thumb: "content/img/automated.jpg",
+							thumb: "content/img/automated.png",
 							goTo: "stellant_app.smartpack_collection.automated_documentation"
 						},
 						{
 							title: "Personalized protocols",
-							thumb: "content/img/automated.jpg",
+							thumb: "content/img/personalized.png",
 							goTo: "stellant_app.smartpack_collection.personalized_protocols"
 						},
 						{
 							title: "Data-driven insights",
-							thumb: "content/img/data.jpg",
+							thumb: "content/img/data.png",
 							goTo: "stellant_app.smartpack_collection.data_driven_insights"
 						}
 					]
