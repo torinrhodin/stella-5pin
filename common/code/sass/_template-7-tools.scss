@@ -22,6 +22,7 @@
 	.slide-subtitle {
 		font-family: $font__main;
 		font-size: 26px;
+		letter-spacing: 0px;
 	}
 
 	.main-content {
@@ -116,6 +117,7 @@
 			position: absolute;
 			top: -65px;
 			left: 0;
+      letter-spacing: .5px;
 		}
 
 		fieldset {
@@ -191,10 +193,10 @@
     bottom: 0;
 
     #calculation-guide {
-      width: 300.5px;
+      width: 207.5px;
       height: 64px;
       background-repeat: no-repeat;
-      background-image: url('../../content/img/arrow-bubble-long.png');  
+      background-image: url('../../content/img/arrow-bubble-calc.png');  
       
       .guide-text {
         color: $orange;

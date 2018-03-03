@@ -16,6 +16,21 @@
   
   ul {
     margin-top: 94px;
+
+    li {
+      line-height: 30px;
+      
+      span {
+        
+        sup {
+          font-size: 24px;
+          font-family: $font__main;
+          top: 7px;
+          right: -1px;
+          line-height: 11px;          
+        }
+      }
+    }
   }
   
   #summary-arrow-links {
@@ -69,8 +84,8 @@
       font-family: $font__main-bold;
       color: $white;
       margin-left: 26px;
-      margin-top: 14px;
-      line-height: 29.5px;
+      margin-top: 15px;
+      line-height: 26.5px;
     }
 
   }

@@ -29,6 +29,13 @@
         }
       }
       
+      sup {
+        font-size: 24px;
+        font-family: $font__main;
+        top: 7px;
+        right: -1px;
+        line-height: 11px;
+      }
     }
   
     .arrow-bubble {
@@ -212,6 +219,14 @@
       height: 63.5px;
       background-image: url('../../content/img/reliability-shield.png');
       margin-top: -14px;
+    }
+  }
+  
+  .slide-subtitle {
+    
+    .subtitle-asterisk {
+      font-size: 21.5px;
+      top: 3px;      
     }
   }
   
@@ -554,9 +569,9 @@
 
 #automated_documentation_steps {
   background-image: url('../../content/img/automated-documentation-detail.png');
-  background-position-x: 77px;
+  background-position-x: 115px;
   background-position-y: 210px;
-  background-size: 888.5px 427.5px;
+  background-size: 850.5px 415px;
 
   #reveal-steps-detail {
     width: 35px;
@@ -681,7 +696,7 @@
     ul {
     
       li {
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         
         &.list-title {
           font-family: $font__main;
@@ -753,6 +768,12 @@
       font-family: $font__main-bold;
       font-weight: normal;
     }
+    
+    .cap {
+      sup {
+        line-height: 17.5px;
+      }
+    }
   }
 }
 
@@ -781,14 +802,14 @@
 
 #popup {
   &.automated_documentation_steps {
-    height: 406px;
+    height: 379px;
     background-image: url('../../content/img/auto-doc-zoom.png');
     background-repeat: no-repeat;
-    background-size: 946px 456px;
+    background-size: 946px 422px;
     background-position-x: 10px;
-    background-position-y: 7px;
+    background-position-y: 11px;
     width: 90%;
-    margin: 0 2%;    
+    margin: 0 2%;
   }
 
   &.scanner_connectivity_detail {
@@ -802,7 +823,7 @@
 
   
   .small-header {
-    margin-left: 36px;
+    margin-left: 48px;
     margin-top: 50px;    
     
     h3 {
@@ -862,10 +883,14 @@
       
       .key {
         bottom: 56px;
+        
+        b {
+          font-family: $font__main-bold;
+        }
       }
       
       .protocols-image {
-        width: 572px;
+        width: 524px;
         height: 321px;
         background-image: url('../../content/img/protocols-image-two.png');
         background-repeat: no-repeat;
@@ -924,6 +949,14 @@
         background-size: contain;
         margin: 80px auto 0;
       }
+
+      .key {
+        
+        b {
+          font-family: $font__main-bold;
+        }
+      }
+
       
     }
 

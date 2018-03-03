@@ -150,6 +150,14 @@
 
     ul {
       margin-right: 110px;
+      
+      sup {
+        font-size: 24px;
+        font-family: "BayerSans Regular", sans-serif;
+        top: 7px;
+        right: -1px;
+        line-height: 11px; 
+      }
     }
   }
     
@@ -192,7 +200,7 @@
         border-radius: 999px;
         width: 30px;
         height: 31px;
-        padding: 0 0 0 1px;
+        padding: 0 0 0 0px;
         border: 3px solid $green;
         color: $green;
         text-align: center;

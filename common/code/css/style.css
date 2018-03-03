@@ -954,6 +954,12 @@ h1 span.asterisk, h2 span.asterisk {
     margin-top: 78px; }
     .popup-slide .features-list ul {
       margin-right: 110px; }
+      .popup-slide .features-list ul sup {
+        font-size: 24px;
+        font-family: "BayerSans Regular", sans-serif;
+        top: 7px;
+        right: -1px;
+        line-height: 11px; }
   .popup-slide #consumables-slide-two {
     width: 629.5px;
     height: 455px;
@@ -982,7 +988,7 @@ h1 span.asterisk, h2 span.asterisk {
       border-radius: 999px;
       width: 30px;
       height: 31px;
-      padding: 0 0 0 1px;
+      padding: 0 0 0 0px;
       border: 3px solid #8cc63e;
       color: #8cc63e;
       text-align: center;
@@ -1023,6 +1029,12 @@ h1 span.asterisk, h2 span.asterisk {
         margin-bottom: 25px; }
         #smartpack .two-col .features-list .list-title .plus-sign {
           padding-left: 0px; }
+      #smartpack .two-col .features-list sup {
+        font-size: 24px;
+        font-family: "BayerSans Regular", sans-serif;
+        top: 7px;
+        right: -1px;
+        line-height: 11px; }
     #smartpack .two-col .arrow-bubble {
       margin-left: 75px;
       margin-bottom: 7px;
@@ -1145,6 +1157,10 @@ h1 span.asterisk, h2 span.asterisk {
   height: 63.5px;
   background-image: url("../../content/img/reliability-shield.png");
   margin-top: -14px; }
+
+#reliability .slide-subtitle .subtitle-asterisk {
+  font-size: 21.5px;
+  top: 3px; }
 
 #reliability .slide-intro {
   color: #e86c1f; }
@@ -1363,9 +1379,9 @@ h1 span.asterisk, h2 span.asterisk {
 
 #automated_documentation_steps {
   background-image: url("../../content/img/automated-documentation-detail.png");
-  background-position-x: 77px;
+  background-position-x: 115px;
   background-position-y: 210px;
-  background-size: 888.5px 427.5px; }
+  background-size: 850.5px 415px; }
   #automated_documentation_steps #reveal-steps-detail {
     width: 35px;
     height: 35px;
@@ -1445,7 +1461,7 @@ h1 span.asterisk, h2 span.asterisk {
     margin-left: 555px;
     margin-top: 13px; }
     #data_driven_insights .features-list ul li {
-      margin-bottom: 15px; }
+      margin-bottom: 12px; }
       #data_driven_insights .features-list ul li.list-title {
         font-family: "BayerSans Regular", sans-serif;
         margin-bottom: 20px;
@@ -1494,6 +1510,8 @@ h1 span.asterisk, h2 span.asterisk {
     #capital_access_program #capital-access-programs b {
       font-family: "BayerSans Bold", sans-serif;
       font-weight: normal; }
+    #capital_access_program #capital-access-programs .cap sup {
+      line-height: 17.5px; }
 
 #smartpack-pillars-popup .header {
   margin-left: 36px;
@@ -1513,12 +1531,12 @@ h1 span.asterisk, h2 span.asterisk {
   margin-top: 30px; }
 
 #popup.automated_documentation_steps {
-  height: 406px;
+  height: 379px;
   background-image: url("../../content/img/auto-doc-zoom.png");
   background-repeat: no-repeat;
-  background-size: 946px 456px;
+  background-size: 946px 422px;
   background-position-x: 10px;
-  background-position-y: 7px;
+  background-position-y: 11px;
   width: 90%;
   margin: 0 2%; }
 
@@ -1531,7 +1549,7 @@ h1 span.asterisk, h2 span.asterisk {
   background-position-y: 15px; }
 
 #popup .small-header {
-  margin-left: 36px;
+  margin-left: 48px;
   margin-top: 50px; }
   #popup .small-header h3 {
     font-size: 23.5px;
@@ -1578,9 +1596,11 @@ h1 span.asterisk, h2 span.asterisk {
 
 #popup .popup-slide.two .key {
   bottom: 56px; }
+  #popup .popup-slide.two .key b {
+    font-family: "BayerSans Bold", sans-serif; }
 
 #popup .popup-slide.two .protocols-image {
-  width: 572px;
+  width: 524px;
   height: 321px;
   background-image: url("../../content/img/protocols-image-two.png");
   background-repeat: no-repeat;
@@ -1627,6 +1647,9 @@ h1 span.asterisk, h2 span.asterisk {
   background-size: contain;
   margin: 80px auto 0; }
 
+#popup .popup-slide.four .key b {
+  font-family: "BayerSans Bold", sans-serif; }
+
 #popup .popup-slide.five .protocols-image {
   width: 634.5px;
   height: 333px;
@@ -1668,6 +1691,14 @@ h1 span.asterisk, h2 span.asterisk {
 
 #summary_page ul {
   margin-top: 94px; }
+  #summary_page ul li {
+    line-height: 30px; }
+    #summary_page ul li span sup {
+      font-size: 24px;
+      font-family: "BayerSans Regular", sans-serif;
+      top: 7px;
+      right: -1px;
+      line-height: 11px; }
 
 #summary_page #summary-arrow-links {
   display: flex;
@@ -1707,8 +1738,8 @@ h1 span.asterisk, h2 span.asterisk {
     font-family: "BayerSans Bold", sans-serif;
     color: #FFFFFF;
     margin-left: 26px;
-    margin-top: 14px;
-    line-height: 29.5px; }
+    margin-top: 15px;
+    line-height: 26.5px; }
 
 #summary_page .key {
   text-align: left;
@@ -1780,7 +1811,7 @@ h1 span.asterisk, h2 span.asterisk {
     #resources #resources-grid .column .resource img {
       width: 85px;
       height: 64px;
-      border: 1px solid #6d6e70; }
+      border: 1px solid #e2e2e2; }
     #resources #resources-grid .column .resource .links {
       display: flex;
       justify-content: center;
@@ -1814,7 +1845,8 @@ h1 span.asterisk, h2 span.asterisk {
 #reliability_calculator .slide-subtitle,
 #calculator .slide-subtitle {
   font-family: "BayerSans Regular", sans-serif;
-  font-size: 26px; }
+  font-size: 26px;
+  letter-spacing: 0px; }
 
 #reliability_calculator .main-content,
 #calculator .main-content {
@@ -1913,7 +1945,8 @@ h1 span.asterisk, h2 span.asterisk {
     box-sizing: border-box;
     position: absolute;
     top: -65px;
-    left: 0; }
+    left: 0;
+    letter-spacing: .5px; }
   #reliability_calculator .calculator fieldset,
   #calculator .calculator fieldset {
     margin: 60px 0 100px; }
@@ -1977,10 +2010,10 @@ h1 span.asterisk, h2 span.asterisk {
   bottom: 0; }
   #reliability_calculator .arrow-bubble #calculation-guide,
   #calculator .arrow-bubble #calculation-guide {
-    width: 300.5px;
+    width: 207.5px;
     height: 64px;
     background-repeat: no-repeat;
-    background-image: url("../../content/img/arrow-bubble-long.png"); }
+    background-image: url("../../content/img/arrow-bubble-calc.png"); }
     #reliability_calculator .arrow-bubble #calculation-guide .guide-text,
     #calculator .arrow-bubble #calculation-guide .guide-text {
       color: #e86c1f;
