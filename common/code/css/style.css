@@ -116,7 +116,7 @@ body {
     .slide .footer .right-logo {
       background: url("../../content/img/16630_b_rad_easipak_logo_KO.svg") no-repeat;
       width: 175px;
-      height: 54px;
+      height: 36px;
       margin-right: 50px; }
   .slide #main_navigationContainer h2 {
     margin-top: 0px; }
@@ -276,9 +276,9 @@ h1 span.asterisk, h2 span.asterisk {
     #mainfooter #stellant_appFooter li {
       background: url("../../content/img/16630_b_rad_easipak_logo_bl01_CMYK_comm-coat.svg") no-repeat;
       width: 175px;
-      height: 54px;
+      height: 36px;
       margin-right: 50px;
-      margin-top: -12px; }
+      margin-top: 0px; }
   #mainfooter.home {
     height: 63px;
     justify-content: flex-end; }
@@ -1088,7 +1088,7 @@ h1 span.asterisk, h2 span.asterisk {
     #smartpack_pillars #pillars .pillar#reliability-pillar {
       background-image: url("../../content/img/reliability-pillar.png"); }
       #smartpack_pillars #pillars .pillar#reliability-pillar .pillar-detail {
-        margin-top: 125px; }
+        margin-top: 100px; }
     #smartpack_pillars #pillars .pillar#technology-pillar {
       background-image: url("../../content/img/technology-pillar.png"); }
       #smartpack_pillars #pillars .pillar#technology-pillar .pillar-detail {
@@ -1210,9 +1210,9 @@ h1 span.asterisk, h2 span.asterisk {
 
 #technological_deployments {
   background-image: url("../../content/img/computer-background.png");
-  background-size: 884.5px 406.5px;
-  background-position-x: 63px;
-  background-position-y: 322px; }
+  background-size: 726.5px 405.5px;
+  background-position-x: 167px;
+  background-position-y: 244px; }
   #technological_deployments .slide-title .title-icon {
     width: 62px;
     height: 65.5px;
@@ -1229,27 +1229,20 @@ h1 span.asterisk, h2 span.asterisk {
       font-family: "BayerSans Bold", sans-serif;
       font-size: 17px;
       line-height: 12px;
-      padding: 10px 25px 10px 60px; }
-      #technological_deployments #deployments-nav .deployment-link sup {
-        font-size: 0.9em;
-        top: 6px; }
+      width: 195px;
+      height: 43px; }
       #technological_deployments #deployments-nav .deployment-link.first {
-        color: #383473;
-        top: 151px;
-        left: 219px; }
+        top: 174px;
+        left: 189px; }
       #technological_deployments #deployments-nav .deployment-link.second {
-        color: #006738;
-        top: 150px;
-        right: 165px;
-        line-height: 18px; }
+        top: 102px;
+        left: 396px; }
       #technological_deployments #deployments-nav .deployment-link.third {
-        color: #00a79d;
-        top: 250px;
-        left: 215px; }
+        top: 242px;
+        left: 199px; }
       #technological_deployments #deployments-nav .deployment-link.fourth {
-        color: #d6df23;
-        top: 267px;
-        right: 206px; }
+        top: 310px;
+        left: 199px; }
 
 .slide.scanner-connectivity .slide-title {
   margin-left: 45px;

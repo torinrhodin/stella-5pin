@@ -82,7 +82,7 @@
 						},
 						{
 							title: "Technology",
-							thumb: "content/img/technology.jpg",
+							thumb: "content/img/technology.png",
 							goTo: "stellant_app.smartpack_collection.technological_deployments"
 						},
 						{

@@ -122,7 +122,7 @@
         background-image: url('../../content/img/reliability-pillar.png');
 
         .pillar-detail {
-          margin-top: 125px;
+          margin-top: 100px;
         }
       }
 
@@ -312,10 +312,10 @@
 
 #technological_deployments {
 	background-image: url('../../content/img/computer-background.png');
-  background-size: 884.5px 406.5px;
-  background-position-x: 63px;
-  background-position-y: 322px;
-  
+  background-size: 726.5px 405.5px;
+  background-position-x: 167px;
+  background-position-y: 244px;
+      
   .slide-title {
 
     .title-icon {
@@ -340,36 +340,27 @@
       font-family: $font__main-bold;
       font-size: 17px;
       line-height: 12px;
-      padding: 10px 25px 10px 60px;
-
-      sup {
-        font-size: 0.9em;
-        top: 6px;
-      }
+      width: 195px;
+      height: 43px;
           
       &.first {
-        color: $purple;
-        top: 151px;
-        left: 219px;
+        top: 174px;
+        left: 189px;
       }
 
       &.second {
-        color: $darkGreen;
-        top: 150px;
-        right: 165px;
-        line-height: 18px;
+        top: 102px;
+        left: 396px;
       }
 
       &.third {
-        color: $teal;
-        top: 250px;
-        left: 215px;
+        top: 242px;
+        left: 199px;
       }
 
       &.fourth {
-        color: $lemonlime;
-        top: 267px;
-        right: 206px;
+        top: 310px;
+        left: 199px;
       }
     }
   }
