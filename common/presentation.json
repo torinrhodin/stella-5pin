@@ -132,15 +132,9 @@
 			"type":"slideshow",
 			"valid":true
 		},
-		"summary_page_slide":{
-			"content":["summary_page"],
-			"name":"Summary Page Slide",
-			"type":"slideshow",
-			"valid":true
-		},
-		"initiate_easipak_slide":{
-			"content":["initiate_easipak"],
-			"name":"Initiate EasiPak Slide",
+		"summary_collection":{
+			"content":["summary_page", "initiate_easipak"],
+			"name":"Summary Collection",
 			"type":"slideshow",
 			"valid":true
 		},
@@ -159,7 +153,7 @@
 	  "stellant_app" : {
 			"name" : "stellant",
 			"type" : "collection",
-  		"content" : ["home","offerings_navigation","medrad_navigation","smartpack_collection","summary_page_slide","initiate_easipak_slide","resources_slide","tools_slide"]
+  		"content" : ["home","offerings_navigation","medrad_navigation","smartpack_collection","summary_collection","resources_slide","tools_slide"]
 		}
 	}
 }

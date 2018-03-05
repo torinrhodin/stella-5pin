@@ -1832,11 +1832,18 @@ h1 span.asterisk, h2 span.asterisk {
   font-family: "BayerSans Regular", sans-serif;
   font-size: 24px;
   color: #e86c1f;
-  margin: 65px 63px 29px; }
+  margin: 65px 63px 29px;
+  letter-spacing: 0.5px; }
   #tools .slide-subtitle span {
     display: inline-block;
     padding: 40px 30px;
     vertical-align: top; }
+
+#tools .key {
+  text-align: center;
+  width: 100%;
+  left: 0;
+  bottom: 29px; }
 
 #reliability_calculator .slide-title,
 #calculator .slide-title {

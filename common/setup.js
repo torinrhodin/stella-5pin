@@ -119,7 +119,7 @@
 				title: "Summary",
 				idName: "link5",
 				labelName: "lab5",
-				goTo: "stellant_app.summary_page_slide.summary_page"
+				goTo: "stellant_app.summary_collection.summary_page"
 			},
 			{
 				title: "Resources",

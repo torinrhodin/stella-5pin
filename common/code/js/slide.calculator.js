@@ -37,6 +37,11 @@ document.addEventListener('presentationInit', function() {
 
 			app.elements.footerMenu.classList.remove('hide-easipak');
 
+			// Reset values to zero
+			slide._setValues(0, 0, 0);
+			for(i = 0; i < slide.element.calcInputs.length; i++) {
+				slide.element.calcInputs[i].value = '';
+			}
 		},
 		_swipePrev: function() {
 			if( app.popup.initialized === false ) {
@@ -53,6 +58,15 @@ document.addEventListener('presentationInit', function() {
 	    var tempNumber = number * factor;
 	    var roundedTempNumber = Math.round(tempNumber);
 	    return roundedTempNumber / factor;
+		},
+		_setValues: function(hour, day, week) {
+			var hourDisplay = slide.element.hourDisplay;
+			var dayDisplay = slide.element.dayDisplay;
+			var weekDisplay = slide.element.weekDisplay;
+			
+			hourDisplay.textContent = hour;
+			dayDisplay.textContent = day;
+			weekDisplay.textContent = week;
 		},
 		_calculate: function(event) {
 			var calcInputs = slide.element.calcInputs;
@@ -73,18 +87,8 @@ document.addEventListener('presentationInit', function() {
 			var hourRounded = slide._round(hourValue, 2);
 			var dayRounded = slide._round(dayValue, 2);
 			var weekRounded = slide._round(weekValue, 2);
-			
-			console.log('hour', hourValue, hourRounded);
-			console.log('day', dayValue, dayRounded);
-			console.log('week', weekValue, weekRounded);
 
-			var hourDisplay = slide.element.hourDisplay;
-			var dayDisplay = slide.element.dayDisplay;
-			var weekDisplay = slide.element.weekDisplay;
-			
-			hourDisplay.textContent = hourRounded;
-			dayDisplay.textContent = dayRounded;
-			weekDisplay.textContent = weekRounded;
+			slide._setValues(hourRounded, dayRounded, weekRounded);
 		},
 		_launchPopup: function(event) {
       var popupClass = this.closest('article').getAttribute('id');
